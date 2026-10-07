@@ -12,7 +12,9 @@ const Navbar = () => {
     { path: "/services/credentialing", label: "Credentialing" },
     { path: "/services/verification", label: "Dental Insurance Verification" },
     { path: "/services/billing", label: "Billing Services" },
-    { path: "/services/consultingandaudit", label: "Practice Consulting and Audit Support" }
+    { path: "/services/consultingandaudit", label: "Practice Consulting and Audit Support" },
+    { path: "/services/ppo-fee-negotiations", label: "PPO Fee Negotiations" },
+    { path: "/services/ppo-network-readiness-checklist", label: "PPO Network Readiness Checklist" }
   ];
 
   // Helper to check if a link is active
@@ -30,7 +32,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
-              <img src="/homeOne/logo-light 1.svg" alt="BEANbite" className="h-12 w-auto" />
+              <img src="/homeOne/beanbite-final.png" alt="BEANbite" className="h-12 w-auto" />
             </Link>
           </div>
 

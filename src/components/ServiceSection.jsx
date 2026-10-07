@@ -45,6 +45,13 @@ const ServicesSection = () => {
       desc: "BEANbite helps dental practices navigate insurance audits, including record requests, chart reviews, billing reviews, and payer communications to reduce compliance risk.",
       link: "/services/consultingandaudit"
     },
+    {
+      id: 5,
+      icon: "/homeOne/fee-negotiations.png",
+      title: "PPO Fee Negotiations",
+      desc: "BEANbite helps dental practices negotiate stronger PPO fee schedules and improve reimbursement while protecting long-term practice profitability.",
+      link: "/services/ppo-fee-negotiations"
+    },
   ];
 
   return (

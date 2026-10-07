@@ -11,6 +11,9 @@ import Credentialing from './pages/Credentialing';
 import InsuranceVerification from './pages/InsuranceVerification';
 import BillingServices from './pages/BillingServices';
 import ConsultingAndAudit from './pages/ConsultingAndAudit';
+import PPOFeeNegotiations from './pages/PPOFeeNegotiations';
+import PPOReadinessChecklist from './pages/PPOReadinessChecklist';
+import CDAAdvertising from './pages/CDAAdvertising';
 import Blog from './pages/Blog';
 import BlogDetails from './pages/BlogDetails';
 import Contact from './pages/Contact';
@@ -32,6 +35,10 @@ function App() {
           <Route path="/services/verification" element={<InsuranceVerification />} />
           <Route path="/services/billing" element={<BillingServices />} />
           <Route path="/services/consultingandaudit" element={<ConsultingAndAudit />} />
+          <Route path="/services/ppo-fee-negotiations" element={<PPOFeeNegotiations />} />
+          <Route path="/services/ppo-network-readiness-checklist" element={<PPOReadinessChecklist />} />
+          <Route path="/CDA-Advertising" element={<CDAAdvertising />} />
+          <Route path="/CDA-Advertising.php" element={<CDAAdvertising />} />
           <Route path="/career" element={<Career />} />
           <Route path="/client-success" element={<ClientSuccess />} />
           <Route path="/testimonials" element={<Testimonials />} />
