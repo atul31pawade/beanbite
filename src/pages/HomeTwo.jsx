@@ -120,7 +120,7 @@ const HomeTwo = () => {
                     <div className="flex justify-between items-center h-16">
                         {/* Logo */}
                         <Link to="/" className="flex-shrink-0">
-                            <img src="/homeOne/logo-light 1.svg" alt="BEANbite" className=" w-[172px]" />
+                            <img src="/homeOne/beanbite-final.jpg" alt="BEANbite" className=" w-[172px]" />
                         </Link>
 
                         {/* Desktop Menu */}
@@ -607,7 +607,7 @@ const HomeTwo = () => {
                          {/* Column 1: Brand & Social */}
                          <div className="lg:col-span-3 space-y-8">
                              <div className="flex items-center gap-2">
-                                <img src="/homeOne/logo-light 1.svg" alt="BEANbite" className="h-14 w-auto" />
+                                <img src="/homeOne/beanbite-final.jpg" alt="BEANbite" className="h-14 w-auto" />
                              </div>
                              <p className="text-gray-300 leading-relaxed text-[15px] max-w-sm">
                                 Our professional and caring staff is dedicated to delivering only premium quality and comprehensive services. This is one of the highest priorities of our company.

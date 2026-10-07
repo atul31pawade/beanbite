@@ -46,7 +46,7 @@ const Footer = () => {
       <footer className="text-white pt-20 pb-0 relative z-10">
         <div className="max-w-[1400px] mx-auto px-4 lg:px-12 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1 space-y-6">
-            <img src="/homeOne/logo-light 1.svg" alt="BEANbite" className="h-10" />
+            <img src="/homeOne/beanbite-final.png" alt="BEANbite" className="h-14 rounded-md" />
             <p className="text-gray-300 text-[15px]">Our professional and caring staff is dedicated to delivering only premium quality and comprehensive services. This is one of the highest priorities of our company.</p>
             {/*<div className="relative">
               <input type="email" placeholder="Email Address" className="w-full bg-white text-gray-800 rounded-lg pl-4 py-3 text-sm" />
@@ -84,6 +84,7 @@ const Footer = () => {
               <li><Link to="/services/verification" className="text-white text-[14px] font-light">Verification</Link></li>
               <li><Link to="/services/billing" className="text-white text-[14px] font-light">Billing Services</Link></li>
               <li><Link to="/services/consultingandaudit" className="text-white text-[14px] font-light">Consulting & Audit Support</Link></li>
+              <li><Link to="/services/ppo-fee-negotiations" className="text-white text-[14px] font-light">PPO Fee Negotiations</Link></li>
             </ul>
           </div>
 
