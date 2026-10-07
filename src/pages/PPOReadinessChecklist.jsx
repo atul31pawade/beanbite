@@ -315,6 +315,7 @@ const PPOReadinessChecklist = () => {
               />
               
               <p className="text-xs text-slate-300 text-center">Optimizing Billing. Maximizing Revenue. Increasing Profits</p>
+              
             </div>
           </div>
         </div>
