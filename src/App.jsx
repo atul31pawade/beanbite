@@ -14,6 +14,7 @@ import ConsultingAndAudit from './pages/ConsultingAndAudit';
 import PPOFeeNegotiations from './pages/PPOFeeNegotiations';
 import PPOReadinessChecklist from './pages/PPOReadinessChecklist';
 import CDAAdvertising from './pages/CDAAdvertising';
+import CDAPage from './pages/CDAPage';
 import Blog from './pages/Blog';
 import BlogDetails from './pages/BlogDetails';
 import Contact from './pages/Contact';
@@ -39,6 +40,7 @@ function App() {
           <Route path="/services/ppo-network-readiness-checklist" element={<PPOReadinessChecklist />} />
           <Route path="/CDA-Advertising" element={<CDAAdvertising />} />
           <Route path="/CDA-Advertising.php" element={<CDAAdvertising />} />
+          <Route path="/cda" element={<CDAPage />} />
           <Route path="/career" element={<Career />} />
           <Route path="/client-success" element={<ClientSuccess />} />
           <Route path="/testimonials" element={<Testimonials />} />

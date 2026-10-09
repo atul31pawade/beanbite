@@ -5,12 +5,18 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="bg-[#414C00] pt-20 relative">
+    
+
+    <div className="bg-[#2e3594] pt-20 relative">
+      {/*<div className="bg-[#414C00] pt-20 relative"></div>*/}
       {/* Floating Banner */}
       <div className="max-w-[1240px] mx-auto px-4 lg:px-12 relative z-20">
         <motion.div 
-          className="relative bg-[#AFCB12] rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row justify-between items-center shadow-lg border-4 border-white/10 overflow-hidden"
+          className="relative bg-white rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row justify-between items-center shadow-lg border-4 border-white/10 overflow-hidden"
         >
+          {/* <motion.div 
+            className="relative bg-[#AFCB12] rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row justify-between items-center shadow-lg border-4 border-white/10 overflow-hidden"
+          ></motion.div> */}
           {/* Background Image */}
           <img
             src="/homeOne/footer-cta.png"
@@ -20,10 +26,12 @@ const Footer = () => {
 
           {/* Content */}
           <div className="md:w-3/5 mb-8 md:mb-0 relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#414C00] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#010851] mb-4">
+            {/*<h2 className="text-3xl md:text-4xl font-bold text-[#414C00] mb-4"></h2>*/}
               Book An Appointment
             </h2>
-            <p className="text-[#3f5216] text-lg opacity-90">
+            <p className="text-[#090e50] text-lg opacity-90">
+            {/*<p className="text-[#3f5216] text-lg opacity-90"></p>*/}
               Helping dental practices grow with seamless billing, credentialing, and insurance support.
             </p>
           </div>
@@ -34,7 +42,8 @@ const Footer = () => {
             <Link to="https://outlook.office.com/owa/calendar/Consultation@beanbite.com/bookings/" target="_blank">
               <button className="cursor-pointer border border-[#C3C3C3] border-[3px] bg-white text-[#414C00] pl-6 pr-1 py-1.5 rounded-full font-bold text-lg inline-flex items-center gap-4">
                 <span>Book Now</span>
-                <div className="w-10 h-10 bg-[#384d14] rounded-full flex items-center justify-center text-white">
+                <div className="w-10 h-10 bg-[#2b35a7] rounded-full flex items-center justify-center text-white">
+                {/*<div className="w-10 h-10 bg-[#384d14] rounded-full flex items-center justify-center text-white">*/}
                   <TrendingUp size={18} />
                 </div>
               </button>
@@ -46,7 +55,7 @@ const Footer = () => {
       <footer className="text-white pt-20 pb-0 relative z-10">
         <div className="max-w-[1400px] mx-auto px-4 lg:px-12 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1 space-y-6">
-            <img src="/homeOne/beanbite-final.png" alt="BEANbite" className="h-14 rounded-md" />
+            <img src="/homeOne/beanbite-final.png" alt="BEANbite" className="h-14 rounded-md bg-white p-1" />
             <p className="text-gray-300 text-[15px]">Our professional and caring staff is dedicated to delivering only premium quality and comprehensive services. This is one of the highest priorities of our company.</p>
             {/*<div className="relative">
               <input type="email" placeholder="Email Address" className="w-full bg-white text-gray-800 rounded-lg pl-4 py-3 text-sm" />
@@ -134,22 +143,22 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-[#414C00] py-6 border-t border-white/5">
+        <div className="bg-[#2e3594] py-6 border-t border-white/5">
           <div className="max-w-[1400px] mx-auto px-4 lg:px-12 flex flex-col md:flex-row justify-between items-center text-white text-sm">
             
             <p>BEANbite &copy; Copyright 2026 - Immersive Infotech</p>
 
             <div className="flex gap-4 mt-4 md:mt-0">
               
-              <a href="https://www.facebook.com/Beanbitellc" target="_blank" className="w-8 h-8 rounded-full bg-[#AFCB12] flex items-center justify-center">
+              <a href="https://www.facebook.com/Beanbitellc" target="_blank" className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
                 <img src="/homeOne/facebook.png" alt="facebook" className="w-4 h-4 object-contain" />
               </a>
 
-              <a href="https://www.instagram.com/beanbitellc/" target="_blank" className="w-8 h-8 rounded-full bg-[#AFCB12] flex items-center justify-center">
+              <a href="https://www.instagram.com/beanbitellc/" target="_blank" className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
                 <img src="/homeOne/instagram.png" alt="instagram" className="w-4 h-4 object-contain" />
               </a>
 
-              <a href="https://x.com/beanbitellc" target="_blank" className="w-8 h-8 rounded-full bg-[#AFCB12] flex items-center justify-center">
+              <a href="https://x.com/beanbitellc" target="_blank" className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
                 <img src="/homeOne/x.png" alt="x" className="w-4 h-4 object-contain" />
               </a>
 

@@ -8,7 +8,7 @@ const TopBar = () => {
         <div className="flex justify-between items-center text-[13px] font-medium text-black pb-6">
           <div className="flex space-x-8">
             <span className="flex items-center gap-2">
-              <Phone size={14} className="text-gray-900 stroke-[2.5]" /> (888) 700 5543
+              <Phone size={14} className="text-gray-900 stroke-[2.5]" /> (888) 700 5498
             </span>
             <span className="flex items-center gap-2">
               <Clock size={14} className="text-gray-900 stroke-[2.5]" /> Mon – Fri 8 am – 6 pm

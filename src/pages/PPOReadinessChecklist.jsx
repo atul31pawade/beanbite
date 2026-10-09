@@ -276,7 +276,7 @@ const PPOReadinessChecklist = () => {
                   Your score <span className="ml-1 text-lg font-bold text-slate-900">{score}/10</span>
                 </p>
                 <a
-                  href="https://bookings.cloud.microsoft/book/BEANbiteConsultationCDA@beanbite.com/?ismsaljsauthenabled"
+                  href="https://bookings.cloud.microsoft/book/InsuranceInfrastructureAssessment@beanbite.com/?ismsaljsauthenabled=true"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#AFCB12] px-5 py-3 font-semibold text-[#1a2e05] shadow-sm transition-colors hover:bg-[#c1d93d]"
                 >
                   Schedule a call <ArrowRight size={18} />
