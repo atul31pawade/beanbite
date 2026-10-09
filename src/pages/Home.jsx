@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import blogData from "../data/blogData";
@@ -35,6 +35,40 @@ const fadeInRight = {
 const staggerContainer = {
   initial: {},
   animate: { transition: { staggerChildren: 0.2 } }
+};
+
+const historicalProduction = 163535277.95;
+const activeClients = 30;
+const monthlyProductionPerClient = 50000;
+const counterStartTime = new Date('2026-06-18T00:00:00');
+const productionPerSecond = (activeClients * monthlyProductionPerClient) / (30.44 * 24 * 60 * 60);
+const productionCurrency = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0
+});
+
+const ProductionImpact = () => {
+    const [currentTime, setCurrentTime] = useState(() => Date.now());
+
+    useEffect(() => {
+        const intervalId = window.setInterval(() => setCurrentTime(Date.now()), 1000);
+        return () => window.clearInterval(intervalId);
+    }, []);
+
+    const elapsedSeconds = Math.max(0, (currentTime - counterStartTime.getTime()) / 1000);
+    const dailyAccrualTotal = historicalProduction + productionPerSecond * elapsedSeconds;
+
+    return (
+        <div className="min-w-0">
+            <p className="text-base font-bold text-gray-900 sm:text-lg">
+                Over <span className="text-xl tabular-nums sm:text-2xl" aria-live="off">{productionCurrency.format(dailyAccrualTotal)}</span>
+            </p>
+            <p className="max-w-[430px] text-md leading-5 text-slate-600">
+                in Dental Production Supported Across Our Client Base Since 2016, with new production added every day.
+            </p>
+        </div>
+    );
 };
 
 const Home = () => {
@@ -134,7 +168,7 @@ const Home = () => {
                         </Link>
                         
                         {/* Social Proof */}
-                        <div className="flex items-center gap-4">
+                        <div className="mt-10 flex items-center gap-4">
                             <div className="flex -space-x-3">
 
                                 <img
@@ -162,11 +196,8 @@ const Home = () => {
                                 />
 
                             </div>
-
-                            <span className="font-bold text-gray-900">
-                                10M+ Impact Across the US.
-                            </span>
-                            </div>
+                            <ProductionImpact />
+                        </div>
                     </motion.div>
 
                     {/* Right Column */}
