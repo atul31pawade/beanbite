@@ -76,7 +76,7 @@ const Blog = () => {
               <div className="bg-white border border-[#D9D9D9] rounded-2xl overflow-hidden hover:shadow-lg transition h-full flex flex-col">
                 
                 {/* Image */}
-                <div className="h-48 overflow-hidden">
+                <div className="aspect-[41/25] shrink-0 overflow-hidden">
                   <img 
                     src={post.image}
                     alt={post.title}
@@ -90,7 +90,7 @@ const Blog = () => {
                     {post.title}
                   </h2>
 
-                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                  <p className="text-base text-gray-600 mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
 

@@ -13,6 +13,7 @@ import {
   ShieldCheck,
   UsersRound
 } from 'lucide-react';
+import Reveal from '../components/Reveal';
 
 const services = [
   { label: 'Insurance verification', to: '/services/verification' },
@@ -89,7 +90,7 @@ const CDAPage = () => {
       <section className="relative overflow-hidden border-b border-[#e5e9d0] bg-[#f7f9ef]">
         <div className="absolute inset-y-0 right-0 hidden w-[42%] bg-[linear-gradient(135deg,rgba(197,217,45,0.14),rgba(197,217,45,0)_70%)] lg:block" aria-hidden="true" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:py-20">
-          <div className="flex flex-col justify-center">
+          <Reveal className="flex flex-col justify-center">
             <p className="mb-4 text-sm font-bold uppercase text-[#657600]">Dental billing support in California</p>
             <h1 className="max-w-2xl text-4xl font-extrabold leading-tight text-[#20270a] sm:text-5xl">
               Affordable Dental Billing Services California
@@ -110,16 +111,16 @@ const CDAPage = () => {
               ))}
             </nav>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-slate-700">
-              <a href="tel:+18887005498" className="inline-flex items-center gap-2 hover:text-[#657600]"><Phone size={16} aria-hidden="true" />(888) 700-5498</a>
+              <a href="tel:+18887005589" className="inline-flex items-center gap-2 hover:text-[#657600]"><Phone size={16} aria-hidden="true" />(888) 700-5589</a>
               <a href="mailto:info@beanbite.com" className="inline-flex items-center gap-2 hover:text-[#657600]"><Mail size={16} aria-hidden="true" />info@beanbite.com</a>
             </div>
-          </div>
+          </Reveal>
 
           <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-[0_18px_50px_rgba(39,50,0,0.10)] sm:p-7">
             <div className="mb-6 border-b border-slate-200 pb-5">
               <p className="text-xs font-bold uppercase text-[#748A00]">Talk with our team</p>
               <h2 className="mt-2 text-2xl font-bold text-slate-950">Get in touch</h2>
-              <p className="mt-2 text-sm leading-6 text-slate-600">Tell us a little about your practice and how we can help.</p>
+              <p className="mt-2 text-base leading-7 text-slate-600">Tell us a little about your practice and how we can help.</p>
             </div>
             <form id="contact-form" onSubmit={handleSubmit} className="space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">
@@ -154,11 +155,11 @@ const CDAPage = () => {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
-        <div className="mb-9 max-w-2xl">
+        <Reveal className="mb-9 max-w-2xl">
           <p className="text-sm font-bold uppercase text-[#748A00]">A steadier billing workflow</p>
           <h2 className="mt-2 text-3xl font-extrabold leading-tight text-slate-950 sm:text-4xl">Billing support from claim to follow-up</h2>
           <p className="mt-4 text-base leading-7 text-slate-600">From timely submissions to practical reporting, our team helps keep the details of insurance billing moving.</p>
-        </div>
+        </Reveal>
         <div className="grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
           {billingSupport.map((item, index) => {
             const Icon = item.icon;
@@ -169,7 +170,7 @@ const CDAPage = () => {
                 </div>
                 <p className="text-xs font-bold uppercase text-[#748A00]">0{index + 1}</p>
                 <h3 className="mt-2 text-lg font-bold leading-snug text-slate-900">{item.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-600">{item.description}</p>
+                <p className="mt-2 text-base leading-7 text-slate-600">{item.description}</p>
               </article>
             );
           })}
@@ -180,7 +181,7 @@ const CDAPage = () => {
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between md:py-12 lg:px-8">
           <div>
             <h2 className="text-2xl font-bold text-slate-950">Ready to talk through your billing workflow?</h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">Call our team at <a className="font-semibold text-[#536400] underline underline-offset-2" href="tel:+18887005498">(888) 700-5498</a> or send us a message.</p>
+            <p className="mt-2 text-base leading-7 text-slate-600">Call our team at <a className="font-semibold text-[#536400] underline underline-offset-2" href="tel:+18887005589">(888) 700-5589</a> or send us a message.</p>
           </div>
           <a href="#contact-form" className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-md bg-[#AFCB12] px-5 py-3 text-sm font-bold text-[#20270a] transition hover:bg-[#c5d92d]">
             Contact BEANbite <ArrowRight size={17} aria-hidden="true" />

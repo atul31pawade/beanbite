@@ -1,5 +1,6 @@
 import React from 'react';
 import InnerPageHeader from '../components/InnerPageHeader';
+import Reveal from '../components/Reveal';
 
 const PrivacyPolicy = () => {
   return (
@@ -7,7 +8,7 @@ const PrivacyPolicy = () => {
       <InnerPageHeader title="Privacy Policy" breadcrumb="Privacy Policy" />
       
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-16">
-        <div className="prose prose-slate max-w-none text-gray-700">
+        <Reveal className="prose prose-slate max-w-none text-gray-700">
           <p className="text-sm font-semibold text-[#AFCB12] mb-4">Effective as of February 14, 2025</p>
           
           <p className="mb-6">Our website addresses are http://beanbite.net/ and http://beanbite.com/</p>
@@ -108,10 +109,10 @@ const PrivacyPolicy = () => {
           
           <div className="bg-gray-50 p-8 rounded-3xl mt-12 border border-gray-100">
             <p className="font-bold mb-4">We welcome your comments or questions about our Privacy Notice and privacy practices. If you feel we are not abiding by this privacy policy, you should contact us immediately:</p>
-            <p>Telephone: <span className="font-bold">888-700-5543</span></p>
+            <p>Telephone: <span className="font-bold">888-700-5589</span></p>
             <p>Email: <span className="font-bold text-[#AFCB12]">info@BEANbite.com</span></p>
           </div>
-        </div>
+        </Reveal>
       </div>
     </div>
   );

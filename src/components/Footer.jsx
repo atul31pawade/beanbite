@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#002060] pt-20 relative">
+    <div className="bg-[#002060] pt-10 relative">
       {/*<div className="bg-[#414C00] pt-20 relative"></div>*/}
       {/* Floating Banner */}
       <div className="max-w-[1240px] mx-auto px-4 lg:px-12 relative z-20">
-        <motion.div className="relative bg-white rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row justify-between items-center shadow-lg border-4 border-white/10 overflow-hidden">
+        <motion.div className="relative bg-white rounded-[40px] p-8 md:px-12 md:py-6 flex flex-col md:flex-row justify-between items-center shadow-lg border-4 border-white/10 overflow-hidden">
           {/* <motion.div 
             className="relative bg-[#AFCB12] rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row justify-between items-center shadow-lg border-4 border-white/10 overflow-hidden"
           ></motion.div> */}
@@ -56,15 +56,15 @@ const Footer = () => {
         </motion.div>
       </div>
 
-      <footer className="text-white pt-20 pb-0 relative z-10">
-        <div className="max-w-[1400px] mx-auto px-4 lg:px-12 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <footer className="text-white pt-10 pb-0 relative z-10">
+        <div className="max-w-[1400px] mx-auto px-4 lg:px-12 pb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1 space-y-6">
             <img
-              src="/homeOne/beanbite-final.png"
+              src="/homeOne/footer-logo.png"
               alt="BEANbite"
-              className="h-14 rounded-md bg-white p-1"
+              className="h-14 rounded-md"
             />
-            <p className="text-gray-300 text-[15px]">
+            <p className="text-gray-300 text-base">
               Our professional and caring staff is dedicated to delivering only
               premium quality and comprehensive services. This is one of the
               highest priorities of our company.
@@ -203,7 +203,7 @@ const Footer = () => {
             <h4 className="text-[18px] font-bold mb-6">Contact Us</h4>
             {/*<ul className="space-y-6 text-sm text-gray-300">
               <li className="flex gap-3"><MapPin size={18} className="text-[#AFCB12]"/> 1015 Riley St, Folsom CA</li>
-              <li className="flex gap-3"><Phone size={18} className="text-[#AFCB12]"/> (888) 700 5543</li>
+              <li className="flex gap-3"><Phone size={18} className="text-[#AFCB12]"/> (888) 700 5589</li>
           </ul>*/}
             <ul className="space-y-6 text-sm text-gray-300">
               <li>
@@ -222,10 +222,10 @@ const Footer = () => {
                   <span>Phone Number</span>
                 </div>
                 <a
-                  href="tel:+18887005543"
+                  href="tel:+18887005589"
                   className="block ml-7 mt-1 text-white text-[14px] font-light hover:text-[#AFCB12] transition"
                 >
-                  (888) 700 5543
+                  (888) 700 5589
                 </a>
               </li>
 
@@ -245,7 +245,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-[#002060] py-6 border-t border-white/5">
+        <div className="bg-[#002060] py-3 border-t border-white/9">
           <div className="max-w-[1400px] mx-auto px-4 lg:px-12 flex flex-col md:flex-row justify-between items-center text-white text-sm">
             <p>BEANbite &copy; Copyright 2026 - Immersive Infotech</p>
 

@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { Calendar, User, Search, Share2, Link as LinkIcon } from "lucide-react";
 import InnerPageHeader from "../components/InnerPageHeader";
+import Reveal from "../components/Reveal";
 import blogData from "../data/blogData";
 
 const BlogDetails = () => {
@@ -20,7 +21,7 @@ const BlogDetails = () => {
              <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-16">
 
                 {/* 🔥 TOP SECTION (FULL WIDTH) */}
-                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-10">
+                <Reveal className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-10">
                     <h2 className="text-3xl font-bold lg:w-[40%]">
                         News & Insights Details.
                     </h2>
@@ -28,21 +29,21 @@ const BlogDetails = () => {
                     <p className="text-gray-500 lg:w-[60%]">
                         A brief introduction explaining what type of content users can expect, such as industry updates, case studies, success stories, and expert insights.
                     </p>
-                </div>
+                </Reveal>
 
                 {/* 🔥 IMAGES (FULL WIDTH) */}
-                <div className="grid md:grid-cols-2 gap-6 mb-10">
+                <Reveal delay={0.15} className="grid md:grid-cols-2 gap-6 mb-10">
                     <img
                         src={post.image}
                         alt={post.title}
-                        className="rounded-xl w-full h-[250px] object-cover"
+                        className="rounded-xl w-full aspect-[41/25] object-cover"
                     />
                     <img
                         src={post.image}
                         alt={post.title}
-                        className="rounded-xl w-full h-[250px] object-cover"
+                        className="rounded-xl w-full aspect-[41/25] object-cover"
                     />
-                </div>
+                </Reveal>
 
                 {/* 🔥 MAIN CONTENT GRID */}
                 <div className="grid lg:grid-cols-3 gap-10">
@@ -78,7 +79,7 @@ const BlogDetails = () => {
                         </div>
 
                         {/* Content */}
-                        <div className="text-gray-700 leading-relaxed space-y-4 text-[15px]">
+                        <div className="text-gray-700 leading-relaxed space-y-4 text-base">
                             {post.content.split("\n").map((para, i) => (
                                 <p key={i}>{para}</p>
                             ))}
@@ -127,7 +128,7 @@ const BlogDetails = () => {
                                     <img
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-16 h-16 object-cover rounded-md"
+                                    className="w-16 shrink-0 self-start aspect-[41/25] object-cover rounded-md"
                                     />
                                     <div>
                                         <p className="text-sm font-medium group-hover:text-[#AFCB12] line-clamp-2">

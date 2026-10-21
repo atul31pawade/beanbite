@@ -2,6 +2,96 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --animate-marquee: marquee 55s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Hero slider — Option C: staggered text rise + slow image zoom */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-kenburns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.hero-swiper .swiper-slide-active .hero-rise {
+  animation: hero-rise 0.7s 0.15s ease-out both;
+}
+
+.hero-swiper .swiper-slide-active .hero-rise-2 {
+  animation-delay: 0.35s;
+}
+
+.hero-swiper .swiper-slide-active .hero-rise-3 {
+  animation-delay: 0.55s;
+}
+
+.hero-swiper .hero-kb-img {
+  transform-origin: center top;
+}
+
+.hero-swiper .swiper-slide-active .hero-kb-img {
+  animation: hero-kenburns 6.5s linear both;
+}
+
+.hero-swiper {
+  --swiper-pagination-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-swiper {
+    --swiper-pagination-bottom: 2rem;
+  }
+}
+
+.hero-swiper .swiper-pagination {
+  text-align: left;
+  padding-left: max(1rem, calc(50% - 700px + 1rem));
+  bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-swiper .swiper-pagination {
+    padding-left: max(3rem, calc(50% - 700px + 3rem));
+    bottom: 2rem;
+  }
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(65, 76, 0, 0.25);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  width: 22px;
+  background: #AFCB12;
+}
 
 html {
   scroll-behavior: smooth;

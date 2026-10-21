@@ -19,6 +19,7 @@ import {
   UserRound,
   Briefcase
 } from 'lucide-react';
+import Reveal from '../components/Reveal';
 
 const bookingUrl = 'https://bookings.cloud.microsoft/book/BEANbiteConsultationCDA@beanbite.com/?ismsaljsauthenabled';
 
@@ -165,7 +166,7 @@ const CDAAdvertising = () => {
             >
               Continue to schedule a call <CalendarCheck size={20} aria-hidden="true" />
             </a>
-            <p className="mt-5 flex items-center justify-center gap-1.5 text-sm leading-6 text-slate-500">
+            <p className="mt-5 flex items-center justify-center gap-1.5 text-base leading-7 text-slate-500">
               <Clock3 size={15} aria-hidden="true" />
               Takes less than 1 minute to select your preferred date &amp; time on our calendar
             </p>
@@ -196,7 +197,7 @@ const CDAAdvertising = () => {
   return (
     <div className="bg-[#F6F8F7] text-slate-900">
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 md:py-16">
-        <header className="mx-auto max-w-4xl text-center">
+        <Reveal className="mx-auto max-w-4xl text-center">
           <p className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full bg-[#EAF4B5] px-4 py-2 text-sm font-bold uppercase text-[#37450A]">
             <BadgeCheck size={16} aria-hidden="true" />
             BEANbite dental billing assessment
@@ -214,9 +215,9 @@ const CDAAdvertising = () => {
           <p className="mx-auto mt-4 max-w-4xl text-md leading-6 text-slate-600">
             BEANbite helps dental practices manage the full billing cycle, from claim submission and attachments to payment posting, denial follow-up, and accounts receivable. Start with a conversation about what is happening in your practice and where your billing process may need attention.
           </p>
-        </header>
+        </Reveal>
 
-        <div className="mx-auto mt-10 max-w-4xl">
+        <Reveal delay={0.15} className="mx-auto mt-10 max-w-4xl">
           <div className="flex flex-wrap items-end justify-between gap-3 border-b border-slate-300 pb-4">
             <h2 className="flex items-center gap-2 text-xl font-bold text-slate-900">
               <ShieldCheck size={21} className="text-[#748A00]" aria-hidden="true" />
@@ -242,11 +243,11 @@ const CDAAdvertising = () => {
               );
             })}
           </ol>
-          <p className="mt-5 flex items-start gap-2 text-sm leading-6 text-slate-600">
+          <p className="mt-5 flex items-start gap-2 text-base leading-7 text-slate-600">
             <ShieldCheck size={17} className="mt-0.5 shrink-0 text-[#748A00]" aria-hidden="true" />
             We’ll discuss opportunities based on the information you provide. A review does not guarantee additional collections or a particular financial result.
           </p>
-        </div>
+        </Reveal>
 
         <div className="mt-9 rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_16px_45px_rgba(15,23,42,0.08)] sm:p-8">
           <div className="mb-7">

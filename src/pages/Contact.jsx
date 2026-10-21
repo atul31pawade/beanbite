@@ -1,69 +1,69 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { TrendingUp, ArrowRight } from 'lucide-react';
-import InnerPageHeader from '../components/InnerPageHeader';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { TrendingUp, ArrowRight } from "lucide-react";
+import InnerPageHeader from "../components/InnerPageHeader";
 
 // Animation variants
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
   transition: { duration: 0.6, ease: "easeOut" },
-  viewport: { once: true }
+  viewport: { once: true },
 };
 
 const fadeInLeft = {
   initial: { opacity: 0, x: -50 },
   whileInView: { opacity: 1, x: 0 },
   transition: { duration: 0.7, ease: "easeOut" },
-  viewport: { once: true }
+  viewport: { once: true },
 };
 
 const fadeInRight = {
   initial: { opacity: 0, x: 50 },
   whileInView: { opacity: 1, x: 0 },
   transition: { duration: 0.7, ease: "easeOut" },
-  viewport: { once: true }
+  viewport: { once: true },
 };
 
 const staggerContainer = {
   initial: {},
   whileInView: {
     transition: {
-      staggerChildren: 0.1
-    }
+      staggerChildren: 0.1,
+    },
   },
-  viewport: { once: true }
+  viewport: { once: true },
 };
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    phone: '',
-    practiceName: '',
-    practiceSize: '',
-    howDidYouHear: '',
-    service: '',
+    firstName: "",
+    lastName: "",
+    phone: "",
+    practiceName: "",
+    practiceSize: "",
+    howDidYouHear: "",
+    service: "",
     emailOptIn: false,
-    textOptIn: false
+    textOptIn: false,
   });
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
-      [name]: type === 'checkbox' ? checked : value
+      [name]: type === "checkbox" ? checked : value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for contacting us! We will get back to you soon.');
+    console.log("Form submitted:", formData);
+    alert("Thank you for contacting us! We will get back to you soon.");
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -86,7 +86,7 @@ const Contact = () => {
           >
             {/* Main Heading */}
             <div>
-            <motion.span 
+              <motion.span
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -95,22 +95,25 @@ const Contact = () => {
               >
                 Get In Touch
               </motion.span>
-              <motion.h2 
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="text-[34px] md:text-5xl font-bold text-black leading-[1.2]"
+                className="text-[34px] md:text-5xl font-bold text-[#5e5e5e] leading-[1.2]"
               >
-                Personalized support and <br /> assistance today
+                Lets talk <span className="text-[#AFCB12]">beans </span>- <br />
+                and revenue.
               </motion.h2>
-              <motion.p 
+              <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="space-y-5 text-gray-600 text-base leading-relaxed mb-8">
-                Reach out to our team for tailored insurance solutions, expert advice, and prompt assistance with all your coverage needs.
+                className="space-y-5 text-gray-600 text-base leading-relaxed mb-8"
+              >
+                Tell us where your practice leaks money. We'll show you how to
+                plug it — billing, credentialing, PPO contracts, all of it.
               </motion.p>
               {/* Address */}
               <div className="mb-8">
@@ -126,21 +129,21 @@ const Contact = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
-              className="relative rounded-2xl overflow-hidden min-h-[300px]"
+              className="relative rounded-2xl overflow-hidden min-h-[300px] bg-black"
             >
-              {/* Background Image */}
-              <div className="absolute inset-0">
+              {/* Background Image — shifted right, left stays black */}
+              <div className="absolute inset-y-0 right-0 left-[15%]">
                 <img
                   src="/contact/contact-bg.png"
                   alt="Contact Background"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-right"
                 />
-                {/* Overlay for better text readability */}
-                <div className="absolute inset-0"></div>
+                {/* Black overlay fading to the right for text readability */}
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.9)_0%,rgba(0,0,0,0.65)_35%,rgba(0,0,0,0.2)_70%,rgba(0,0,0,0)_100%)]"></div>
               </div>
 
               {/* Content */}
-              <div className="relative z-10 p-4 md:p-6 flex flex-col justify-center min-h-[300px] text-white">
+              <div className="relative z-10 p-4 md:p-6 flex flex-col justify-center min-h-[300px] text-white w-[65%] md:w-[58%]">
                 {/* Contact Number */}
                 <div className="flex items-center gap-4 mb-8">
                   <img
@@ -152,9 +155,12 @@ const Contact = () => {
                     <p className="text-sm font-semibold text-white/90 mb-1">
                       Contact Number
                     </p>
-                    <p className="text-white text-lg md:text-xl font-semibold">
-                      +1(888) 700-5498
-                    </p>
+                    <a
+                      href="tel:+18887005589"
+                      className="text-white text-lg md:text-xl font-semibold hover:text-[#C5D92D] transition-colors"
+                    >
+                      +1(888) 700 5589
+                    </a>
                   </div>
                 </div>
 
@@ -171,9 +177,12 @@ const Contact = () => {
                     <p className="text-sm font-semibold text-white/90 mb-1">
                       Email
                     </p>
-                    <p className="text-white text-lg md:text-xl font-semibold">
+                    <a
+                      href="mailto:info@BEANbite.com"
+                      className="text-white text-lg md:text-xl font-semibold hover:text-[#C5D92D] transition-colors"
+                    >
                       info@BEANbite.com
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -197,7 +206,6 @@ const Contact = () => {
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
-
               {/* First + Last */}
               <div className="grid md:grid-cols-2 gap-4">
                 <input
@@ -254,9 +262,9 @@ const Contact = () => {
               </div>
 
               {/* Service */}
-              <textarea 
-                name="service" 
-                className="input-style" 
+              <textarea
+                name="service"
+                className="input-style"
                 placeholder="What service are you looking for?"
                 rows={2}
               />
@@ -280,7 +288,26 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="text-xs text-gray-500 leading-relaxed space-y-3 pt-2"> <p> By choosing text, you agree to receive texts/calls from BEANbite LLC and its affiliates, including by auto-dialed or prerecorded means, regarding current and future projects or services at the number you provide. Since texts are unencrypted, there is a risk that your message could be intercepted or viewed by third parties, and others who access your device. Consent is not a condition of purchasing any goods/services. Message frequency varies. Message and data rates may apply. </p> <p> We do not share personal information with third parties for marketing purposes under any circumstances. </p> </div>
+              <div className="text-xs text-gray-500 leading-relaxed space-y-3 pt-2">
+                {" "}
+                <p>
+                  {" "}
+                  By choosing text, you agree to receive texts/calls from
+                  BEANbite LLC and its affiliates, including by auto-dialed or
+                  prerecorded means, regarding current and future projects or
+                  services at the number you provide. Since texts are
+                  unencrypted, there is a risk that your message could be
+                  intercepted or viewed by third parties, and others who access
+                  your device. Consent is not a condition of purchasing any
+                  goods/services. Message frequency varies. Message and data
+                  rates may apply.{" "}
+                </p>{" "}
+                <p>
+                  {" "}
+                  We do not share personal information with third parties for
+                  marketing purposes under any circumstances.{" "}
+                </p>{" "}
+              </div>
 
               {/* Submit */}
               <button className="flex items-center gap-2 bg-[#C5D92D] border-2 border-[#384d14] text-[#1a2e05] font-bold px-6 py-2.5 rounded-full shadow-md mt-4">
