@@ -1,5 +1,6 @@
 import React from 'react';
 import InnerPageHeader from '../components/InnerPageHeader';
+import Reveal from '../components/Reveal';
 
 const TermsConditions = () => {
   return (
@@ -7,7 +8,7 @@ const TermsConditions = () => {
       <InnerPageHeader title="Terms & Conditions" breadcrumb="Terms" />
       
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-16 text-gray-700">
-        <div className="prose prose-slate max-w-none">
+        <Reveal className="prose prose-slate max-w-none">
           <p className="text-sm font-semibold text-[#AFCB12] mb-6">Effective as of February 14, 2025</p>
 
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Agreement between User and BEANbite LLC</h1>
@@ -84,10 +85,10 @@ const TermsConditions = () => {
                 <p>850 Iron Point Road, Suite 102</p>
                 <p>Folsom, California 95630</p>
                 <p>Email Address: <span className="text-[#AFCB12]">info@beanbite.com</span></p>
-                <p>Telephone number: 888-700-5543</p>
+                <p>Telephone number: 888-700-5589</p>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </div>
   );

@@ -75,10 +75,10 @@ const ConsultingAndAudit = () => {
                 We help dental practices uncover operational gaps, strengthen revenue cycle performance, and confidently navigate compliance and insurance audit challenges.
             </h2>
             <p className="text-[#AFCB12] font-bold mb-4">Evaluate Before You Elevate Your Dental Practice</p>
-            <p className="text-gray-600 text-sm leading-relaxed mb-2">
+            <p className="text-gray-600 text-base leading-relaxed mb-2">
                 Are you making important decisions based on assumptions or clear operational insights? Most dental practices in the United States closely monitor production, collections, and patient care. Very few have the time to evaluate whether the systems behind those results are performing at the same level. In fact, hidden inefficiencies often go unnoticed until they begin to affect your dental office's performance.
             </p>
-            <p className="text-gray-600 text-sm leading-relaxed mb-0">
+            <p className="text-gray-600 text-base leading-relaxed mb-0">
                 BEANbite brings an experienced, objective perspective to evaluate your practice, uncover improvement opportunities, and strengthen the systems that drive long-term success. Our consulting and audit support services help you make informed decisions, improve operational performance, and confidently prepare your team for future growth.
             </p>
           </motion.div>
@@ -108,10 +108,10 @@ const ConsultingAndAudit = () => {
               <h2 className="text-3xl font-bold mb-6 text-gray-900 leading-tight">
                 A Consulting Strategy Built Around Your Practice, Not a Template
               </h2>
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-2">
+              <p className="text-gray-600 text-base leading-relaxed mb-2">
                 Every dental practice operates differently. What works well for one practice may not deliver the same results for another. Staffing, patient demographics, insurance participation, internal workflows, and long-term goals all influence how your practice performs. That's why we first understand your dental office and only then recommend any changes. 
               </p>
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-600 text-base leading-relaxed">
                 BEANbite takes a comprehensive approach to evaluating your operational, financial, and revenue cycle performance to identify improvement opportunities that truly matter. Our consulting and audit support team performs revenue cycle analysis, billing and documentation reviews, coding assessments, compliance evaluations, and workflow optimization. Then we offer practical recommendations designed to reduce inefficiencies, strengthen financial performance, and support compliance. Every recommendation is tailored to help your team build a stronger foundation for long-term success.
               </p>
             </motion.div>
@@ -191,7 +191,7 @@ const ConsultingAndAudit = () => {
                     {step.question}
                   </h3>
                   
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-base leading-relaxed">
                     {step.answer}
                   </p>
                 </div>

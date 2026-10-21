@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { motion as Motion } from 'framer-motion';
 import { CheckCircle2, Circle, TrendingUp, AlertTriangle, ShieldCheck, ArrowRight, X } from 'lucide-react';
 import InnerPageHeader from '../components/InnerPageHeader';
+import Reveal from '../components/Reveal';
 
 const readinessQuestions = [
   {
@@ -169,9 +170,9 @@ const PPOReadinessChecklist = () => {
 
       <section id="checklist" className="max-w-6xl mx-auto px-6 pb-20">
         <div className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-xl">
-          <div className="bg-[#111827] px-6 py-5 md:px-8">
+          <Reveal className="bg-[#111827] px-6 py-5 md:px-8">
             <h3 className="text-2xl font-bold text-white">Questions to Answer Before Signing Your Next PPO Contract</h3>
-          </div>
+          </Reveal>
 
           <div className="divide-y divide-slate-200">
             {readinessQuestions.map((question, index) => (

@@ -723,7 +723,7 @@ const HomeTwo = () => {
                                      </div>
                                      <div>
                                          <p className="font-bold text-white text-[15px]">Phone Number</p>
-                                         <p className=" text-sm font-light">(888) 700 5543</p>
+                                         <p className=" text-sm font-light">(888) 700 5589</p>
                                      </div>
                                  </div>
                                  <div className="flex items-start gap-4 hover:translate-x-2 transition-transform duration-300">
