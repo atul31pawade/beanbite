@@ -116,7 +116,14 @@ export default function Testimonials() {
   ).toFixed(1);
 
   return (
-    <section id="testimonials" className="relative w-full bg-[#0a0f00]">
+    <section id="testimonials" className="relative w-full bg-[#0a0f00] overflow-hidden">
+      <img
+        src="/homeOne/testimonial-bg.jpg"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-black/50" aria-hidden="true" />
       <div className="relative max-w-[1400px] mx-auto px-4 lg:px-12 pt-16 md:pt-10 pb-16 md:pb-10">
         <div className="flex flex-wrap items-end justify-between gap-4 mb-10 md:mb-12">
           <div>

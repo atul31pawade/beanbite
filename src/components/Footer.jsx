@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#002060] pt-10 relative">
+    <div className="bg-[#5e5e5e] pt-10 relative">
       {/*<div className="bg-[#414C00] pt-20 relative"></div>*/}
       {/* Floating Banner */}
       <div className="max-w-[1240px] mx-auto px-4 lg:px-12 relative z-20">
@@ -46,7 +46,7 @@ const Footer = () => {
             >
               <button className="cursor-pointer border border-[#C3C3C3] border-[3px] bg-white text-[#414C00] pl-6 pr-1 py-1.5 rounded-full font-bold text-lg inline-flex items-center gap-4">
                 <span>Book Now</span>
-                <div className="w-10 h-10 bg-[#002060] rounded-full flex items-center justify-center text-white">
+                <div className="w-10 h-10 bg-[#5e5e5e] rounded-full flex items-center justify-center text-white">
                   {/*<div className="w-10 h-10 bg-[#384d14] rounded-full flex items-center justify-center text-white">*/}
                   <TrendingUp size={18} />
                 </div>
@@ -245,7 +245,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-[#002060] py-3 border-t border-white/9">
+        <div className="bg-[#5e5e5e] py-3 border-t border-white/9">
           <div className="max-w-[1400px] mx-auto px-4 lg:px-12 flex flex-col md:flex-row justify-between items-center text-white text-sm">
             <p>BEANbite &copy; Copyright 2026 - Immersive Infotech</p>
 
