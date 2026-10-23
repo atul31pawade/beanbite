@@ -14,21 +14,21 @@ import Testimonial from "../components/Testimonial";
 
 const heroSlides = [
   {
-    image: "/homeOne/hero/slide-1.jpg",
+    image: "/hero/11.jpg",
     lines: ["Bill Smarter.", "Collect Faster.", "Keep More."],
     paragraphs: [
       "Expert billing, credentialing, PPO optimization and revenue cycle management — helping dental practices boost collections, strengthen cash flow and shed the admin load.",
     ],
   },
   {
-    image: "/homeOne/hero/slide-2.jpg",
+    image: "/hero/12.jpg",
     lines: ["Zero Guesswork.", "Zero Stress."],
     paragraphs: [
       "Straight-talking advice you can bank on — dependable, transparent revenue services your practice can count on, day in and day out.",
     ],
   },
   {
-    image: "/homeOne/hero/slide-3.jpg",
+    image: "/hero/13.jpg",
     lines: ["Keep Every Dollar", "You've Drilled For."],
     paragraphs: [
       "You can increase your bottom line while doing zero extra dentistry!",
@@ -142,6 +142,10 @@ const Home = () => {
                       src={slide.image}
                       alt="Dental Team"
                       className="hero-kb-img w-full h-full object-cover object-[right_top]"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0.72)_38%,rgba(255,255,255,0.3)_58%,transparent_78%)]"
                     />
                   </div>
 
