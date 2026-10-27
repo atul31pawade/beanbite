@@ -127,7 +127,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4"
+                className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4"
               >
                 Santosh Rohira, a dentist with international training, is the
                 visionary behind{" "}
@@ -181,7 +181,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4"
+                className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4"
               >
                 A Commitment To Service
               </motion.h2>
@@ -207,7 +207,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 block"
+                className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 block"
               >
                 Care — Above Everything Else
               </motion.span>

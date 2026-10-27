@@ -91,7 +91,7 @@ const BillingServices = () => {
 
         <div className="relative mx-auto max-w-[1400px] lg:px-6">
           <Reveal className="mb-12 max-w-3xl">
-            <h2 className="mb-4 text-3xl font-bold leading-tight text-[#5e5e5e] md:text-5xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
               Dental Billing.{" "}
               <span className="text-[#809900]">Off Your Plate.</span>
             </h2>

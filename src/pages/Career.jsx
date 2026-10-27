@@ -1059,7 +1059,7 @@ const Career = () => {
               whileInView="whileInView"
               initial="initial"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-snug">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-snug">
                 Work at <br /> BEANbite
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-8 max-w-md">

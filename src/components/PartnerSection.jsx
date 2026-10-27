@@ -7,7 +7,9 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const PartnerSection = () => {
+const SECTION_HEADING = "text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-[1.2]";
+
+const PartnerSection = ({ headingClass = SECTION_HEADING }) => {
   // Different partner logos for Row 1 and Row 2
   const row1Logos = [
     {
@@ -132,7 +134,7 @@ const PartnerSection = () => {
             OUR VALUED CLIENTS
           </motion.span>
 
-          <motion.h2 className="text-[34px] md:text-5xl font-bold text-[#5e5e5e] leading-[1.2] mb-6">
+          <motion.h2 className={headingClass}>
             Strengthen your business <br /> for enduring success.
           </motion.h2>
 
