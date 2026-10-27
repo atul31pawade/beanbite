@@ -347,7 +347,7 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <ServiceSection />
+      <ServiceSection headingClass="text-[34px] md:text-5xl font-bold text-[#5e5e5e] leading-[1.2]" />
 
       {/* CTA Strip */}
       <section className=" relative py-6">
@@ -555,7 +555,7 @@ const Home = () => {
             </section>*/}
 
       <section className="max-w-[1400px] mx-auto px-4 lg:px-12 pt-10 pb-10">
-        <PartnersSection />
+        <PartnersSection headingClass="text-[34px] md:text-5xl font-bold text-[#5e5e5e] leading-[1.2] mb-6" />
       </section>
 
       {/* Testimonial Section */}
@@ -595,7 +595,7 @@ const Home = () => {
               <motion.div
                 key={post.id}
                 variants={fadeInUp}
-                className="group cursor-pointer"
+                className="group cursor-pointer flex flex-col h-full"
               >
                 {/* Image */}
                 <div className="rounded-[32px] overflow-hidden mb-6 aspect-[41/25]">
@@ -617,12 +617,12 @@ const Home = () => {
 
                 {/* Title */}
                 <Link to={`/blog/${post.id}`}>
-                  <h3 className="text-[22px] font-bold text-black mb-6 leading-snug pr-4">
+                  <h3 className="text-[20px] md:text-[22px] font-bold text-black mb-6 leading-snug pr-4 line-clamp-3">
                     {post.title}
                   </h3>
                 </Link>
 
-                <div className="border-t border-[#B2B2B2] opacity-50 mb-6"></div>
+                <div className="border-t border-[#B2B2B2] opacity-50 mb-6 mt-auto"></div>
 
                 {/* Button */}
                 <Link to={`/blog/${post.id}`}>

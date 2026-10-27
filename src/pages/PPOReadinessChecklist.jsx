@@ -120,7 +120,7 @@ const PPOReadinessChecklist = () => {
             <p className="inline-flex items-center rounded-full bg-[#C5D92D]/20 text-[#1a2e05] px-3 py-1 text-sm font-semibold mb-4">
               BEANbite practice assessment
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#111827] leading-tight mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
               Should your practice go in-network?
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">

@@ -100,10 +100,11 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="text-[34px] md:text-5xl font-bold text-[#5e5e5e] leading-[1.2]"
+                className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-[1.2]"
               >
-                Lets talk <span className="text-[#AFCB12]">beans </span>- <br />
-                and revenue.
+                Stronger bites. <br />
+                Stronger production. <br />
+                More beans.
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -197,7 +198,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="bg-[#F6F6F6] rounded-2xl p-6 md:p-8 contact-from shadow-sm"
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               Get in <span className="font-extrabold">touch</span> with us
             </h2>
 
@@ -252,12 +253,25 @@ const Contact = () => {
                   <option>More than 10 practices</option>
                 </select>
 
-                <select name="howDidYouHear" className="input-style">
-                  <option>How did you here about us?</option>
+                <select
+                  name="howDidYouHear"
+                  value={formData.howDidYouHear}
+                  onChange={handleInputChange}
+                  className="input-style"
+                >
+                  <option value="">How did you hear about us?</option>
                   <option>Google</option>
-                  <option>Linkedin</option>
+                  <option>LinkedIn</option>
                   <option>Facebook</option>
                   <option>Dental Conference</option>
+                  <option>Dental Publication</option>
+                  <option>Referred by Friend/Other DDS</option>
+                  <option>Dental Attorney</option>
+                  <option>Dental CPA</option>
+                  <option>Dental Broker</option>
+                  <option>Instagram</option>
+                  <option>Facebook Groups</option>
+                  <option>CDA convention</option>
                 </select>
               </div>
 

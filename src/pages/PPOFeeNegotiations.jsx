@@ -129,7 +129,7 @@ const PPOFeeNegotiations = () => {
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-4">
               Data-driven strategy
             </p>
-            <h2 className="text-4xl md:text-6xl font-bold text-gray-900 leading-[1.05] mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
               Your PPO strategy shouldn&apos;t be based on guesswork.
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-5">
@@ -172,7 +172,7 @@ const PPOFeeNegotiations = () => {
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Real client results
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               Carrier-by-carrier improvements
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -183,7 +183,7 @@ const PPOFeeNegotiations = () => {
           </div>
           <div className="overflow-x-auto border border-gray-200 rounded-[4px]">
             <table className="w-full min-w-[720px] text-left text-sm">
-              <thead className="bg-[#1E1E1E] text-white">
+              <thead className="bg-[#383838] text-white">
                 <tr>
                   {[
                     "Carrier",
@@ -224,7 +224,7 @@ const PPOFeeNegotiations = () => {
           </p>
         </MotionDiv>
       </section>
-      <section className="bg-[#AFCB12] py-16">
+      <section className="bg-[#383838] py-16">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-white text-center">
           {[
             ["37%", "Largest improvement", "Humana and Mutual of Omaha"],
@@ -249,7 +249,7 @@ const PPOFeeNegotiations = () => {
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               The BEANbite difference
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               PPO negotiation is about more than asking for higher fees.
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -286,7 +286,7 @@ const PPOFeeNegotiations = () => {
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               What we analyze
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               A strategy built around your practice
             </h2>
           </div>
@@ -317,7 +317,7 @@ const PPOFeeNegotiations = () => {
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               From data to implementation
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               Our 11-step PPO strategy process
             </h2>
             <p className="text-gray-600 mt-4">
@@ -356,7 +356,7 @@ const PPOFeeNegotiations = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#1E1E1E] text-white py-16">
+      <section className="bg-[#383838] text-white py-16">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
@@ -401,7 +401,7 @@ const PPOFeeNegotiations = () => {
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Strategic participation, not maximum participation
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               Stop letting old PPO decisions make new business decisions.
             </h2>
             <p className="text-gray-600 leading-relaxed max-w-2xl">
@@ -424,7 +424,7 @@ const PPOFeeNegotiations = () => {
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Visual insights
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               PPO strategy at a glance
             </h2>
             <p className="text-gray-600 mt-4">
@@ -495,7 +495,7 @@ const PPOFeeNegotiations = () => {
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               A different approach
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               How BEANbite differs from other PPO consulting firms
             </h2>
             <p className="text-gray-600 mt-4">
@@ -522,7 +522,7 @@ const PPOFeeNegotiations = () => {
                 </p>
               ))}
             </div>
-            <div className="bg-[#1E1E1E] text-white p-7 rounded-[4px]">
+            <div className="bg-[#383838] text-white p-7 rounded-[4px]">
               <h3 className="font-bold text-[#C5D92D] text-xl mb-5">
                 BEANbite&apos;s approach
               </h3>
@@ -543,13 +543,13 @@ const PPOFeeNegotiations = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#AFCB12] py-16">
+      <section className="bg-[#383838] py-16">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
           <div className="text-center text-white max-w-2xl mx-auto mb-10">
             <p className="font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Hear from practices we&apos;ve helped
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Real results from real practices
             </h2>
           </div>
@@ -589,7 +589,7 @@ const PPOFeeNegotiations = () => {
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Why practices choose BEANbite
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               A partner who understands the full ecosystem.
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -620,13 +620,13 @@ const PPOFeeNegotiations = () => {
           </div>
         </div>
       </section>
-      <section className="py-16 md:py-20 bg-[#F7F9F2]">
+      <section className="py-16 md:py-20 bg-[#F7F9F2] mb-20">
         <div className="max-w-[1000px] mx-auto px-6 lg:px-12">
           <div className="text-center mb-10">
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Questions, answered
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               Frequently asked questions
             </h2>
             <p className="text-gray-600 mt-4">

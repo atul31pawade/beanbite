@@ -181,7 +181,7 @@ const InsuranceVerification = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold mb-8 text-gray-900">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
                 Short Form
               </h2>
               <ul className="grid gap-y-4">
@@ -214,7 +214,7 @@ const InsuranceVerification = () => {
       <section className="max-w-[1400px] mx-auto px-6 lg:px-12 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
-            <h2 className="text-3xl font-bold mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               Full or Complete Breakdown Form
             </h2>
             <ul className="space-y-3">
@@ -248,7 +248,7 @@ const InsuranceVerification = () => {
             <span className="mb-4 inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#809900]">
               Made for your specialty
             </span>
-            <h2 className="text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
               For specialists, we provide customized forms
             </h2>
             <p className="mt-4 text-gray-600">
@@ -270,7 +270,7 @@ const InsuranceVerification = () => {
             <span className="bg-[#C5D92D] text-[#1a2e05] px-4 py-1.5 rounded-full text-xs font-bold uppercase">
               Services
             </span>
-            <h2 className="text-[24px] font-semibold mt-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 mt-6">
               BEANbite’s insurance verifications team aims at setting your
               dental practice up for success with our insurance verification
               services

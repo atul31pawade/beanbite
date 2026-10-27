@@ -47,7 +47,7 @@ const Services = () => {
             whileInView="show"
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               Start Dental{" "}
               <span className="text-[#C5D92D]">Billing Service</span>
             </h2>

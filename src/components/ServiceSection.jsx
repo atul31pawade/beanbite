@@ -15,7 +15,9 @@ const fadeInUp = {
   transition: { duration: 0.6, ease: "easeOut" },
 };
 
-const ServicesSection = () => {
+const SECTION_HEADING = "text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-[1.2]";
+
+const ServicesSection = ({ headingClass = SECTION_HEADING }) => {
   const services = [
     {
       id: 1,
@@ -68,7 +70,7 @@ const ServicesSection = () => {
             SERVICES
           </span>
 
-          <h2 className="text-[34px] md:text-5xl font-bold text-[#5e5e5e] leading-[1.2]">
+          <h2 className={headingClass}>
             Reliable Dental Billing, Credentialing & <br />
             Insurance Solutions for Growing Practices
           </h2>

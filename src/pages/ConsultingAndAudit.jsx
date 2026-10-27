@@ -71,12 +71,14 @@ const ConsultingAndAudit = () => {
       <section className="max-w-[1400px] mx-auto px-6 lg:px-16 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 leading-tight">
-                We help dental practices uncover operational gaps, strengthen revenue cycle performance, and confidently navigate compliance and insurance audit challenges.
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
+                Is Your Practice Doing as Well as You Think?
+                <br />
+                We Find Out &mdash; Then We Fix It.
             </h2>
             <p className="text-[#AFCB12] font-bold mb-4">Evaluate Before You Elevate Your Dental Practice</p>
             <p className="text-gray-600 text-base leading-relaxed mb-2">
-                Are you making important decisions based on assumptions or clear operational insights? Most dental practices in the United States closely monitor production, collections, and patient care. Very few have the time to evaluate whether the systems behind those results are performing at the same level. In fact, hidden inefficiencies often go unnoticed until they begin to affect your dental office's performance.
+                Most dental practices in the United States closely monitor production, collections, and patient care. Very few have the time to evaluate whether the systems behind those results are performing at the same level. In fact, hidden inefficiencies often go unnoticed until they begin to affect your dental office's performance.
             </p>
             <p className="text-gray-600 text-base leading-relaxed mb-0">
                 BEANbite brings an experienced, objective perspective to evaluate your practice, uncover improvement opportunities, and strengthen the systems that drive long-term success. Our consulting and audit support services help you make informed decisions, improve operational performance, and confidently prepare your team for future growth.
@@ -105,7 +107,7 @@ const ConsultingAndAudit = () => {
               viewport={{ once: true, margin: "-100px" }}
               className="py-16 lg:py-24 pr-0 lg:pr-20 z-10"
             >
-              <h2 className="text-3xl font-bold mb-6 text-gray-900 leading-tight">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
                 A Consulting Strategy Built Around Your Practice, Not a Template
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-2">
@@ -142,7 +144,7 @@ const ConsultingAndAudit = () => {
             />
           </div>
           <div className="lg:col-span-3">
-            <h2 className="text-3xl font-bold mb-8">What We Evaluate During Your Dental Practice Assessment</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">What We Evaluate During Your Dental Practice Assessment</h2>
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
               {services.map((service, i) => (
                 <div key={i} className="flex items-start gap-3">
@@ -158,7 +160,7 @@ const ConsultingAndAudit = () => {
       {/* 4. Workflow Section - No Read More/Less */}
       <section className="bg-white mb-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl font-bold text-center mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 text-center">
             Our 8-Step Practice Consulting Framework <br /> for Better Practice Performance
           </h2>
           <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">

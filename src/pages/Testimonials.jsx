@@ -50,7 +50,7 @@ const Testimonials = () => {
           className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
         >
           <div className="max-w-2xl">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 tracking-tight">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 tracking-tight">
               Trusted by <span className="text-[#AFCB12]">Our Clients</span>
             </h2>
             <p className="text-gray-500 text-lg">

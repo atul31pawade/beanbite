@@ -141,7 +141,7 @@ const Credentialing = () => {
               </p>
             </div>
 
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 leading-tight">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
               Helping You <span className="text-[#AFCB12]">Succeed</span> at
               Every Stage
             </h2>
@@ -237,7 +237,7 @@ const Credentialing = () => {
               viewport={{ once: true, margin: "-100px" }}
               className="py-16 lg:py-24 pr-0 lg:pr-20 z-10"
             >
-              <h2 className="text-3xl font-bold mb-6 text-gray-900 leading-tight">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
                 PPO Fee Negotiations
               </h2>
               <p className="text-gray-600 text-base leading-relaxed">
@@ -292,7 +292,7 @@ const Credentialing = () => {
             />
           </div>
           <div className="lg:col-span-3">
-            <h2 className="text-3xl font-bold mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               Documents required for credentialing:
             </h2>
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
@@ -315,7 +315,7 @@ const Credentialing = () => {
       {/* 4. Workflow Accordion Section */}
       <section className="bg-white mb-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <h2 className="text-3xl font-bold text-center mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 text-center">
             BEANbite Credentialing and Fee <br /> Negotiations Workflow
           </h2>
           <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">

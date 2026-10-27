@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#5e5e5e] pt-10 relative">
+    <div className="bg-[#383838] pt-10 relative">
       {/*<div className="bg-[#414C00] pt-20 relative"></div>*/}
       {/* Floating Banner */}
       <div className="max-w-[1240px] mx-auto px-4 lg:px-12 relative z-20">
@@ -245,7 +245,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-[#5e5e5e] py-3 border-t border-white/9">
+        <div className="bg-[#383838] py-3 border-t border-white/9">
           <div className="max-w-[1400px] mx-auto px-4 lg:px-12 flex flex-col md:flex-row justify-between items-center text-white text-sm">
             <p>BEANbite &copy; Copyright 2026 - Immersive Infotech</p>
 

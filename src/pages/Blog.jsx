@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
-import { Calendar, User, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import InnerPageHeader from '../components/InnerPageHeader';
 import blogData from "../data/blogData";
 
@@ -86,7 +86,11 @@ const Blog = () => {
 
                 {/* Content */}
                 <div className="p-6 flex-1">
-                  <h2 className="text-lg font-bold mb-2 line-clamp-2 group-hover:text-[#AFCB12]">
+                  <span className="inline-block text-xs font-bold uppercase tracking-wide text-[#AFCB12] mb-2">
+                    {post.category}
+                  </span>
+
+                  <h2 className="text-lg font-bold mb-2 line-clamp-3 group-hover:text-[#AFCB12]">
                     {post.title}
                   </h2>
 
@@ -100,8 +104,8 @@ const Blog = () => {
                       {post.date}
                     </span>
                     <span className="flex items-center gap-1">
-                      <User size={14} className="text-[#AFCB12]" />
-                      {post.author}
+                      <Clock size={14} className="text-[#AFCB12]" />
+                      {post.readTime}
                     </span>
                   </div>
                 </div>
@@ -112,7 +116,7 @@ const Blog = () => {
                     to={`/blog/${post.id}`}
                     className="flex items-center gap-2 text-[#AFCB12] text-sm font-semibold"
                   >
-                    Read More
+                    Read More <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
 
