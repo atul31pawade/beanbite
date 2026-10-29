@@ -5,6 +5,7 @@ import HomeTwo from './pages/HomeTwo';
 import About from './pages/About';
 import Career from './pages/Career';
 import ClientSuccess from "./pages/ClientSuccess";
+import ChecklistThankYou from './pages/ChecklistThankYou';
 import Testimonials from "./pages/Testimonials";
 import Services from "./pages/Services"; 
 import Credentialing from './pages/Credentialing';
@@ -43,6 +44,7 @@ function App() {
           <Route path="/cda" element={<CDAPage />} />
           <Route path="/career" element={<Career />} />
           <Route path="/client-success" element={<ClientSuccess />} />
+          <Route path="/checklists/:slug" element={<ChecklistThankYou />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetails />} />

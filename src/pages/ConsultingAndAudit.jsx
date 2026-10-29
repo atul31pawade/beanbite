@@ -71,12 +71,6 @@ const ConsultingAndAudit = () => {
       <section className="max-w-[1400px] mx-auto px-6 lg:px-16 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
-                Is Your Practice Doing as Well as You Think?
-                <br />
-                We Find Out &mdash; Then We Fix It.
-            </h2>
-            <p className="text-[#AFCB12] font-bold mb-4">Evaluate Before You Elevate Your Dental Practice</p>
             <p className="text-gray-600 text-base leading-relaxed mb-2">
                 Most dental practices in the United States closely monitor production, collections, and patient care. Very few have the time to evaluate whether the systems behind those results are performing at the same level. In fact, hidden inefficiencies often go unnoticed until they begin to affect your dental office's performance.
             </p>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import InnerPageHeader from "../components/InnerPageHeader";
 import PartnerSection from "../components/PartnerSection";
 import ServiceSection from "../components/ServiceSection";
+import CtaButton from "../components/CtaButton";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -51,7 +52,7 @@ const Services = () => {
               Start Dental{" "}
               <span className="text-[#C5D92D]">Billing Service</span>
             </h2>
-            <p className="text-lg font-semibold text-gray-800 mb-6">
+            <p className="text-base font-semibold text-gray-800 mb-6">
               No setup fee or long-term contract
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
@@ -171,12 +172,9 @@ const ServiceFeatureCard = ({ icon, title, description }) => (
         {description}
       </p>
 
-      <motion.button
-        whileTap={{ scale: 0.95 }}
-        className="px-8 py-2.5 border border-gray-200 rounded-full text-sm font-bold text-gray-700 hover:bg-[#C5D92D] hover:border-transparent hover:text-[#1a2e05] transition-all bg-white cursor-pointer z-20"
-      >
+      <CtaButton variant="light" className="z-20 mt-auto">
         Learn More
-      </motion.button>
+      </CtaButton>
     </div>
   </motion.div>
 );

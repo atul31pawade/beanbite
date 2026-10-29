@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import {
   CheckCircle2,
   ChevronDown,
-  ArrowRight,
   BarChart3,
   Network,
   ShieldCheck,
   TrendingUp,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import CtaButton from "../components/CtaButton";
 import InnerPageHeader from "../components/InnerPageHeader";
 import PartnerSection from "../components/PartnerSection";
 
@@ -126,13 +126,7 @@ const PPOFeeNegotiations = () => {
       <section className="bg-[#F7F9F2] py-16 md:py-24">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid lg:grid-cols-[1.05fr_.95fr] gap-12 items-center">
           <MotionDiv {...reveal}>
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-4">
-              Data-driven strategy
-            </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
-              Your PPO strategy shouldn&apos;t be based on guesswork.
-            </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-5">
+            <p className="text-base text-gray-600 leading-relaxed mb-5">
               Most practices participate with PPOs based on old decisions made
               under different economics. BEANbite analyzes your actual
               production data, patient utilization, and contracted
@@ -144,12 +138,9 @@ const PPOFeeNegotiations = () => {
               carriers, including Cigna DPPO, Humana, and Mutual of Omaha. These
               are documented outcomes, not promises.
             </p>
-            <a
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-[#AFCB12] hover:bg-[#9db520] text-white px-6 py-3 rounded-[4px] font-semibold"
-            >
-              Schedule your PPO analysis <ArrowRight size={18} />
-            </a>
+            <CtaButton to="/contact" size="lg">
+              Schedule your PPO analysis
+            </CtaButton>
           </MotionDiv>
           <MotionDiv
             {...reveal}
@@ -410,12 +401,9 @@ const PPOFeeNegotiations = () => {
               contributing and build a strategy that makes financial sense.
             </p>
           </div>
-          <a
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2 bg-[#AFCB12] hover:bg-[#9db520] text-white px-6 py-3 rounded-[4px] font-semibold whitespace-nowrap"
-          >
-            Start your analysis <ArrowRight size={18} />
-          </a>
+          <CtaButton to="/contact" size="lg" className="whitespace-nowrap">
+            Start your analysis
+          </CtaButton>
         </div>
       </section>
       <section className="bg-[#F7F9F2] py-16 md:py-20">
@@ -566,7 +554,7 @@ const PPOFeeNegotiations = () => {
                 <div className="text-[#AFCB12] tracking-[0.2em] mb-4">
                   ★★★★★
                 </div>
-                <p className="leading-relaxed text-sm mb-5">
+                <p className="leading-relaxed text-base mb-5">
                   &quot;{quote}&quot;
                 </p>
                 <p className="font-bold text-gray-900 text-sm">

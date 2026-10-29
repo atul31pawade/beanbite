@@ -90,7 +90,7 @@ const Blog = () => {
                     {post.category}
                   </span>
 
-                  <h2 className="text-lg font-bold mb-2 line-clamp-3 group-hover:text-[#AFCB12]">
+                  <h2 className="text-lg font-bold mb-2 line-clamp-3 text-[#5e5e5e] group-hover:text-[#AFCB12]">
                     {post.title}
                   </h2>
 

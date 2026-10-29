@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, TrendingUp, CheckCircle2 } from "lucide-react";
+import CtaButton from "./CtaButton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
@@ -131,7 +132,7 @@ const PartnerSection = ({ headingClass = SECTION_HEADING }) => {
         {/* LEFT SIDE - Logos */}
         <div>
           <motion.span className="inline-block px-6 py-2 bg-[#AFCB12] text-[#000000] font-bold rounded-full text-lg mb-6">
-            OUR VALUED CLIENTS
+            The Clients We Stand Behind
           </motion.span>
 
           <motion.h2 className={headingClass}>
@@ -276,15 +277,7 @@ const ContactFormCard = () => (
             provide.
           </label>
         </div>
-        <button
-          type="button"
-          className="cursor-pointer border border-[4px] border-[#414C00] bg-[#9db520] hover:bg-[#8ca319] text-[#ffffff] pl-4 pr-2 py-1 rounded-full font-semibold text-[16px] inline-flex items-center gap-4 transition-all shadow-lg group"
-        >
-          Submit
-          <div className="w-10 h-10 bg-[#384d14] rounded-full flex items-center justify-center text-white">
-            <TrendingUp size={18} />
-          </div>
-        </button>
+        <CtaButton icon={TrendingUp}>Submit</CtaButton>
       </form>
     </div>
   </motion.div>

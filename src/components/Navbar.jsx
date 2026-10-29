@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
+import CtaButton from "./CtaButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -244,21 +245,22 @@ const Navbar = () => {
                   Contact Us
                 </Link>
 
-                <div className="pt-4 border-t border-gray-100">
-                  <Link
-                    to="https://assist.zoho.com/install-customer-plugin"
+                <div className="pt-4 border-t border-gray-100 flex flex-col gap-3">
+                  <CtaButton
+                    href="https://assist.zoho.com/install-customer-plugin"
                     onClick={() => setIsMenuOpen(false)}
-                    className="block text-center py-3 border-2 border-gray-900 text-gray-900 rounded-lg hover:border-[#AFCB12] hover:text-[#AFCB12] transition-all font-bold"
+                    fullWidth
                   >
                     Remote Support
-                  </Link>
-                  <Link
-                    to="https://outlook.office.com/owa/calendar/Consultation@beanbite.com/bookings/"
+                  </CtaButton>
+                  <CtaButton
+                    href="https://outlook.office.com/owa/calendar/Consultation@beanbite.com/bookings/"
                     onClick={() => setIsMenuOpen(false)}
-                    className="block text-center py-3 border-2 border-gray-900 text-gray-900 rounded-lg hover:border-[#AFCB12] hover:text-[#AFCB12] transition-all font-bold"
+                    variant="light"
+                    fullWidth
                   >
                     Book a Consultation
-                  </Link>
+                  </CtaButton>
                 </div>
               </div>
             </div>

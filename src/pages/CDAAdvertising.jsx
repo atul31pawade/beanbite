@@ -1,7 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react';
 import {
   AlertTriangle,
-  ArrowRight,
   BadgeCheck,
   Building2,
   CalendarCheck,
@@ -20,6 +19,7 @@ import {
   Briefcase
 } from 'lucide-react';
 import Reveal from '../components/Reveal';
+import CtaButton from '../components/CtaButton';
 
 const bookingUrl = 'https://bookings.cloud.microsoft/book/BEANbiteConsultationCDA@beanbite.com/?ismsaljsauthenabled';
 
@@ -160,12 +160,9 @@ const CDAAdvertising = () => {
           </p>
 
           <div className="mt-8 rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 px-5 py-7 text-center sm:mt-9 sm:px-8 sm:py-8">
-            <a
-              href={bookingUrl}
-              className="inline-flex min-h-14 items-center justify-center gap-3 rounded-xl bg-[#AFCB12] px-6 py-4 text-base font-bold text-slate-950 shadow-[0_10px_24px_rgba(175,203,18,0.25)] transition hover:bg-[#c1d93d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#758d00]"
-            >
-              Continue to schedule a call <CalendarCheck size={20} aria-hidden="true" />
-            </a>
+            <CtaButton href={bookingUrl} size="lg" icon={CalendarCheck}>
+              Continue to schedule a call
+            </CtaButton>
             <p className="mt-5 flex items-center justify-center gap-1.5 text-base leading-7 text-slate-500">
               <Clock3 size={15} aria-hidden="true" />
               Takes less than 1 minute to select your preferred date &amp; time on our calendar
@@ -426,12 +423,9 @@ const CDAAdvertising = () => {
               )}
             </div>
 
-            <button
-              type="submit"
-              className="inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-[#AFCB12] px-5 py-4 text-base font-bold text-slate-950 shadow-sm transition hover:bg-[#c1d93d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#758d00]"
-            >
-              Submit Practice Details &amp; Continue to Schedule Call <ArrowRight size={19} aria-hidden="true" />
-            </button>
+            <CtaButton type="submit" fullWidth>
+              Submit Practice Details &amp; Continue to Schedule Call
+            </CtaButton>
             <p className="text-center text-sm text-slate-500">
               100% confidential. You’ll choose a call time on our calendar immediately after submitting.
             </p>

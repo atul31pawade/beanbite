@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CtaButton from '../components/CtaButton';
 import {
   ArrowRight,
   ChartColumnIncreasing,
@@ -146,9 +147,9 @@ const CDAPage = () => {
                 <textarea className={`${inputClassName} min-h-28 resize-y`} name="message" rows="4" placeholder="Tell us about your billing needs" required />
               </label>
               <p className="text-xs leading-5 text-slate-500">Submitting opens a new email to BEANbite with your inquiry. Please do not include patient information.</p>
-              <button type="submit" className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-[#AFCB12] px-5 py-3 text-sm font-bold text-[#20270a] transition hover:bg-[#c5d92d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#657600]">
-                Send message <ArrowRight size={17} aria-hidden="true" />
-              </button>
+              <CtaButton type="submit" fullWidth>
+                Send message
+              </CtaButton>
             </form>
           </div>
         </div>
@@ -183,9 +184,9 @@ const CDAPage = () => {
             <h2 className="text-2xl font-bold text-slate-950">Ready to talk through your billing workflow?</h2>
             <p className="mt-2 text-base leading-7 text-slate-600">Call our team at <a className="font-semibold text-[#536400] underline underline-offset-2" href="tel:+18887005589">(888) 700-5589</a> or send us a message.</p>
           </div>
-          <a href="#contact-form" className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-md bg-[#AFCB12] px-5 py-3 text-sm font-bold text-[#20270a] transition hover:bg-[#c5d92d]">
-            Contact BEANbite <ArrowRight size={17} aria-hidden="true" />
-          </a>
+          <CtaButton href="#contact-form" className="shrink-0">
+            Contact BEANbite
+          </CtaButton>
         </div>
       </section>
     </div>

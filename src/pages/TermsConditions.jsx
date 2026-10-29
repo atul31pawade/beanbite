@@ -11,14 +11,14 @@ const TermsConditions = () => {
         <Reveal className="prose prose-slate max-w-none">
           <p className="text-sm font-semibold text-[#AFCB12] mb-6">Effective as of February 14, 2025</p>
 
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">Agreement between User and BEANbite LLC</h1>
+          <h1 className="text-3xl font-bold text-[#5e5e5e] mb-6">Agreement between User and BEANbite LLC</h1>
           <p className="mb-6">The https://www.beanbite.com/ and https://www.beanbite.net/ websites (the "Site") are comprised of various web pages operated by BEANbite LLC. https://www.beanbite.com/ and https://www.beanbite.net/ is offered to you conditioned on your acceptance without modification of the terms, conditions, and notices contained herein (the "Terms"). Your use of https://www.beanbite.com/ and https://www.beanbite.net/ constitutes your agreement to all such Terms. Please read these terms carefully, and keep a copy of them for your reference.</p>
           
           <p className="mb-6">https://www.beanbite.com/ and https://www.beanbite.net/ are dental professional services Sites.</p>
           
           <p className="mb-6">Beanbite.com (and beanbite.net ) is the official website of BEANbite LLC, a company specializing in dental billing and administrative services, BEANbite aims to empower dental professionals by managing interactions with insurance carriers, allowing dentists and office managers to focus on patient care and superior customer service.</p>
           
-          <h3 className="text-xl font-bold text-gray-900 mt-10 mb-4">The company offers a range of services tailored to enhance the efficiency and profitability of dental practices, including:</h3>
+          <h3 className="text-xl font-bold text-[#5e5e5e] mt-10 mb-4">The company offers a range of services tailored to enhance the efficiency and profitability of dental practices, including:</h3>
           <ul className="list-disc pl-6 space-y-3 mb-8">
             <li><strong>Credentialing:</strong> Assisting dental practices in obtaining necessary provider credentials and managing re-credentialing processes.</li>
             <li><strong>Dental Insurance Verification:</strong> Providing customized insurance breakdown forms and managing appointment reports to streamline front office operations.</li>

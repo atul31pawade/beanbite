@@ -617,7 +617,7 @@ const Home = () => {
 
                 {/* Title */}
                 <Link to={`/blog/${post.id}`}>
-                  <h3 className="text-[20px] md:text-[22px] font-bold text-black mb-6 leading-snug pr-4 line-clamp-3">
+                  <h3 className="text-[20px] md:text-[22px] font-bold text-[#5e5e5e] mb-6 leading-snug pr-4 line-clamp-3">
                     {post.title}
                   </h3>
                 </Link>
