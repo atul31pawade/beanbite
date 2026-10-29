@@ -123,7 +123,7 @@ const PPOFeeNegotiations = () => {
         title="PPO Fee Negotiations"
         breadcrumb="Services / PPO Fee Negotiations"
       />
-      <section className="bg-[#F7F9F2] py-16 md:py-24">
+      <section className="bg-[#F7F9F2] py-16 md:py-16">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid lg:grid-cols-[1.05fr_.95fr] gap-12 items-center">
           <MotionDiv {...reveal}>
             <p className="text-base text-gray-600 leading-relaxed mb-5">
@@ -158,7 +158,7 @@ const PPOFeeNegotiations = () => {
         </div>
       </section>
       <section className="py-16 md:py-20">
-        <MotionDiv {...reveal} className="max-w-[1200px] mx-auto px-6 lg:px-12">
+        <MotionDiv {...reveal} className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center mb-10">
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Real client results
