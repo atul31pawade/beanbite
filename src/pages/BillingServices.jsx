@@ -12,6 +12,7 @@ import {
   ArrowRight,
   X,
 } from "lucide-react";
+import CtaButton from "../components/CtaButton";
 import InnerPageHeader from "../components/InnerPageHeader";
 import Reveal from "../components/Reveal";
 import PartnerSection from "../components/PartnerSection";
@@ -91,14 +92,7 @@ const BillingServices = () => {
 
         <div className="relative mx-auto max-w-[1400px] lg:px-6">
           <Reveal className="mb-12 max-w-3xl">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
-              Dental Billing.{" "}
-              <span className="text-[#809900]">Off Your Plate.</span>
-            </h2>
-            <p className="mb-4 text-xl font-bold text-[#5e5e5e] md:text-2xl">
-              A dedicated billing crew that works like it sits in your office.
-            </p>
-            <p className="text-base leading-8 text-gray-600 md:text-lg">
+            <p className="text-base leading-8 text-gray-600">
               From same-day claims to denial-fighting follow-ups, BEANbite keeps
               every account moving — so your team stays in the chair and out of
               the claim portal.
@@ -172,13 +166,13 @@ const BillingServices = () => {
                 <p className="text-base leading-7 text-gray-300">
                   {activeService.description}
                 </p>
-                <a
-                  href="/contact"
+                <CtaButton
+                  to="/contact"
                   onClick={() => setActiveService(null)}
-                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#C5D92D] px-5 py-2.5 text-sm font-bold text-[#1a2e05] hover:bg-[#b0c41a] transition-colors"
+                  className="mt-6"
                 >
-                  Get Started <ArrowRight size={16} />
-                </a>
+                  Get Started
+                </CtaButton>
               </div>
             </motion.div>
           </motion.div>

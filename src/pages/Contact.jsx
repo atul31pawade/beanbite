@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { TrendingUp, ArrowRight } from "lucide-react";
 import InnerPageHeader from "../components/InnerPageHeader";
+import CtaButton from "../components/CtaButton";
 
 // Animation variants
 const fadeInUp = {
@@ -324,12 +325,9 @@ const Contact = () => {
               </div>
 
               {/* Submit */}
-              <button className="flex items-center gap-2 bg-[#C5D92D] border-2 border-[#384d14] text-[#1a2e05] font-bold px-6 py-2.5 rounded-full shadow-md mt-4">
+              <CtaButton type="submit" className="mt-4" icon={TrendingUp}>
                 Submit
-                <span className="w-8 h-8 bg-[#384d14] rounded-full flex items-center justify-center text-white">
-                  ↗
-                </span>
-              </button>
+              </CtaButton>
             </form>
           </motion.div>
         </div>

@@ -19,7 +19,7 @@ const PrivacyPolicy = () => {
             as well as our procedures for collecting, utilizing, maintaining, protecting, and disclosing that information.
           </p>
 
-          <h3 className="text-xl font-bold text-gray-900 mt-10 mb-4">This policy applies to the information we collect:</h3>
+          <h3 className="text-xl font-bold text-[#5e5e5e] mt-10 mb-4">This policy applies to the information we collect:</h3>
           <ul className="list-disc pl-6 space-y-2 mb-8">
             <li>On this Website.</li>
             <li>In email, text, and other electronic messages exchanged between you and this Website.</li>
@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
             <li>When you engage with our advertising and applications on third-party websites and services, provided that such applications or advertising contain links to this policy.</li>
           </ul>
 
-          <h3 className="text-xl font-bold text-gray-900 mt-10 mb-4">It will notify you of the following:</h3>
+          <h3 className="text-xl font-bold text-[#5e5e5e] mt-10 mb-4">It will notify you of the following:</h3>
           <ul className="list-disc pl-6 space-y-2 mb-8">
             <li>What personally identifiable information is collected from you through the website, how it is used, and with whom it may be shared?</li>
             <li>What choices are available to you regarding the use of your data?</li>

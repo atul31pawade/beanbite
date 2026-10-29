@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import CtaButton from "./CtaButton";
 
 const Footer = () => {
   return (
@@ -40,25 +41,21 @@ const Footer = () => {
               className="w-[150px] hidden md:block"
             />
 
-            <Link
-              to="https://outlook.office.com/owa/calendar/Consultation@beanbite.com/bookings/"
-              target="_blank"
+            <CtaButton
+              href="https://outlook.office.com/owa/calendar/Consultation@beanbite.com/bookings/"
+              variant="light"
+              size="lg"
+              icon={TrendingUp}
             >
-              <button className="cursor-pointer border border-[#C3C3C3] border-[3px] bg-white text-[#414C00] pl-6 pr-1 py-1.5 rounded-full font-bold text-lg inline-flex items-center gap-4">
-                <span>Book Now</span>
-                <div className="w-10 h-10 bg-[#5e5e5e] rounded-full flex items-center justify-center text-white">
-                  {/*<div className="w-10 h-10 bg-[#384d14] rounded-full flex items-center justify-center text-white">*/}
-                  <TrendingUp size={18} />
-                </div>
-              </button>
-            </Link>
+              Book Now
+            </CtaButton>
           </div>
         </motion.div>
       </div>
 
       <footer className="text-white pt-10 pb-0 relative z-10">
-        <div className="max-w-[1400px] mx-auto px-4 lg:px-12 pb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          <div className="lg:col-span-1 space-y-6">
+        <div className="max-w-[1400px] mx-auto px-4 lg:px-12 pb-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8">
+          <div className="space-y-6 xl:col-start-1 xl:row-start-1 xl:row-span-2">
             <img
               src="/homeOne/footer-logo.png"
               alt="BEANbite"
@@ -83,8 +80,8 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div>
-            <h4 className="text-[18px] font-bold mb-6">Quick Link</h4>
+          <div className="xl:col-start-2 xl:row-start-1">
+            <h4 className="text-[18px] font-bold mb-4">Quick Link</h4>
             <ul className="space-y-4 text-white text-[14px] font-light">
               <li>
                 <Link to="/" className="text-white text-[14px] font-light">
@@ -115,46 +112,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-[18px] font-bold mb-6">Help Link</h4>
-            <ul className="space-y-4 text-white text-[14px] font-light">
-              <li>
-                <Link
-                  to="/testimonials"
-                  className="text-white text-[14px] font-light"
-                >
-                  Testimonial
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/client-success"
-                  className="text-white text-[14px] font-light"
-                >
-                  Client & Resources
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/privacy-policy"
-                  className="text-white text-[14px] font-light"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/terms-conditions"
-                  className="text-white text-[14px] font-light"
-                >
-                  Terms & Conditions
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-[18px] font-bold mb-6">Services</h4>
+          <div className="xl:col-start-3 xl:row-start-1">
+            <h4 className="text-[18px] font-bold mb-4">Services</h4>
             <ul className="space-y-4 text-white text-[14px] font-light">
               <li>
                 <Link
@@ -199,13 +158,47 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-[18px] font-bold mb-6">Contact Us</h4>
-            {/*<ul className="space-y-6 text-sm text-gray-300">
-              <li className="flex gap-3"><MapPin size={18} className="text-[#AFCB12]"/> 1015 Riley St, Folsom CA</li>
-              <li className="flex gap-3"><Phone size={18} className="text-[#AFCB12]"/> (888) 700 5589</li>
-          </ul>*/}
-            <ul className="space-y-6 text-sm text-gray-300">
+          <div className="xl:col-start-4 xl:row-start-1">
+            <h4 className="text-[18px] font-bold mb-4">Help Link</h4>
+            <ul className="space-y-4 text-white text-[14px] font-light">
+              <li>
+                <Link
+                  to="/testimonials"
+                  className="text-white text-[14px] font-light"
+                >
+                  Testimonial
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/client-success"
+                  className="text-white text-[14px] font-light"
+                >
+                  Client & Resources
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/privacy-policy"
+                  className="text-white text-[14px] font-light"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/terms-conditions"
+                  className="text-white text-[14px] font-light"
+                >
+                  Terms & Conditions
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="md:col-span-2 xl:col-start-2 xl:col-end-5 xl:row-start-2">
+            <h4 className="text-[18px] font-bold mb-4">Contact Us</h4>
+            <ul className="grid grid-cols-1 gap-6 md:grid-cols-3">
               <li>
                 <div className="flex items-center gap-3 text-[16px] font-semibold text-white">
                   <MapPin size={18} className="text-white" />
@@ -242,6 +235,25 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+          </div>
+
+          <div className="md:col-span-2 xl:col-span-1 xl:col-start-5 xl:row-start-1 xl:row-span-2">
+            <h4 className="text-[18px] font-bold mb-4">
+              Scan to Book a Consultation
+            </h4>
+            <Link
+              to="https://outlook.office.com/owa/calendar/Consultation@beanbite.com/bookings/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Scan this code or tap to open the consultation booking form"
+              className="flex w-fit flex-col items-center rounded-xl bg-white p-3 md:mx-auto xl:mx-0"
+            >
+              <img
+                src="/homeOne/footer-booking-qr.png"
+                alt="QR code linking to the BEANbite consultation booking form"
+                className="w-[180px] h-[180px]"
+              />
+            </Link>
           </div>
         </div>
 

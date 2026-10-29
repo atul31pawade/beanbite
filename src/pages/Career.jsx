@@ -11,6 +11,7 @@ import {
 import "swiper/css";
 import "swiper/css/navigation";
 import InnerPageHeader from "../components/InnerPageHeader";
+import CtaButton from "../components/CtaButton";
 import PartnerSection from "../components/PartnerSection";
 
 // Animation variants
@@ -893,20 +894,9 @@ const Career = () => {
             </motion.div>
           </motion.button>
 
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => openModal(job.title)}
-            className="flex items-center gap-2 bg-[#C5D92D] border border-1 border-[#384d14] text-[#1a2e05] font-bold px-2 py-2 rounded-full shadow-md hover:bg-[#b0c41a] transition-all group cursor-pointer"
-          >
+          <CtaButton onClick={() => openModal(job.title)} icon={TrendingUp}>
             Apply Now
-            <motion.div
-              whileHover={{ x: 5 }}
-              className="w-8 h-8 bg-[#384d14] rounded-full flex items-center justify-center text-white"
-            >
-              <TrendingUp size={18} />
-            </motion.div>
-          </motion.button>
+          </CtaButton>
         </div>
       </div>
 
@@ -1358,20 +1348,9 @@ const Career = () => {
                     </div>
 
                     <div className="flex">
-                      <motion.button
-                        type="submit"
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        className="flex items-center gap-2 bg-[#C5D92D] border-2 border-[#384d14] text-[#1a2e05] font-bold px-6 py-1 rounded-full shadow-md hover:bg-[#b0c41a] transition-all group"
-                      >
+                      <CtaButton type="submit" icon={TrendingUp}>
                         Submit Application
-                        <motion.div
-                          whileHover={{ x: 5 }}
-                          className="w-8 h-8 bg-[#384d14] rounded-full flex items-center justify-center text-white"
-                        >
-                          <TrendingUp size={16} />
-                        </motion.div>
-                      </motion.button>
+                      </CtaButton>
                     </div>
                   </form>
                 </div>

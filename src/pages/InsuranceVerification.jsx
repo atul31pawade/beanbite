@@ -84,7 +84,7 @@ const InsuranceVerification = () => {
           viewport={{ once: true }}
           className="relative mx-auto max-w-7xl text-center"
         >
-          <p className="mx-auto mb-5 max-w-7xl text-left text-base leading-8 text-gray-600 md:text-lg">
+          <p className="mx-auto mb-5 max-w-7xl text-left text-base leading-8 text-gray-600">
             BEANbite takes absolute pride in the quality &amp; accuracy of the
             Insurance Verifications done by our agents. Our goal is to set up
             the dental office for success. Obtaining a ‘comprehensive insurance

@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import CtaButton from "../components/CtaButton";
 import {
     Calendar,
     Clock,
     User,
-    Link as LinkIcon,
-    Check,
     ArrowLeft,
     ArrowRight,
     Linkedin,
     Facebook,
     Twitter,
+    Mail,
     ListTree,
 } from "lucide-react";
 import Reveal from "../components/Reveal";
@@ -30,7 +30,7 @@ const Block = ({ block }) => {
             return (
                 <h2
                     id={slugify(block.text)}
-                    className="text-[22px] md:text-[28px] font-bold text-gray-900 leading-snug mt-12 mb-5 scroll-mt-28"
+                    className="text-[22px] md:text-[28px] font-bold text-[#5e5e5e] leading-snug mt-12 mb-5 scroll-mt-28"
                 >
                     {block.text}
                 </h2>
@@ -39,7 +39,7 @@ const Block = ({ block }) => {
             return (
                 <h3
                     id={slugify(block.text)}
-                    className="text-[19px] md:text-[22px] font-bold text-gray-900 leading-snug mt-9 mb-4 scroll-mt-28"
+                    className="text-[19px] md:text-[22px] font-bold text-[#5e5e5e] leading-snug mt-9 mb-4 scroll-mt-28"
                 >
                     {block.text}
                 </h3>
@@ -48,7 +48,7 @@ const Block = ({ block }) => {
             return (
                 <h4
                     id={slugify(block.text)}
-                    className="text-[17px] md:text-[18px] font-bold text-[#414C00] mt-7 mb-3 pl-4 border-l-[3px] border-[#AFCB12] scroll-mt-28"
+                    className="text-[17px] md:text-[18px] font-bold text-[#5e5e5e] mt-7 mb-3 pl-4 border-l-[3px] border-[#AFCB12] scroll-mt-28"
                 >
                     {block.text}
                 </h4>
@@ -105,7 +105,6 @@ const Block = ({ block }) => {
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const [copied, setCopied] = useState(false);
 
     const postIndex = blogData.findIndex((item) => item.id === Number(id));
     const post = blogData[postIndex];
@@ -126,14 +125,11 @@ const BlogDetails = () => {
     if (!post) {
         return (
             <div className="min-h-[60vh] flex flex-col items-center justify-center gap-4 bg-white px-4 text-center">
-                <h1 className="text-2xl font-bold text-gray-900">Article not found</h1>
+                <h1 className="text-2xl font-bold text-[#5e5e5e]">Article not found</h1>
                 <p className="text-[#5e5e5e]">The article you are looking for is no longer available.</p>
-                <Link
-                    to="/blog"
-                    className="mt-2 inline-flex items-center gap-2 rounded-full bg-[#C5D92D] px-6 py-3 font-bold text-[#414C00] hover:bg-[#AFCB12] transition"
-                >
-                    <ArrowLeft size={16} /> Back to blog
-                </Link>
+                <CtaButton to="/blog" icon={ArrowLeft}>
+                    Back to blog
+                </CtaButton>
             </div>
         );
     }
@@ -141,9 +137,9 @@ const BlogDetails = () => {
     const shareUrl = typeof window !== "undefined" ? window.location.href : "";
     const shareLinks = [
         {
-            icon: Linkedin,
-            label: "Share on LinkedIn",
-            href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
+            icon: Facebook,
+            label: "Share on Facebook",
+            href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
         },
         {
             icon: Twitter,
@@ -151,21 +147,16 @@ const BlogDetails = () => {
             href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`,
         },
         {
-            icon: Facebook,
-            label: "Share on Facebook",
-            href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
+            icon: Linkedin,
+            label: "Share on LinkedIn",
+            href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
+        },
+        {
+            icon: Mail,
+            label: "Share on Email",
+            href: `mailto:?subject=${encodeURIComponent(post.title)}&body=${encodeURIComponent(shareUrl)}`,
         },
     ];
-
-    const copyLink = async () => {
-        try {
-            await navigator.clipboard.writeText(shareUrl);
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
-        } catch {
-            setCopied(false);
-        }
-    };
 
     return (
         <div className="bg-white">
@@ -197,7 +188,7 @@ const BlogDetails = () => {
                                 </span>
                             </div>
 
-                            <h1 className="text-[26px] md:text-[38px] font-bold text-gray-900 leading-[1.2] mb-6">
+                            <h1 className="text-[26px] md:text-[38px] font-bold text-[#5e5e5e] leading-[1.2] mb-6">
                                 {post.title}
                             </h1>
 
@@ -214,8 +205,9 @@ const BlogDetails = () => {
                                         <a
                                             key={label}
                                             href={href}
-                                            target="_blank"
-                                            rel="noreferrer"
+                                            {...(href.startsWith("mailto:")
+                                                ? {}
+                                                : { target: "_blank", rel: "noreferrer" })}
                                             aria-label={label}
                                             title={label}
                                             className="w-9 h-9 rounded-full border border-[#E4E9D8] flex items-center justify-center text-gray-600 hover:bg-[#AFCB12] hover:text-white hover:border-[#AFCB12] transition"
@@ -223,15 +215,6 @@ const BlogDetails = () => {
                                             <Icon size={16} />
                                         </a>
                                     ))}
-                                    <button
-                                        type="button"
-                                        onClick={copyLink}
-                                        aria-label="Copy link"
-                                        title="Copy link"
-                                        className="w-9 h-9 rounded-full border border-[#E4E9D8] flex items-center justify-center text-gray-600 hover:bg-[#AFCB12] hover:text-white hover:border-[#AFCB12] transition cursor-pointer"
-                                    >
-                                        {copied ? <Check size={16} /> : <LinkIcon size={16} />}
-                                    </button>
                                 </div>
                             </div>
 
@@ -288,7 +271,7 @@ const BlogDetails = () => {
                         <div className="lg:sticky lg:top-24 space-y-6">
                             {contents.length > 0 && (
                                 <div className="border border-[#E4E9D8] rounded-2xl p-6">
-                                    <h2 className="flex items-center gap-2 text-[15px] font-bold text-gray-900 mb-4">
+                                    <h2 className="flex items-center gap-2 text-[15px] font-bold text-[#5e5e5e] mb-4">
                                         <ListTree size={16} className="text-[#AFCB12]" /> On this page
                                     </h2>
                                     <nav className="space-y-2.5 max-h-[320px] overflow-y-auto pr-1">
@@ -308,7 +291,7 @@ const BlogDetails = () => {
                             )}
 
                             <div className="border border-[#E4E9D8] rounded-2xl p-6">
-                                <h2 className="text-[15px] font-bold text-gray-900 mb-4">More articles</h2>
+                                <h2 className="text-[15px] font-bold text-[#5e5e5e] mb-4">More articles</h2>
                                 <div className="space-y-4">
                                     {moreArticles.map((item) => (
                                         <Link
@@ -339,12 +322,9 @@ const BlogDetails = () => {
                                 <p className="text-sm text-white/75 leading-relaxed mb-5">
                                     BEANbite keeps dental practices compliant, audit-ready and billing cleanly across every payer.
                                 </p>
-                                <Link
-                                    to="/contact"
-                                    className="inline-flex items-center gap-2 rounded-full bg-[#C5D92D] px-5 py-2.5 text-sm font-bold text-[#414C00] hover:bg-[#AFCB12] hover:text-white transition"
-                                >
-                                    Talk to our team <ArrowRight size={15} />
-                                </Link>
+                                <CtaButton to="/contact">
+                                    Talk to our team
+                                </CtaButton>
                             </div>
                         </div>
                     </aside>

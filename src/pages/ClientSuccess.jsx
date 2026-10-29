@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import InnerPageHeader from "../components/InnerPageHeader";
 import PartnerSection from "../components/PartnerSection";
+import ChecklistSection from "../components/ChecklistSection";
 
 // ================= CLIENT IMAGES =================
 const column1 = [
@@ -114,7 +115,7 @@ const ClientSuccess = () => {
           </span>
 
           <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
-            We Work With The Best <br /> Clients Success
+            Behind Every Great Practice <br /> Is a Team It Can Trust
           </h2>
 
           <p className="text-gray-600">
@@ -150,7 +151,9 @@ const ClientSuccess = () => {
             className="bg-[#f8f8f8] px-6 md:px-16 lg:px-24 py-12 flex items-center justify-center"
           >
             <div className="max-w-[600px]">
-              <h3 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">Resources</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
+                Resources
+              </h3>
 
               <ul className="space-y-4 text-sm text-gray-700">
                 {resources.map((item, i) => (
@@ -191,6 +194,8 @@ const ClientSuccess = () => {
           </motion.div>
         </div>
       </div>
+
+      <ChecklistSection />
 
       {/* ================= REUSABLE PARTNER SECTION ================= */}
       <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-16">
