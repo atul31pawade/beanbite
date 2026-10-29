@@ -1,23 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from 'framer-motion';
-import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
-import InnerPageHeader from '../components/InnerPageHeader';
+import { motion } from "framer-motion";
+import {
+  Calendar,
+  Clock,
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
+import InnerPageHeader from "../components/InnerPageHeader";
 import blogData from "../data/blogData";
 
 // Animation variants (FIXED)
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 }
+  transition: { duration: 0.5 },
 };
 
 const staggerContainer = {
   animate: {
     transition: {
-      staggerChildren: 0.1
-    }
-  }
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 const Blog = () => {
@@ -25,14 +31,13 @@ const Blog = () => {
   const postsPerPage = 6;
 
   const blogPosts = blogData;
-  
 
   // Pagination logic
   const totalPages = Math.ceil(blogPosts.length / postsPerPage);
 
   const currentPosts = blogPosts.slice(
     (currentPage - 1) * postsPerPage,
-    currentPage * postsPerPage
+    currentPage * postsPerPage,
   );
 
   const handlePageChange = (pageNumber) => {
@@ -42,12 +47,12 @@ const Blog = () => {
 
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       className="font-sans text-gray-800 bg-white"
@@ -56,10 +61,9 @@ const Blog = () => {
       <InnerPageHeader title="Blog" breadcrumb="Blog" />
 
       <div className="max-w-[1400px] mx-auto px-4 lg:px-12 py-16">
-
         {/* Blog Grid */}
         <motion.div
-          key={currentPage} 
+          key={currentPage}
           variants={staggerContainer}
           initial="initial"
           animate="animate"
@@ -74,10 +78,9 @@ const Blog = () => {
               className="group cursor-pointer"
             >
               <div className="bg-white border border-[#D9D9D9] rounded-2xl overflow-hidden hover:shadow-lg transition h-full flex flex-col">
-                
                 {/* Image */}
                 <div className="aspect-[41/25] shrink-0 overflow-hidden">
-                  <img 
+                  <img
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
@@ -90,7 +93,7 @@ const Blog = () => {
                     {post.category}
                   </span>
 
-                  <h2 className="text-lg font-bold mb-2 line-clamp-3 text-[#5e5e5e] group-hover:text-[#AFCB12]">
+                  <h2 className="text-[20px] md:text-[16px] font-bold mb-2 line-clamp-3 text-[#5e5e5e] group-hover:text-[#AFCB12]">
                     {post.title}
                   </h2>
 
@@ -116,10 +119,13 @@ const Blog = () => {
                     to={`/blog/${post.id}`}
                     className="flex items-center gap-2 text-[#AFCB12] text-sm font-semibold"
                   >
-                    Read More <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
+                    Read More{" "}
+                    <ArrowRight
+                      size={15}
+                      className="transition-transform group-hover:translate-x-1"
+                    />
                   </Link>
                 </div>
-
               </div>
             </motion.article>
           ))}
@@ -128,7 +134,6 @@ const Blog = () => {
         {/* Pagination */}
         {totalPages > 1 && (
           <div className="flex justify-center items-center gap-2 mt-12">
-            
             {/* Prev */}
             <button
               onClick={() => handlePageChange(currentPage - 1)}
@@ -146,9 +151,7 @@ const Blog = () => {
                   key={page}
                   onClick={() => handlePageChange(page)}
                   className={`w-10 h-10 rounded-full cursor-pointer ${
-                    currentPage === page
-                      ? 'bg-[#C5D92D] text-black'
-                      : 'border'
+                    currentPage === page ? "bg-[#C5D92D] text-black" : "border"
                   }`}
                 >
                   {page}
@@ -164,10 +167,8 @@ const Blog = () => {
             >
               <ChevronRight size={18} />
             </button>
-
           </div>
         )}
-
       </div>
     </motion.div>
   );
