@@ -176,25 +176,24 @@ const PPOReadinessChecklist = () => {
         breadcrumb="PPO Network Readiness"
       />
 
-      <section className="max-w-6xl mx-auto px-6 py-12 md:py-20">
+      <section className="max-w-[1400px] mx-auto lg:px-12 px-6 py-12 md:py-20">
         <Motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-start"
+          className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center"
         >
           <div>
             {/*<p className="inline-flex items-center rounded-full bg-[#C5D92D]/20 text-[#1a2e05] px-3 py-1 text-sm font-semibold mb-4">
               BEANbite practice assessment
             </p>*/}
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
-              Should your practice go in-network?
+              Your Next PPO Decision Deserves More Than a Gut Feeling
             </h2>
             <p className="text-base text-slate-600 leading-relaxed mb-6">
-              An open schedule does not automatically mean you need more
-              insurance plans. Evaluate your numbers, capacity, case acceptance,
-              revenue cycle, and PPO exposure before accepting lower contracted
-              fees.
+              Should your practice go in-network? Answer these 10 questions
+              about your collections, patient demand, financial performance, and
+              operational readiness to help determine your next move.
             </p>
             <div className="flex flex-wrap gap-3">
               <CtaButton href="#checklist">Start assessment</CtaButton>

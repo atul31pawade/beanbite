@@ -86,18 +86,18 @@ const BillingServices = () => {
         breadcrumb="Services / Billing"
       />
 
-      <section className="relative overflow-hidden bg-[#F7F9F2] px-6 py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F7F9F2] px-6 py-16 md:py-16">
         <div className="pointer-events-none absolute -left-28 -top-24 h-80 w-80 rounded-full bg-[#C5D92D]/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -right-20 h-96 w-96 rounded-full bg-[#002060]/5 blur-3xl" />
 
         <div className="relative mx-auto max-w-[1400px] lg:px-6">
-          <Reveal className="mb-12 max-w-3xl">
+          {/*<Reveal className="mb-12 max-w-3xl">
             <p className="text-base leading-8 text-gray-600">
               From same-day claims to denial-fighting follow-ups, BEANbite keeps
               every account moving — so your team stays in the chair and out of
               the claim portal.
             </p>
-          </Reveal>
+          </Reveal>*/}
 
           <Reveal delay={0.15} y={40}>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 items-start">
