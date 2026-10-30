@@ -18,10 +18,6 @@ const Navbar = () => {
       label: "Practice Consulting and Audit Support",
     },
     { path: "/services/ppo-fee-negotiations", label: "PPO Fee Negotiations" },
-    {
-      path: "/services/ppo-network-readiness-checklist",
-      label: "PPO Network Readiness Checklist",
-    },
   ];
 
   // Helper to check if a link is active
@@ -40,9 +36,9 @@ const Navbar = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
               <img
-                src="/homeOne/beanbite-final.png"
+                src="/homeOne/beanbite-final.svg"
                 alt="BEANbite"
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
           </div>
