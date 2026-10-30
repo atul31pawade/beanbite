@@ -36,9 +36,9 @@ const Navbar = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
               <img
-                src="/homeOne/beanbite-final.svg"
+                src="/homeOne/beanbite-navbar.svg"
                 alt="BEANbite"
-                className="h-20 w-auto"
+                className="h-14 sm:h-16 lg:h-18 w-auto"
               />
             </Link>
           </div>
