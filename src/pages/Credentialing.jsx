@@ -108,7 +108,7 @@ const Credentialing = () => {
       />
 
       {/* 1. Top Section: We Cater to Start-up... */}
-      <section className="max-w-[1400px] mx-auto px-6 lg:px-16 py-20">
+      <section className="max-w-[1400px] mx-auto px-6 lg:px-16 py-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT SIDE */}
           <motion.div

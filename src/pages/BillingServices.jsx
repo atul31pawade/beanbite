@@ -86,7 +86,7 @@ const BillingServices = () => {
         breadcrumb="Services / Billing"
       />
 
-      <section className="relative overflow-hidden bg-[#F7F9F2] px-6 py-16 md:py-16">
+      <section className="relative overflow-hidden bg-[#F7F9F2] px-6 py-16 md:py-10">
         <div className="pointer-events-none absolute -left-28 -top-24 h-80 w-80 rounded-full bg-[#C5D92D]/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -right-20 h-96 w-96 rounded-full bg-[#002060]/5 blur-3xl" />
 

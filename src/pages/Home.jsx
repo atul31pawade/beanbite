@@ -31,7 +31,7 @@ const heroSlides = [
     image: "/hero/13.jpg",
     lines: ["Keep Every Dollar", "You've Drilled For."],
     paragraphs: [
-      "You can increase your bottom line while doing zero extra dentistry!",
+      " Increase Your Practice Revenue Without Doing More Dentistry",
       "Do you feel some insurances could provide a better compensation on their contracted fees?",
     ],
   },

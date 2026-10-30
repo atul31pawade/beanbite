@@ -79,7 +79,7 @@ const ConsultingAndAudit = () => {
       />
 
       {/* 1. Top Section */}
-      <section className="max-w-[1400px] mx-auto px-6 lg:px-16 py-20">
+      <section className="max-w-[1400px] mx-auto px-6 lg:px-16 py-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
             <p className="text-gray-600 text-base leading-relaxed mb-2">
@@ -103,7 +103,7 @@ const ConsultingAndAudit = () => {
             <img
               src="/services/consulting-audit/practice-audit-review.jpg"
               alt="Dental Consulting & Audit"
-              className="rounded-2xl shadow-xl w-full h-[240px] sm:h-[400px] lg:h-[375px] object-cover object-[center_15%]"
+              className="rounded-2xl shadow-xl w-full h-[240px] sm:h-[400px] lg:h-[280px] object-cover"
             />
           </div>
         </div>

@@ -30,27 +30,27 @@ const results = [
 const analysisItems = [
   [
     "Production by Insurance",
-    "How much production is associated with each plan? A nationally recognized carrier may matter far less if it represents minimal production.",
+    "How much production is actually associated with each plan? A nationally recognized carrier may matter far less than you assumed if it represents minimal production.",
   ],
   [
     "Patient Count by Plan",
-    "How many active patients are covered by each PPO? A plan representing hundreds of patients requires a different strategy.",
+    "How many active patients are covered by each PPO? A plan representing hundreds of patients requires a different strategy than one representing a handful.",
   ],
   [
     "Procedure-Level Utilization",
-    "Which CDT codes drive your practice? Your top procedures affect your negotiation opportunities.",
+    "Which CDT codes are driving your practice? Your top procedures may be very different from your dental colleagues in other specialties—and that affects negotiation strategy.",
   ],
   [
     "Current Reimbursement Baseline",
-    "What are you actually being paid today? We establish the baseline before evaluating improvement.",
+    "What are you actually being paid today? We establish the baseline before evaluating improvement opportunities or alternative networks.",
   ],
   [
     "Your Office Fee Schedule",
-    "Your full fee schedule impacts both your negotiating position and overall reimbursement strategy.",
+    "How are your established full fees positioned against current contracted reimbursement? This impacts both your negotiating position and your practice's financial footing.",
   ],
   [
     "Direct vs. Umbrella Networks",
-    "We evaluate both direct PPO negotiation and stronger alternative network arrangements.",
+    "Is a stronger opportunity available through an alternative network arrangement? We evaluate both direct PPO negotiation and available umbrella network structures.",
   ],
 ];
 const steps = [
@@ -123,7 +123,7 @@ const PPOFeeNegotiations = () => {
         title="PPO Fee Negotiations"
         breadcrumb="Services / PPO Fee Negotiations"
       />
-      <section className="bg-[#F7F9F2] py-16 md:py-16">
+      <section className="bg-[#F7F9F2] py-16 md:py-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid lg:grid-cols-[1.05fr_.95fr] gap-12 items-center">
           <MotionDiv {...reveal}>
             <p className="text-base text-gray-600 leading-relaxed mb-5">
@@ -167,9 +167,12 @@ const PPOFeeNegotiations = () => {
               Carrier-by-carrier improvements
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              Recent client cases across direct participation and umbrella
-              network arrangements. Individual results vary based on your
-              practice, carrier policies, and current terms.
+              <b>Recent Carrier Negotiations (Sample Results)</b>
+              <br />
+              These results represent recent client cases across direct
+              participation and umbrella network arrangements. Individual
+              results vary based on your practice's specific situation, carrier
+              policies, and current contracting terms.
             </p>
           </div>
           <div className="overflow-x-auto border border-gray-200 rounded-[4px]">
@@ -177,11 +180,11 @@ const PPOFeeNegotiations = () => {
               <thead className="bg-[#383838] text-white">
                 <tr>
                   {[
-                    "Carrier",
-                    "Participation",
-                    "Before",
-                    "After",
-                    "Change",
+                    "Carrier / Network",
+                    "Participation Type",
+                    "Initial Fee %",
+                    "Negotiated Fee %",
+                    "Improvement",
                   ].map((heading) => (
                     <th key={heading} className="px-5 py-4">
                       {heading}
@@ -209,19 +212,30 @@ const PPOFeeNegotiations = () => {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-4">
-            Results shown represent specific cases. Not all negotiations result
-            in improvements, and outcomes depend on your practice&apos;s
-            situation, carrier policies, and market conditions.
+            Results shown represent negotiation outcomes on specific cases. Not
+            all negotiations result in improvements. Some practices may find
+            their current contracts are already competitive and require no
+            changes. Outcomes depend on your practice's situation, carrier
+            policies, and market conditions.
           </p>
         </MotionDiv>
       </section>
       <section className="bg-[#383838] py-16">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-white text-center">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid sm:grid-cols-1 lg:grid-cols-1 gap-6 text-white text-center">
+          <p className="text-white mb-4 text-[18px]">
+            <b>
+              Here's what we've actually negotiated for dental practices like
+              <br />
+              yours across major carriers.
+            </b>
+          </p>
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-white text-center">
           {[
             ["37%", "Largest improvement", "Humana and Mutual of Omaha"],
             ["33%", "Cigna DPPO", "Direct participation"],
             ["17%", "Assurance DHA", "Direct participation"],
-            ["6-17%", "Typical improvement", "Across many negotiations"],
+            ["14%", "Average improvement", "Across Multiple Carriers"],
           ].map((item) => (
             <div
               key={item[1]}
@@ -234,180 +248,8 @@ const PPOFeeNegotiations = () => {
           ))}
         </div>
       </section>
-      <section className="py-16 md:py-20">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
-          <motion.div {...reveal} className="max-w-3xl mb-10">
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
-              The BEANbite difference
-            </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
-              PPO negotiation is about more than asking for higher fees.
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              A successful PPO strategy begins by understanding your actual
-              practice data and building decisions on facts instead of
-              assumptions.
-            </p>
-          </motion.div>
-          <div className="grid md:grid-cols-2 gap-4">
-            {[
-              "What your practice is currently being paid by each plan",
-              "Which PPOs actually matter to your patient base",
-              "How many patients are associated with each plan",
-              "How much production each plan represents",
-              "Which procedures drive your production",
-              "Whether stronger network opportunities are available",
-              "Whether maintaining a particular PPO still makes financial sense",
-              "Whether your existing direct PPO fees can be renegotiated",
-            ].map((item) => (
-              <div
-                key={item}
-                className="flex gap-3 items-start border-b border-gray-200 pb-4"
-              >
-                <CheckCircle2 className="text-[#AFCB12] shrink-0" size={21} />
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
       <section className="bg-[#F7F9F2] py-16 md:py-20">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
-          <div className="text-center mb-10">
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
-              What we analyze
-            </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
-              A strategy built around your practice
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {analysisItems.map(([title, text]) => (
-              <motion.div
-                {...reveal}
-                key={title}
-                className="bg-white p-6 border border-gray-100 rounded-[4px]"
-              >
-                <div className="w-10 h-10 bg-[#AFCB12]/15 flex items-center justify-center rounded-full mb-5">
-                  <BarChart3 className="text-[#7d9200]" size={20} />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  {title}
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  {text}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="py-16 md:py-20">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
-              From data to implementation
-            </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
-              Our 11-step PPO strategy process
-            </h2>
-            <p className="text-gray-600 mt-4">
-              From data analysis to implementation verification, here&apos;s
-              exactly how we work.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-x-10 gap-y-6">
-            {steps.map((step, i) => (
-              <div key={step} className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-[#AFCB12] text-white flex items-center justify-center font-bold">
-                  {i + 1}
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900">{step}</h3>
-                  <p className="text-base text-gray-600 mt-1">
-                    {
-                      [
-                        "We request reports showing production, patient count, utilization, and contracted fees by insurance.",
-                        "We confirm your direct contracts, umbrella arrangements, and network hierarchies.",
-                        "We identify which insurance relationships matter based on real utilization and production.",
-                        "We evaluate contracted fees across your strategically important procedures.",
-                        "We compare your full fee schedule against regional benchmarks.",
-                        "We pursue improved reimbursement with documented evidence where appropriate.",
-                        "We compare alternative network arrangements against existing contracts.",
-                        "We calculate the financial effect of reimbursement changes.",
-                        "We recommend keeping, renegotiating, restructuring, or terminating contracts.",
-                        "We manage credentialing, contracting, fee loading, and network updates.",
-                        "We review actual claims to confirm the negotiated arrangement.",
-                      ][i]
-                    }
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="bg-[#383838] text-white py-16">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
-          <div className="grid md:grid-cols-3 gap-6 text-center">
-            <div>
-              <TrendingUp className="text-[#C5D92D] mx-auto mb-3" size={32} />
-              <h3 className="font-bold text-xl mb-2">Direct PPO negotiation</h3>
-              <p className="text-white/70">
-                6% to 37% based on completed client cases.
-              </p>
-            </div>
-            <div>
-              <Network className="text-[#C5D92D] mx-auto mb-3" size={32} />
-              <h3 className="font-bold text-xl mb-2">Umbrella networks</h3>
-              <p className="text-white/70">
-                14% to 37% based on available arrangements.
-              </p>
-            </div>
-            <div>
-              <ShieldCheck className="text-[#C5D92D] mx-auto mb-3" size={32} />
-              <h3 className="font-bold text-xl mb-2">Realistic expectations</h3>
-              <p className="text-white/70">
-                Some payers decline, and some current contracts are already
-                strong.
-              </p>
-            </div>
-          </div>
-          <div className="max-w-2xl mx-auto text-center mt-12 border-t border-white/20 pt-10">
-            <h3 className="text-2xl font-bold mb-3">
-              The real measure of success
-            </h3>
-            <p className="text-white/75 leading-relaxed">
-              A large fee increase on a low-production procedure may deliver
-              less value than a smaller increase on your high-volume procedures.
-              We measure actual financial impact, not percentage improvement
-              alone.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="py-16 md:py-20">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12 grid md:grid-cols-[1fr_auto] gap-8 items-center">
-          <div>
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
-              Strategic participation, not maximum participation
-            </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
-              Stop letting old PPO decisions make new business decisions.
-            </h2>
-            <p className="text-gray-600 leading-relaxed max-w-2xl">
-              Your PPO relationships should reflect your practice economics
-              today. Let&apos;s analyze what your contracts are actually
-              contributing and build a strategy that makes financial sense.
-            </p>
-          </div>
-          <CtaButton to="/contact" size="lg" className="whitespace-nowrap">
-            Start your analysis
-          </CtaButton>
-        </div>
-      </section>
-      <section className="bg-[#F7F9F2] py-16 md:py-20">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Visual insights
@@ -416,7 +258,7 @@ const PPOFeeNegotiations = () => {
               PPO strategy at a glance
             </h2>
             <p className="text-gray-600 mt-4">
-              These visual snapshots help you understand the full picture of
+              These infographics help you understand the full picture of
               strategic PPO participation.
             </p>
           </div>
@@ -424,33 +266,33 @@ const PPOFeeNegotiations = () => {
             {[
               [
                 "PPO Participation Breakdown",
-                "See the balance between direct contracts, umbrella networks, and out-of-network participation.",
-                "Identify which PPOs matter most to your practice",
+                "Shows typical practice distribution across direct contracts, umbrella networks, and out-of-network participation.",
+                "Helps identify which PPOs matter most to your practice",
               ],
               [
                 "Fee Improvement Potential",
-                "Compare current reimbursement rates by carrier to uncover negotiation opportunities.",
-                "Reveal which carriers may be underpaying you",
+                "Compares current reimbursement rates by carrier, showing where negotiation opportunities exist.",
+                "Reveals which carriers are underpaying you",
               ],
               [
                 "A/R Impact Timeline",
-                "Track how improved fee schedules and better processes can reduce days in A/R over 6-12 months.",
-                "Demonstrate potential cash-flow improvement",
+                "Shows how improved fee schedules and better processes reduce days in A/R over 6-12 months.",
+                "Demonstrates cash flow improvement",
               ],
               [
                 "Production by Insurance Mix",
-                "Break down production by PPO to identify high-value and low-value relationships.",
-                "Prioritize negotiations strategically",
+                "Breaks down your practice's production by PPO to identify high-value vs. low-value relationships.",
+                "Strategic prioritization for negotiation",
               ],
               [
                 "Network Strategy Comparison",
-                "Compare keeping existing contracts with transitioning to higher-paying network options.",
-                "Understand the financial trade-offs",
+                "Side-by-side analysis of keeping existing contracts vs. transitioning to higher-paying networks.",
+                "Financial trade-off analysis",
               ],
               [
                 "Carrier Fee Schedule Trends",
-                "Review how PPO fees have changed over time and identify contracts trending downward.",
-                "Know when renegotiation is critical",
+                "Shows how PPO fees have changed over 3-5 years, revealing whether your current contracts are trending down.",
+                "Identifies when renegotiation is critical",
               ],
             ].map(([title, text, takeaway]) => (
               <div
@@ -478,7 +320,76 @@ const PPOFeeNegotiations = () => {
         </div>
       </section>
       <section className="py-16 md:py-20">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <motion.div {...reveal} className="mb-10 text-center">
+            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+              The BEANbite difference
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
+              PPO negotiation is about more than asking for higher fees.
+            </h2>
+            <p className="text-gray-600 leading-relaxed">
+              A successful PPO strategy begins by understanding your actual
+              practice data—then building decisions on facts instead of
+              assumptions.
+            </p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              "What your practice is currently being paid by each plan",
+              "Which PPOs actually matter to your patient base",
+              "How many patients are associated with each plan",
+              "How much production each plan represents",
+              "Which procedures drive your production",
+              "Whether your existing direct PPO fees can be renegotiated",
+              "Whether stronger network opportunities are available",
+              "Whether maintaining a particular PPO still makes financial sense",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex gap-3 items-start border-b border-gray-200 pb-4"
+              >
+                <CheckCircle2 className="text-[#AFCB12] shrink-0" size={21} />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#F7F9F2] py-16 md:py-20">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div className="text-center mb-10">
+            <p className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
+              What we analyze
+            </p>
+            <h2 className="text-gray-600 leading-relaxed">
+              For established practices, we dive deeper than other PPO
+              consulting firms. Here's what the data reveals.
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {analysisItems.map(([title, text]) => (
+              <motion.div
+                {...reveal}
+                key={title}
+                className="bg-white p-6 border border-gray-100 rounded-[4px]"
+              >
+                <div className="w-10 h-10 bg-[#AFCB12]/15 flex items-center justify-center rounded-full mb-5">
+                  <BarChart3 className="text-[#7d9200]" size={20} />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  {title}
+                </h3>
+                <p className="text-base text-gray-600 leading-relaxed">
+                  {text}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-16 md:py-20">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               A different approach
@@ -487,8 +398,8 @@ const PPOFeeNegotiations = () => {
               How BEANbite differs from other PPO consulting firms
             </h2>
             <p className="text-gray-600 mt-4">
-              We do not promise guaranteed increases. We deliver smarter
-              strategy backed by real results.
+              We don't promise guaranteed increases. We deliver smarter strategy
+              backed by real results.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -497,7 +408,7 @@ const PPOFeeNegotiations = () => {
                 Typical PPO consultants
               </h3>
               {[
-                "Negotiate higher PPO fees and hope",
+                "Negotiate higher PPO fees (hoping)",
                 "Focus primarily on direct contracts",
                 "Present offers and fee schedules",
                 "Hand off implementation to your team",
@@ -516,23 +427,150 @@ const PPOFeeNegotiations = () => {
               </h3>
               {[
                 "Analyze actual practice data first",
-                "Evaluate direct and umbrella networks",
+                "Evaluate direct AND umbrella networks",
                 "Develop strategy for your specific situation",
                 "Verify reimbursement on actual EOBs",
                 "Provide ongoing PPO management",
-                "Measure success by financial impact",
+                "Measure success by financial impact to your practice",
               ].map((item) => (
                 <p key={item} className="flex gap-3 mb-4">
                   <CheckCircle2 className="text-[#C5D92D] shrink-0" size={18} />
                   {item}
                 </p>
               ))}
+              <span class="badge">Founder: DDS + Office Manager</span>
             </div>
           </div>
         </div>
       </section>
+      <section className="py-16 md:py-20">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+              From data to implementation
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
+              Our 11-step PPO strategy process
+            </h2>
+            <p className="text-gray-600 mt-4">
+              From data analysis to implementation verification—here's exactly
+              how we work.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-x-10 gap-y-6">
+            {steps.map((step, i) => (
+              <div key={step} className="flex gap-4">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-[#AFCB12] text-white flex items-center justify-center font-bold">
+                  {i + 1}
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900">{step}</h3>
+                  <p className="text-base text-gray-600 mt-1">
+                    {
+                      [
+                        "We request reports from your practice-management software showing production, patient count, utilization, and contracted fees by insurance.",
+                        "We confirm how your practice currently participates with each payer and network—direct contracts, umbrella arrangements, network hierarchies.",
+                        "We determine which insurance relationships actually matter to your practice based on real patient utilization and production.",
+                        "We evaluate contracted fees across your strategically important procedures and assess where you're being paid competitively vs. where you're leaving money on the table.",
+                        "We evaluate your full fee schedule against regional benchmarks. Your office fees impact both your negotiating position and your overall reimbursement strategy.",
+                        "Where direct PPO negotiation is appropriate and available, we pursue improved reimbursement with documented evidence supporting the request.",
+                        "Where available, we compare alternative network arrangements against your existing direct contracts—weighing reimbursement, access, and participation implications.",
+                        "We look beyond percentage increases and calculate how reimbursement changes affect your practice based on your actual procedure mix and utilization.",
+                        "Based on the analysis, we recommend: keeping current contracts, renegotiating direct contracts, evaluating umbrella networks, restructuring overlapping relationships, or terminating underperforming PPOs.",
+                        "If changes are approved, we manage credentialing, contracting, fee schedule loading, and any necessary network updates.",
+                        "Once changes become effective, we review actual claims to confirm reimbursement matches the negotiated arrangement. This is where the real test happens.",
+                      ][i]
+                    }
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#383838] text-white py-16">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div className="text-center mx-auto mb-12">
+            <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
+              Realistic Expectations for PPO Fee Improvements
+            </h2>
+            <p className="text-white mt-4">
+              Based on actual client results, here's what improvement looks
+              like.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div>
+              <TrendingUp className="text-[#C5D92D] mx-auto mb-3" size={32} />
+              <h3 className="font-bold text-xl mb-2">Direct PPO negotiation</h3>
+              <p className="text-white/70">
+                6% to 37% based on completed client cases.
+              </p>
+            </div>
+            <div>
+              <Network className="text-[#C5D92D] mx-auto mb-3" size={32} />
+              <h3 className="font-bold text-xl mb-2">
+                Umbrella/Alternative Networks
+              </h3>
+              <p className="text-white/70">
+                14% to 37% based on available arrangements.
+              </p>
+            </div>
+            <div>
+              <ShieldCheck className="text-[#C5D92D] mx-auto mb-3" size={32} />
+              <h3 className="font-bold text-xl mb-2">
+                Not All Negotiations Succeed
+              </h3>
+              <p className="text-white/70">
+                Some payers decline. Some offer less than requested. Some
+                already have strong contracts.
+              </p>
+            </div>
+          </div>
+          <div className="max-w-2xl mx-auto text-center mt-12 border-t border-white/20 pt-10">
+            <h3 className="text-2xl font-bold mb-3">
+              The real measure of success
+            </h3>
+            <p className="text-white/75 leading-relaxed">
+              A 37% fee increase on a procedure that represents minimal
+              production may deliver far less financial benefit than a smaller
+              increase on your high-volume procedures.
+              <br />
+              <br />
+              <b>
+                We measure success not by percentage improvement alone, but by
+                actual financial impact to your practice.
+              </b>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="py-16 md:py-20">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid md:grid-cols-[1fr_auto] gap-8 items-center">
+          <div>
+            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+              Strategic participation, not maximum participation
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
+              Stop letting old PPO decisions make new business decisions.
+            </h2>
+            <p className="text-gray-600 leading-relaxed max-w-2xl">
+              Your PPO relationships should reflect your practice economics
+              today—not decisions made years ago under different circumstances.
+              <br />
+              Let&apos;s analyze what your PPO contracts are actually
+              contributing to your practice—and build a strategy that makes
+              financial sense.
+            </p>
+          </div>
+          <CtaButton to="/contact" size="lg" className="whitespace-nowrap">
+            Start your analysis
+          </CtaButton>
+        </div>
+      </section>
+
       <section className="bg-[#383838] py-16">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center text-white max-w-2xl mx-auto mb-10">
             <p className="font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Hear from practices we&apos;ve helped
@@ -543,9 +581,9 @@ const PPOFeeNegotiations = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {[
-              "Within 4 months of working with BEANbite on outstanding claims, they recovered a 6-digit dollar amount. Santosh gets personally involved in every activity.",
-              "BEANbite helped us get credentialed with multiple insurance carriers and negotiated substantially better fee schedules. Their team is thorough and efficient.",
-              "BEANbite not only advised me on software and claims processes, they trained my team repeatedly to make sure we implemented it correctly.",
+              "Within 4 months of working with BEANbite on outstanding claims, they recovered a 6-digit dollar amount. They came in and fixed issues one by one. Santosh gets personally involved in every activity.",
+              "BEANbite helped us get credentialed with multiple insurance carriers we selected, and negotiated substantially better fee schedules with Aetna, Guardian, and others. Their team is thorough and efficient.",
+              "My A/R was down due to staff turnover and technical issues. BEANbite not only advised me on software and claims processes—they trained my team repeatedly to make sure we implemented it correctly.",
             ].map((quote, i) => (
               <div
                 key={quote}
@@ -566,13 +604,22 @@ const PPOFeeNegotiations = () => {
                     ][i]
                   }
                 </p>
+                <p className="font-normal text-gray-500 text-sm">
+                  {
+                    [
+                      "A/R Recovery & Revenue Cycle Client",
+                      "Fee Negotiation & Credentialing Client",
+                      "Operational & Revenue Cycle Client",
+                    ][i]
+                  }
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
       <section className="py-16 md:py-20">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12 grid lg:grid-cols-[.9fr_1.1fr] gap-12 items-center">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid lg:grid-cols-[.9fr_1.1fr] gap-12 items-center">
           <div>
             <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Why practices choose BEANbite
@@ -581,19 +628,20 @@ const PPOFeeNegotiations = () => {
               A partner who understands the full ecosystem.
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              BEANbite&apos;s founder, Dr. Santosh Rohira, started as a dental
-              office manager. She lived these problems and built BEANbite to
-              solve them differently.
+              Most PPO consultants started in consulting. BEANbite&apos;s
+              founder, Dr. Santosh Rohira, started as a dental office manager.
+              She lived these problems—and built BEANbite to solve them
+              differently.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              "We do not promise guaranteed increases. Insurance companies make final decisions.",
-              "We use your actual production, patients, and procedures, not market assumptions.",
-              "We evaluate direct and umbrella networks to find the strongest opportunity.",
-              "We understand billing, credentialing, claims processing, and EOB verification.",
-              "We measure financial impact, not percentage increases alone.",
-              "We verify outcomes on actual EOBs after a new fee schedule takes effect.",
+              "We do not promise guaranteed increases. Insurance companies make final decisions. We give realistic analysis.",
+              "We use your actual data. Not assumptions about your market. Your production, patients, and procedures.",
+              "We evaluate both direct and umbrella networks. The strongest opportunity might not be renegotiating your current contract.",
+              "We understand the full ecosystem. Billing, credentialing, claims processing, EOB verification—not just negotiation.",
+              "We measure by financial impact. Not percentage increases. How much does this actually improve your practice revenue?",
+              "We verify outcomes on actual EOBs. A new fee schedule means nothing until claims process correctly.",
             ].map((item) => (
               <div
                 key={item}

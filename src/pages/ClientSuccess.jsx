@@ -107,7 +107,7 @@ const ClientSuccess = () => {
       <InnerPageHeader title="Client Success" breadcrumb="Client Success" />
 
       {/* ================= CLIENT SECTION ================= */}
-      <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-16 grid lg:grid-cols-2 gap-10 items-center">
+      <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-10 grid lg:grid-cols-2 gap-10 items-center">
         {/* LEFT */}
         <motion.div variants={fadeLeft} initial="hidden" whileInView="show">
           <span className="text-[#AFCB12] font-semibold mb-2 block">
@@ -119,8 +119,8 @@ const ClientSuccess = () => {
           </h2>
 
           <p className="text-gray-600">
-            We decided to deal with insurance carriers so that they prioritize
-            patient care.
+            We help healthcare practices navigate insurance complexities, so
+            they can focus on what matters most: patient care.
           </p>
         </motion.div>
 

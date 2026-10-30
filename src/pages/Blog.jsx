@@ -60,7 +60,7 @@ const Blog = () => {
       {/* Header */}
       <InnerPageHeader title="Blog" breadcrumb="Blog" />
 
-      <div className="max-w-[1400px] mx-auto px-4 lg:px-12 py-16">
+      <div className="max-w-[1400px] mx-auto px-4 lg:px-12 py-10">
         {/* Blog Grid */}
         <motion.div
           key={currentPage}
