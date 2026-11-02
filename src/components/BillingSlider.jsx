@@ -47,7 +47,7 @@ const BillingSlider = () => {
                   className={`relative p-8 md:p-10 rounded-[2.5rem] transition-all duration-500 min-h-[520px] flex flex-col border
                   
                   ${isActive
-                      ? "bg-[#AFCB12] text-white shadow-2xl scale-105 border-transparent"
+                      ? "bg-[#8CB429] text-white shadow-2xl scale-105 border-transparent"
                       : "bg-white text-gray-900 border-gray-100 scale-95 opacity-60"
                     }`}
                 >
@@ -67,7 +67,7 @@ const BillingSlider = () => {
                     {/* ICON */}
                     <div
                       className={`w-14 h-14 rounded-full flex items-center justify-center mb-6
-                      ${isActive ? "bg-white/20" : "bg-[#C5D92D]"}`}
+                      ${isActive ? "bg-white/20" : "bg-[#8CB429]"}`}
                     >
                       <img
                         src={slide.icon}

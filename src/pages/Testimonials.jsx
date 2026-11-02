@@ -51,7 +51,7 @@ const Testimonials = () => {
         >
           <div className="max-w-2xl">
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 tracking-tight">
-              Trusted by <span className="text-[#AFCB12]">Our Clients</span>
+              Trusted by <span className="text-[#8CB429]">Our Clients</span>
             </h2>
             <p className="text-gray-500 text-lg">
               We let our results speak for themselves. Explore the experiences of our clients.
@@ -64,7 +64,7 @@ const Testimonials = () => {
              </div>
              <div className="h-10 w-[1px] bg-gray-100"></div>
              <div className="text-center">
-                <p className="text-3xl font-bold text-[#AFCB12]">5.0</p>
+                <p className="text-3xl font-bold text-[#8CB429]">5.0</p>
                 <p className="text-xs text-gray-400 uppercase tracking-widest font-bold">Rating</p>
              </div>
           </div>
@@ -84,12 +84,12 @@ const Testimonials = () => {
                 className="group relative h-fit self-start"
               >
                 {/* Decorative background element that appears on hover */}
-                <div className="absolute inset-0 bg-[#AFCB12] rounded-[2.5rem] rotate-1 group-hover:rotate-3 transition-transform duration-300 opacity-0 group-hover:opacity-10"></div>
+                <div className="absolute inset-0 bg-[#8CB429] rounded-[2.5rem] rotate-1 group-hover:rotate-3 transition-transform duration-300 opacity-0 group-hover:opacity-10"></div>
                 
                 <div className="relative flex flex-col bg-white p-8 md:p-10 rounded-[2.5rem] border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] transition-all duration-300 overflow-hidden">
                   
                   {/* Floating Quote Icon */}
-                  <div className="absolute -top-4 -right-4 w-24 h-24 text-gray-50 group-hover:text-[#AFCB12]/10 transition-colors duration-500 pointer-events-none">
+                  <div className="absolute -top-4 -right-4 w-24 h-24 text-gray-50 group-hover:text-[#8CB429]/10 transition-colors duration-500 pointer-events-none">
                     <Quote size={80} fill="currentColor" />
                   </div>
 
@@ -101,7 +101,7 @@ const Testimonials = () => {
                         transition={{ delay: 0.3 + (i * 0.1) }}
                         key={i}
                       >
-                        <Star size={16} fill="#AFCB12" className="text-[#AFCB12]" />
+                        <Star size={16} fill="#8CB429" className="text-[#8CB429]" />
                       </motion.div>
                     ))}
                   </div>
@@ -129,7 +129,7 @@ const Testimonials = () => {
                     {/* Read More / Less Button */}
                     <button
                       onClick={() => toggleReadMore(index)}
-                      className="mt-4 text-[#AFCB12] font-semibold text-sm hover:underline cursor-pointer"
+                      className="mt-4 text-[#8CB429] font-semibold text-sm hover:underline cursor-pointer"
                     >
                       {expanded[index] ? "Read Less" : "Read More"}
                     </button>
@@ -141,12 +141,12 @@ const Testimonials = () => {
                         <div className="w-14 h-14 rounded-2xl bg-[#384d14] flex items-center justify-center font-black text-white text-xl shadow-lg transform -rotate-3 group-hover:rotate-0 transition-transform">
                         {review.name.charAt(0)}
                         </div>
-                        <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#AFCB12] rounded-full border-4 border-white flex items-center justify-center">
+                        <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#8CB429] rounded-full border-4 border-white flex items-center justify-center">
                             <MessageCircle size={10} className="text-white fill-current" />
                         </div>
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900 text-lg tracking-tight group-hover:text-[#AFCB12] transition-colors">{review.name}</h4>
+                      <h4 className="font-bold text-gray-900 text-lg tracking-tight group-hover:text-[#8CB429] transition-colors">{review.name}</h4>
                       <p className="text-[10px] text-gray-400 font-black uppercase tracking-[0.2em]">Client</p>
                     </div>
                   </div>

@@ -66,7 +66,7 @@ const WhoWeHelp = () => {
           viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto mb-14 lg:mb-20"
         >
-          {/* <span className="inline-flex px-5 py-2 rounded-full bg-[#AFCB12]/10 text-[#7A9200] font-semibold">
+          {/* <span className="inline-flex px-5 py-2 rounded-full bg-[#8CB429]/10 text-[#7A9200] font-semibold">
             Who We Help
           </span> */}
 
@@ -110,7 +110,7 @@ const WhoWeHelp = () => {
 
             return (
               <SwiperSlide key={index}>
-                <div className="group bg-white rounded-[28px] overflow-hidden shadow-md hover:shadow-xl border border-gray-200 hover:border-[#AFCB12] transition-all duration-300 h-full flex flex-col">
+                <div className="group bg-white rounded-[28px] overflow-hidden shadow-md hover:shadow-xl border border-gray-200 hover:border-[#8CB429] transition-all duration-300 h-full flex flex-col">
                   <div className="relative h-64 overflow-hidden">
                     <img
                       src={item.image}
@@ -118,7 +118,7 @@ const WhoWeHelp = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
-                    <div className="absolute bottom-5 left-5 w-14 h-14 rounded-2xl bg-[#AFCB12] flex items-center justify-center shadow-lg">
+                    <div className="absolute bottom-5 left-5 w-14 h-14 rounded-2xl bg-[#8CB429] flex items-center justify-center shadow-lg">
                       <Icon size={26} className="text-white" />
                     </div>
                   </div>
@@ -133,12 +133,12 @@ const WhoWeHelp = () => {
                     </p>
 
                     {/*<div className="mt-6 pt-5 border-t border-gray-100 flex items-center justify-between">
-                      <span className="text-[#AFCB12] font-semibold">
+                      <span className="text-[#8CB429] font-semibold">
                         Learn More
                       </span>
                       <ArrowRight
                         size={18}
-                        className="text-[#AFCB12] group-hover:translate-x-1 transition-transform duration-300"
+                        className="text-[#8CB429] group-hover:translate-x-1 transition-transform duration-300"
                       />
                     </div>*/}
                   </div>

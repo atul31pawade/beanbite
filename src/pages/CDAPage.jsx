@@ -66,7 +66,7 @@ const billingSupport = [
   }
 ];
 
-const inputClassName = 'mt-2 min-h-12 w-full rounded-md border border-slate-300 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#748A00] focus:ring-2 focus:ring-[#AFCB12]/30';
+const inputClassName = 'mt-2 min-h-12 w-full rounded-md border border-slate-300 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#748A00] focus:ring-2 focus:ring-[#8CB429]/30';
 
 const CDAPage = () => {
   const handleSubmit = (event) => {
@@ -89,7 +89,7 @@ const CDAPage = () => {
   return (
     <div className="bg-white text-slate-900">
       <section className="relative overflow-hidden border-b border-[#e5e9d0] bg-[#f7f9ef]">
-        <div className="absolute inset-y-0 right-0 hidden w-[42%] bg-[linear-gradient(135deg,rgba(197,217,45,0.14),rgba(197,217,45,0)_70%)] lg:block" aria-hidden="true" />
+        <div className="absolute inset-y-0 right-0 hidden w-[42%] bg-[linear-gradient(135deg,rgba(140,180,41,0.14),rgba(140,180,41,0)_70%)] lg:block" aria-hidden="true" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:py-20">
           <Reveal className="flex flex-col justify-center">
             <p className="mb-4 text-sm font-bold uppercase text-[#657600]">Dental billing support in California</p>
@@ -105,7 +105,7 @@ const CDAPage = () => {
                 <Link
                   key={service.to}
                   to={service.to}
-                  className="inline-flex min-h-10 items-center gap-2 rounded-full border border-[#d8dfb4] bg-white px-4 py-2 text-sm font-semibold text-[#394307] transition hover:border-[#9db814] hover:bg-[#f2f6dc]"
+                  className="inline-flex min-h-10 items-center gap-2 rounded-full border border-[#d8dfb4] bg-white px-4 py-2 text-sm font-semibold text-[#394307] transition hover:border-[#789A23] hover:bg-[#f2f6dc]"
                 >
                   {service.label}<ArrowRight size={14} aria-hidden="true" />
                 </Link>

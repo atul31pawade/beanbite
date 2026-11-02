@@ -98,7 +98,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-12">
-        <div className="bg-gradient-to-r from-[#AFCB12] to-[#6d8502] rounded-[40px] overflow-hidden flex flex-col md:flex-row shadow-xl relative min-h-[500px]">
+        <div className="bg-gradient-to-r from-[#8CB429] to-[#6d8502] rounded-[40px] overflow-hidden flex flex-col md:flex-row shadow-xl relative min-h-[500px]">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
@@ -176,7 +176,7 @@ export default function Testimonials() {
                   onClick={prevSlide}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="cursor-pointer w-11 h-11 rounded-full bg-[#728602] text-[#94AE00] border border-[#9db520] flex items-center justify-center hover:bg-[#658325]"
+                  className="cursor-pointer w-11 h-11 rounded-full bg-[#728602] text-[#8CB429] border border-[#8CB429] flex items-center justify-center hover:bg-[#658325]"
                 >
                   <ArrowLeft size={20} />
                 </motion.button>
@@ -185,7 +185,7 @@ export default function Testimonials() {
                   onClick={nextSlide}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="cursor-pointer w-11 h-11 rounded-full bg-[#C5D92D] text-white border border-[#C5D92D] flex items-center justify-center hover:bg-[#b0c41a]"
+                  className="cursor-pointer w-11 h-11 rounded-full bg-[#8CB429] text-white border border-[#8CB429] flex items-center justify-center hover:bg-[#789A23]"
                 >
                   <ArrowRight size={20} />
                 </motion.button>
@@ -201,7 +201,7 @@ export default function Testimonials() {
               className="relative z-10 h-[90%] w-auto object-contain object-bottom"
             />
 
-            <div className="absolute top-28 right-14 w-24 h-24 bg-[#AFCB12] rounded-full flex items-center justify-center text-[#4d6600]">
+            <div className="absolute top-28 right-14 w-24 h-24 bg-[#8CB429] rounded-full flex items-center justify-center text-[#4d6600]">
               <img
                 src="/homeOne/quote.png"
                 alt="Decorative"

@@ -15,7 +15,7 @@ const phases = [
     phase: "Phase 1",
     title: "Practice Assessment & Negotiated PPO Fees",
     icon: ClipboardCheck,
-    color: "bg-[#AFCB12]",
+    color: "bg-[#8CB429]",
 
     intro:
       "We begin by preparing your practice for successful insurance participation.",
@@ -149,7 +149,7 @@ export default function StrategicProcess() {
 
         <div className="text-center max-w-3xl mx-auto mb-14">
 
-          {/*<span className="inline-flex px-5 py-2 rounded-full bg-[#AFCB12]/10 text-[#7A9200] font-semibold">
+          {/*<span className="inline-flex px-5 py-2 rounded-full bg-[#8CB429]/10 text-[#7A9200] font-semibold">
             Our Strategic Process
           </span> */}
 
@@ -180,7 +180,7 @@ export default function StrategicProcess() {
       className={`relative cursor-pointer w-full flex flex-col lg:flex-row items-center lg:items-start gap-3 rounded-2xl p-3 transition-all duration-300 border text-center lg:text-left ${
         activeTab === index
           ? `${item.color} text-white border-transparent shadow-xl`
-          : "bg-white border-gray-200 text-gray-700 hover:border-[#AFCB12]"
+          : "bg-white border-gray-200 text-gray-700 hover:border-[#8CB429]"
       }`}
     >
 
@@ -291,7 +291,7 @@ export default function StrategicProcess() {
 
               <CheckCircle2
                 size={20}
-                className="text-[#AFCB12] mt-1 shrink-0"
+                className="text-[#8CB429] mt-1 shrink-0"
               />
 
               <p className="text-sm text-gray-700 leading-7">
@@ -310,7 +310,7 @@ export default function StrategicProcess() {
 
       <div>
 
-        <div className="bg-[#F8FAFC] border border-[#AFCB12]/20 rounded-3xl p-4">
+        <div className="bg-[#F8FAFC] border border-[#8CB429]/20 rounded-3xl p-4">
 
           <h4 className="text-xl font-bold text-gray-900 mb-4">
             {active.boxTitle}
@@ -342,12 +342,12 @@ export default function StrategicProcess() {
 initial={{ opacity: 0 }}
 animate={{ opacity: 1 }}
 transition={{ delay: 0.2 }}
-className="mt-4 rounded-3xl bg-gradient-to-r from-[#AFCB12]/10 to-white border border-[#AFCB12]/20 p-4"
+className="mt-4 rounded-3xl bg-gradient-to-r from-[#8CB429]/10 to-white border border-[#8CB429]/20 p-4"
 >
 
 <div className="flex items-start gap-5">
 
-<div className="w-14 h-14 rounded-2xl bg-[#AFCB12] flex items-center justify-center shrink-0">
+<div className="w-14 h-14 rounded-2xl bg-[#8CB429] flex items-center justify-center shrink-0">
 
 <CheckCircle2
 className="text-white"

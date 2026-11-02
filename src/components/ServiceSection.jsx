@@ -66,7 +66,7 @@ const ServicesSection = ({ headingClass = SECTION_HEADING }) => {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <span className="inline-block px-6 py-2 bg-[#AFCB12] text-black font-bold rounded-full text-lg mb-6">
+          <span className="inline-block px-6 py-2 bg-[#8CB429] text-black font-bold rounded-full text-lg mb-6">
             SERVICES
           </span>
 
@@ -127,7 +127,7 @@ const ServicesSection = ({ headingClass = SECTION_HEADING }) => {
           </Swiper>
 
           {/* Custom Navigation Buttons */}
-          <button className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-[#AFCB12] hover:text-white transition-all duration-300 -ml-4 md:-ml-6">
+          <button className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-[#8CB429] hover:text-white transition-all duration-300 -ml-4 md:-ml-6">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -142,7 +142,7 @@ const ServicesSection = ({ headingClass = SECTION_HEADING }) => {
               />
             </svg>
           </button>
-          <button className="swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-[#AFCB12] hover:text-white transition-all duration-300 -mr-4 md:-mr-6">
+          <button className="swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-[#8CB429] hover:text-white transition-all duration-300 -mr-4 md:-mr-6">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -180,7 +180,7 @@ const ServicesSection = ({ headingClass = SECTION_HEADING }) => {
         }
         
         .swiper-pagination-custom .swiper-pagination-bullet-active {
-          background: #AFCB12;
+          background: #8CB429;
           width: 30px;
           border-radius: 5px;
         }
@@ -211,7 +211,7 @@ const ServiceCard = ({ icon, title, desc, link }) => (
       }}
     />
 
-    <div className="w-20 h-20 bg-[#C5D92D] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+    <div className="w-20 h-20 bg-[#8CB429] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
       <img src={icon} alt={title} className="w-10 h-10 object-contain" />
     </div>
 

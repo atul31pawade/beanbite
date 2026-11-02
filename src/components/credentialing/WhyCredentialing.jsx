@@ -46,7 +46,7 @@ const WhyCredentialing = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            {/* <span className="inline-flex rounded-full bg-[#AFCB12]/10 px-5 py-2 text-[#7A9200] font-semibold">
+            {/* <span className="inline-flex rounded-full bg-[#8CB429]/10 px-5 py-2 text-[#7A9200] font-semibold">
               Why Credentialing Matters
             </span> */}
 
@@ -79,7 +79,7 @@ const WhyCredentialing = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="rounded-3xl bg-white border border-[#AFCB12]/20 p-8">
+            <div className="rounded-3xl bg-white border border-[#8CB429]/20 p-8">
               <h3 className="text-xl font-bold text-gray-900">
                 Professional credentialing helps your practice:
               </h3>
@@ -92,9 +92,9 @@ const WhyCredentialing = () => {
                       key={item.text}
                       className="flex gap-4 items-start"
                     >
-                      <div className="w-12 h-12 rounded-xl bg-[#AFCB12]/10 flex items-center justify-center shrink-0">
+                      <div className="w-12 h-12 rounded-xl bg-[#8CB429]/10 flex items-center justify-center shrink-0">
                         <Icon
-                          className="text-[#AFCB12]"
+                          className="text-[#8CB429]"
                           size={22}
                         />
                       </div>

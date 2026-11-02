@@ -100,14 +100,14 @@ const About = () => {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#C5D92D]/20 rounded-full -z-10"
+                className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#8CB429]/20 rounded-full -z-10"
               ></motion.div>
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="absolute -top-4 -right-4 w-32 h-32 bg-[#AFCB12]/10 rounded-full -z-10"
+                className="absolute -top-4 -right-4 w-32 h-32 bg-[#8CB429]/10 rounded-full -z-10"
               ></motion.div>
             </motion.div>
 
@@ -118,7 +118,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="inline-block px-6 py-2 bg-[#C5D92D] text-[#1a2e05] font-bold rounded-full text-sm mb-6"
+                className="inline-block px-6 py-2 bg-[#8CB429] text-[#1a2e05] font-bold rounded-full text-sm mb-6"
               >
                 Who We Are
               </motion.span>
@@ -131,7 +131,7 @@ const About = () => {
               >
                 Santosh Rohira, a dentist with international training, is the
                 visionary behind{" "}
-                <span className="text-[#AFCB12]">BEANbite</span>
+                <span className="text-[#8CB429]">BEANbite</span>
               </motion.h2>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -253,7 +253,7 @@ const About = () => {
                   whileInView={{ scale: 1, rotate: 0 }}
                   transition={{ type: "spring", stiffness: 200, delay: 0.31 }}
                   viewport={{ once: true }}
-                  className="absolute bottom-6 -left-22 md:-left-22 bg-[#C5D92D] rounded-full w-54 h-54 flex flex-col items-center justify-center text-left border-6 border-white"
+                  className="absolute bottom-6 -left-22 md:-left-22 bg-[#8CB429] rounded-full w-54 h-54 flex flex-col items-center justify-center text-left border-6 border-white"
                 >
                   <span className="text-6xl font-bold text-[#ffffff] leading-none">
                     20+

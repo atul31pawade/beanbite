@@ -50,7 +50,7 @@ const Services = () => {
           >
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
               Start Dental{" "}
-              <span className="text-[#C5D92D]">Billing Service</span>
+              <span className="text-[#8CB429]">Billing Service</span>
             </h2>
             <p className="text-base font-semibold text-gray-800 mb-6">
               No setup fee or long-term contract
@@ -93,7 +93,7 @@ const Services = () => {
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
-              className="absolute right-4 bottom-10 z-20 bg-[#C5D92D] p-5 rounded-xl shadow-xl max-w-[180px]"
+              className="absolute right-4 bottom-10 z-20 bg-[#8CB429] p-5 rounded-xl shadow-xl max-w-[180px]"
             >
               <p className="text-[#1a2e05] font-bold text-base leading-snug">
                 Trusted and funded by more than 675 companies
@@ -118,7 +118,7 @@ const Services = () => {
             <motion.div 
                initial={{ scale: 0 }}
                whileInView={{ scale: 1 }}
-               className="absolute right-4 bottom-10 z-20 bg-[#C5D92D] p-5 rounded-xl shadow-xl max-w-[180px]"
+               className="absolute right-4 bottom-10 z-20 bg-[#8CB429] p-5 rounded-xl shadow-xl max-w-[180px]"
             >
               <p className="text-[#1a2e05] font-bold text-base leading-snug">
                 Trusted and funded by more than 675 companies
@@ -162,7 +162,7 @@ const ServiceFeatureCard = ({ icon, title, description }) => (
     <div className="relative z-10 flex flex-col items-center h-full">
       <motion.div
         whileHover={{ rotate: 15 }}
-        className="w-16 h-16 bg-[#C5D92D] rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm"
+        className="w-16 h-16 bg-[#8CB429] rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm"
       >
         <img src={icon} alt={title} className="w-8 h-8 object-contain" />
       </motion.div>

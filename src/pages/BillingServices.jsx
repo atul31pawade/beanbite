@@ -105,8 +105,8 @@ const BillingServices = () => {
                           color: "#809900",
                         }}
                         whileInView={{
-                          backgroundColor: "#AFCB12",
-                          borderColor: "#AFCB12",
+                          backgroundColor: "#8CB429",
+                          borderColor: "#8CB429",
                           color: "#010851",
                         }}
                         viewport={viewport}
@@ -122,18 +122,18 @@ const BillingServices = () => {
                             whileInView={{ scaleY: 1 }}
                             viewport={viewport}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="block h-full w-full origin-top bg-[#AFCB12]"
+                            className="block h-full w-full origin-top bg-[#8CB429]"
                           />
                         </span>
                       )}
                     </div>
                     <div>
                       <div className="flex items-center gap-3">
-                        <span className="text-[11px] font-bold tracking-[0.16em] text-[#AFCB12]">
+                        <span className="text-[11px] font-bold tracking-[0.16em] text-[#8CB429]">
                           {String(index + 1).padStart(2, "0")}
                         </span>
-                        <span className="h-[3px] flex-1 rounded-full bg-[#AFCB12]/20">
-                          <span className="block h-full w-0 rounded-full bg-[#AFCB12] transition-all duration-700 group-hover:w-full"></span>
+                        <span className="h-[3px] flex-1 rounded-full bg-[#8CB429]/20">
+                          <span className="block h-full w-0 rounded-full bg-[#8CB429] transition-all duration-700 group-hover:w-full"></span>
                         </span>
                       </div>
                       <h3 className="mt-[5px] text-[17px] font-bold leading-snug text-[#5e5e5e]">

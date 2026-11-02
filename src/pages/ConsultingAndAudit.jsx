@@ -179,10 +179,10 @@ const ConsultingAndAudit = () => {
               {services.map((service, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <CheckCircle2
-                    className="text-[#AFCB12] shrink-0 mt-0.5"
+                    className="text-[#8CB429] shrink-0 mt-0.5"
                     size={18}
                   />
-                  <span className="text-gray-700 text-sm font-medium">
+                  <span className="text-gray-700 text-base font-medium">
                     {service}
                   </span>
                 </div>
@@ -195,7 +195,7 @@ const ConsultingAndAudit = () => {
       {/* 4. Workflow Section - No Read More/Less */}
       <section className="bg-white mb-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 text-center">
+          <h2 className="text-base font-bold text-[#5e5e5e] mb-4 text-center">
             Our 8-Step Practice Consulting Framework <br /> for Better Practice
             Performance
           </h2>
@@ -214,19 +214,19 @@ const ConsultingAndAudit = () => {
                 viewport={{ once: true }}
                 className="group relative"
               >
-                <div className="h-full bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-200 hover:border-[#AFCB12] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div className="h-full bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-200 hover:border-[#8CB429] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                   {/* Step Number */}
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#AFCB12]/10 text-[#AFCB12] font-bold text-sm group-hover:bg-[#AFCB12] group-hover:text-white transition-colors">
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#8CB429]/10 text-[#8CB429] font-bold text-sm group-hover:bg-[#8CB429] group-hover:text-white transition-colors">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <div className="h-1 flex-1 bg-[#AFCB12]/20 rounded-full">
-                      <div className="h-full w-0 group-hover:w-full bg-[#AFCB12] rounded-full transition-all duration-700"></div>
+                    <div className="h-1 flex-1 bg-[#8CB429]/20 rounded-full">
+                      <div className="h-full w-0 group-hover:w-full bg-[#8CB429] rounded-full transition-all duration-700"></div>
                     </div>
                   </div>
 
                   {/* Content - Full Answer Visible */}
-                  <h3 className="font-bold text-[#5e5e5e] mb-3 text-sm leading-tight">
+                  <h3 className="font-bold text-[#5e5e5e] mb-3 text-base leading-tight">
                     {step.question}
                   </h3>
 

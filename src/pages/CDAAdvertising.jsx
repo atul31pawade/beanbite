@@ -61,7 +61,7 @@ const reviewPoints = [
   { text: 'Which billing tasks BEANbite could take off your team’s plate', icon: Layers }
 ];
 
-const fieldClassName = 'mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 outline-none transition focus:border-[#AFCB12] focus:ring-2 focus:ring-[#AFCB12]/30';
+const fieldClassName = 'mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 outline-none transition focus:border-[#8CB429] focus:ring-2 focus:ring-[#8CB429]/30';
 
 const CDAAdvertising = () => {
   const [formData, setFormData] = useState({
@@ -145,7 +145,7 @@ const CDAAdvertising = () => {
   if (isSubmitted) {
     return (
       <section className="min-h-[70vh] bg-[#F6F8F7] px-4 py-12 sm:px-6 sm:py-16">
-        <div className="mx-auto max-w-[760px] rounded-[20px] border-t-[5px] border-[#AFCB12] bg-white px-6 py-10 shadow-[0_24px_70px_rgba(15,23,42,0.10)] sm:px-10 sm:py-12">
+        <div className="mx-auto max-w-[760px] rounded-[20px] border-t-[5px] border-[#8CB429] bg-white px-6 py-10 shadow-[0_24px_70px_rgba(15,23,42,0.10)] sm:px-10 sm:py-12">
           <div className="mb-5 flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
             <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#EFF9CD] text-[#5E9700]">
               <Check size={34} strokeWidth={4} aria-hidden="true" />
@@ -173,7 +173,7 @@ const CDAAdvertising = () => {
             <ul className="flex flex-col justify-center gap-3 text-sm font-semibold text-slate-700 sm:flex-row sm:flex-wrap sm:gap-x-6">
               {['1-on-1 Practice Evaluation', 'Review of AR & Denials', 'Zero Financial Obligation'].map((benefit) => (
                 <li key={benefit} className="inline-flex items-center justify-center gap-2">
-                  <Check size={16} className="text-[#74B900]" strokeWidth={3} aria-hidden="true" />
+                  <Check size={16} className="text-[#8CB429]" strokeWidth={3} aria-hidden="true" />
                   {benefit}
                 </li>
               ))}
@@ -205,7 +205,7 @@ const CDAAdvertising = () => {
               Let’s find out where revenue is getting stuck.
             </span>
           </h1>
-          <div className="mx-auto mt-2 h-1 w-16 rounded-full bg-[#AFCB12]" aria-hidden="true" />
+          <div className="mx-auto mt-2 h-1 w-16 rounded-full bg-[#8CB429]" aria-hidden="true" />
           <p className="mx-auto mt-6 max-w-4xl text-md leading-6 text-slate-600">
             Your team works hard to provide care. But when claims sit unresolved, denials pile up, or payments are posted incorrectly, collections can fall behind production.
           </p>
@@ -227,7 +227,7 @@ const CDAAdvertising = () => {
               const PointIcon = point.icon;
               return (
                 <li key={point.text} className="group relative flex gap-4 border-b border-slate-200/80 py-4 transition-colors hover:bg-white/70">
-                  <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-[#718900] shadow-sm transition-all group-hover:border-[#AFCB12] group-hover:bg-[#F5F9DF]">
+                  <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-[#718900] shadow-sm transition-all group-hover:border-[#8CB429] group-hover:bg-[#F5F9DF]">
                     <PointIcon size={19} aria-hidden="true" />
                   </span>
                   <div className="pt-0.5">
@@ -274,7 +274,7 @@ const CDAAdvertising = () => {
                 aria-valuenow={formProgress}
               >
                 <div
-                  className="h-full rounded-full bg-[#AFCB12] transition-[width] duration-300 ease-out"
+                  className="h-full rounded-full bg-[#8CB429] transition-[width] duration-300 ease-out"
                   style={{ width: `${formProgress}%` }}
                 />
               </div>
@@ -325,7 +325,7 @@ const CDAAdvertising = () => {
                   return (
                     <label
                       key={concern.label}
-                      className={`group flex min-h-14 cursor-pointer items-center justify-between rounded-lg border-2 px-4 py-3 text-sm transition-all duration-200 focus-within:ring-2 focus-within:ring-[#AFCB12]/50 ${isSelected ? 'border-[#9DB814] bg-[#F5F9DF] font-semibold text-[#37450A] shadow-sm' : 'border-slate-200 bg-white text-slate-700 hover:-translate-y-0.5 hover:border-[#AFCB12] hover:shadow-sm'}`}
+                      className={`group flex min-h-14 cursor-pointer items-center justify-between rounded-lg border-2 px-4 py-3 text-sm transition-all duration-200 focus-within:ring-2 focus-within:ring-[#8CB429]/50 ${isSelected ? 'border-[#789A23] bg-[#F5F9DF] font-semibold text-[#37450A] shadow-sm' : 'border-slate-200 bg-white text-slate-700 hover:-translate-y-0.5 hover:border-[#8CB429] hover:shadow-sm'}`}
                     >
                       <input
                         type="checkbox"
@@ -354,7 +354,7 @@ const CDAAdvertising = () => {
             {billingQuestions.map((question) => {
               const QuestionIcon = question.icon;
               return (
-              <fieldset key={question.id} className="rounded-xl border border-slate-200 bg-slate-50 p-4 transition-colors duration-200 has-[:checked]:border-[#C5D92D] sm:p-5">
+              <fieldset key={question.id} className="rounded-xl border border-slate-200 bg-slate-50 p-4 transition-colors duration-200 has-[:checked]:border-[#8CB429] sm:p-5">
                 <legend className="max-w-full text-sm font-semibold leading-6 text-slate-800">
                   <span className="flex items-start gap-3">
                     <QuestionIcon size={19} className="mt-0.5 shrink-0 text-[#748A00]" aria-hidden="true" />
@@ -367,7 +367,7 @@ const CDAAdvertising = () => {
                     return (
                       <label
                         key={option}
-                        className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-lg border-2 px-4 py-2 text-sm transition-colors focus-within:ring-2 focus-within:ring-[#AFCB12]/50 ${isSelected ? 'border-[#9DB814] bg-[#F5F9DF] font-semibold text-[#37450A]' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300'}`}
+                        className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-lg border-2 px-4 py-2 text-sm transition-colors focus-within:ring-2 focus-within:ring-[#8CB429]/50 ${isSelected ? 'border-[#789A23] bg-[#F5F9DF] font-semibold text-[#37450A]' : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300'}`}
                       >
                         <input
                           type="radio"
