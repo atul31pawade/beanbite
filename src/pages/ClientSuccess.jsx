@@ -110,17 +110,21 @@ const ClientSuccess = () => {
       <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-10 grid lg:grid-cols-2 gap-10 items-center">
         {/* LEFT */}
         <motion.div variants={fadeLeft} initial="hidden" whileInView="show">
-          <span className="text-[#AFCB12] font-semibold mb-2 block">
-            Our Clients
+          <span className="text-[#AFCB12] text-lg font-semibold mb-2 block">
+            Our Happy Clients
           </span>
 
           <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
             Behind Every Great Practice <br /> Is a Team It Can Trust
           </h2>
 
-          <p className="text-gray-600">
+          <p className="text-gray-600 mb-4">
             We help healthcare practices navigate insurance complexities, so
             they can focus on what matters most: patient care.
+          </p>
+          <p className="text-gray-600">
+            That means fewer denials, faster reimbursements, and a team that
+            stops chasing payers.
           </p>
         </motion.div>
 

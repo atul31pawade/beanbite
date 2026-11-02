@@ -74,8 +74,8 @@ const ConsultingAndAudit = () => {
   return (
     <div className="bg-white">
       <InnerPageHeader
-        title="Practice Consulting & Audit Report"
-        breadcrumb="Services / Consulting & Audit"
+        title="Practice Audit Support"
+        breadcrumb="Services / Practice Audit Support"
       />
 
       {/* 1. Top Section */}
