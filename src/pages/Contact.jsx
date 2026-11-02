@@ -92,7 +92,7 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="inline-block px-6 py-2 bg-[#AFCB12] text-[#000000] font-bold rounded-full text-lg mb-6"
+                className="inline-block px-6 py-2 bg-[#8CB429] text-[#000000] font-bold rounded-full text-lg mb-6"
               >
                 Get In Touch
               </motion.span>
@@ -159,7 +159,7 @@ const Contact = () => {
                     </p>
                     <a
                       href="tel:+18887005589"
-                      className="text-white text-lg md:text-xl font-semibold hover:text-[#C5D92D] transition-colors"
+                      className="text-white text-lg md:text-xl font-semibold hover:text-[#8CB429] transition-colors"
                     >
                       +1(888) 700 5589
                     </a>
@@ -181,7 +181,7 @@ const Contact = () => {
                     </p>
                     <a
                       href="mailto:info@BEANbite.com"
-                      className="text-white text-lg md:text-xl font-semibold hover:text-[#C5D92D] transition-colors"
+                      className="text-white text-lg md:text-xl font-semibold hover:text-[#8CB429] transition-colors"
                     >
                       info@BEANbite.com
                     </a>
@@ -292,12 +292,12 @@ const Contact = () => {
 
                 <div className="flex gap-6">
                   <label className="flex items-center gap-2">
-                    <input type="checkbox" className="accent-[#C5D92D]" />
+                    <input type="checkbox" className="accent-[#8CB429]" />
                     <span className="text-sm">E-mail</span>
                   </label>
 
                   <label className="flex items-center gap-2">
-                    <input type="checkbox" className="accent-[#C5D92D]" />
+                    <input type="checkbox" className="accent-[#8CB429]" />
                     <span className="text-sm">Text</span>
                   </label>
                 </div>
@@ -350,11 +350,11 @@ const Contact = () => {
                 850 Iron Point Rd #120, Folsom, CA 95630
               </p>
               {/* Rating */}
-              <div className="flex items-center gap-1 mt-2 text-[#C5D92D] text-sm">
+              <div className="flex items-center gap-1 mt-2 text-[#8CB429] text-sm">
                 ★★★★★ <span className="text-gray-600 ml-1">5.0</span>
               </div>
               {/* Button */}
-              <button className="text-[#AFCB12] text-xs font-semibold mt-2 hover:underline">
+              <button className="text-[#8CB429] text-xs font-semibold mt-2 hover:underline">
                 Directions →
               </button>
             </div>

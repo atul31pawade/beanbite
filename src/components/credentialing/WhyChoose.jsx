@@ -21,7 +21,7 @@ const WhyChoose = () => {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-16">
 
         <div className="text-center max-w-3xl mx-auto mb-16">
-          {/*<span className="inline-block px-5 py-2 rounded-full bg-[#AFCB12]/10 text-[#7A9200] font-semibold">
+          {/*<span className="inline-block px-5 py-2 rounded-full bg-[#8CB429]/10 text-[#7A9200] font-semibold">
             Why Dental Practices Choose BEANbite
           </span> */}
 
@@ -43,12 +43,12 @@ const WhyChoose = () => {
                 <motion.div
                   key={index}
                   whileHover={{ y: -5 }}
-                  className="flex items-center gap-3 p-5 rounded-2xl bg-white border border-gray-200 hover:border-[#AFCB12] hover:shadow-lg transition"
+                  className="flex items-center gap-3 p-5 rounded-2xl bg-white border border-gray-200 hover:border-[#8CB429] hover:shadow-lg transition"
                 >
 
                   <CheckCircle2
                     size={22}
-                    className="text-[#AFCB12] shrink-0"
+                    className="text-[#8CB429] shrink-0"
                   />
 
                   <p className="text-gray-700 font-medium">
@@ -79,7 +79,7 @@ const WhyChoose = () => {
 
             </p>
 
-            <div className="mt-4 p-4 rounded-2xl bg-[#F7FBEA] border border-[#AFCB12]/20">
+            <div className="mt-4 p-4 rounded-2xl bg-[#F7FBEA] border border-[#8CB429]/20">
 
               <h4 className="font-bold text-lg text-gray-900 mb-2">
                 Nationwide Support

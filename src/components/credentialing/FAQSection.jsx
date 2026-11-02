@@ -189,7 +189,7 @@ const FAQ = () => {
 
         <div className="text-center mb-14">
 
-          {/* <span className="inline-flex px-5 py-2 rounded-full bg-[#AFCB12]/10 text-[#7A9200] font-semibold">
+          {/* <span className="inline-flex px-5 py-2 rounded-full bg-[#8CB429]/10 text-[#7A9200] font-semibold">
             Frequently Asked Questions
           </span> */}
 
@@ -236,7 +236,7 @@ const FAQ = () => {
         {openIndex === index ? (
           <ChevronUp
             size={22}
-            className="text-[#AFCB12]"
+            className="text-[#8CB429]"
           />
         ) : (
           <ChevronDown
@@ -301,7 +301,7 @@ const FAQ = () => {
 
   <button
     onClick={() => setShowAll(!showAll)}
-    className="cursor-pointer inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#AFCB12] text-white font-semibold hover:bg-[#95AF0F] transition"
+    className="cursor-pointer inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#8CB429] text-white font-semibold hover:bg-[#789A23] transition"
   >
 
     {showAll ? "Show Less FAQs" : "Show More FAQs"}

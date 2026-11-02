@@ -20,10 +20,10 @@ const FIELDS = [
   { name: "email", label: "Work email", type: "email" },
 ];
 
-// Logo lockup colors: "BEAN" #8CB428, "bite" #7F7F7F
+// Logo lockup colors: "BEAN" #8CB429, "bite" #7F7F7F
 const Wordmark = () => (
   <>
-    <span className="text-[#8CB428]">BEAN</span>
+    <span className="text-[#8CB429]">BEAN</span>
     <span className="text-[#7F7F7F]">bite</span>
   </>
 );
@@ -213,7 +213,7 @@ const DownloadModal = ({ item, onClose }) => {
                     onChange={(e) =>
                       setValues({ ...values, [f.name]: e.target.value })
                     }
-                    className={`w-full rounded-lg border px-3.5 py-2.5 text-[15px] outline-none transition-colors focus:border-[#AFCB12] ${
+                    className={`w-full rounded-lg border px-3.5 py-2.5 text-[15px] outline-none transition-colors focus:border-[#8CB429] ${
                       errors[f.name] ? "border-rose-400" : "border-[#E4E9D8]"
                     }`}
                   />
@@ -245,7 +245,7 @@ const DownloadModal = ({ item, onClose }) => {
                   onChange={(e) =>
                     setValues({ ...values, [f.name]: e.target.value })
                   }
-                  className={`w-full rounded-lg border px-3.5 py-2.5 text-[15px] outline-none transition-colors focus:border-[#AFCB12] ${
+                  className={`w-full rounded-lg border px-3.5 py-2.5 text-[15px] outline-none transition-colors focus:border-[#8CB429] ${
                     errors[f.name] ? "border-rose-400" : "border-[#E4E9D8]"
                   }`}
                 />
@@ -308,8 +308,8 @@ const ChecklistSection = () => {
               onClick={() => setCategory(c)}
               className={`rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
                 category === c
-                  ? "border-[#AFCB12] bg-[#AFCB12] text-[#1a2e05]"
-                  : "border-[#E4E9D8] bg-white text-[#5e5e5e] hover:border-[#C5D92D]"
+                  ? "border-[#8CB429] bg-[#8CB429] text-[#1a2e05]"
+                  : "border-[#E4E9D8] bg-white text-[#5e5e5e] hover:border-[#8CB429]"
               }`}
             >
               {c}
@@ -327,7 +327,7 @@ const ChecklistSection = () => {
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search checklists"
             aria-label="Search checklists"
-            className="w-full rounded-full border border-[#E4E9D8] bg-white py-2.5 pl-10 pr-4 text-[15px] outline-none transition-colors focus:border-[#AFCB12]"
+            className="w-full rounded-full border border-[#E4E9D8] bg-white py-2.5 pl-10 pr-4 text-[15px] outline-none transition-colors focus:border-[#8CB429]"
           />
         </div>
       </div>
@@ -349,7 +349,7 @@ const ChecklistSection = () => {
               setQuery("");
               setCategory("All");
             }}
-            className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#E4E9D8] bg-white px-4 py-2 text-sm font-semibold text-[#414C00] transition-colors hover:border-[#C5D92D]"
+            className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#E4E9D8] bg-white px-4 py-2 text-sm font-semibold text-[#414C00] transition-colors hover:border-[#8CB429]"
           >
             <RotateCcw size={15} /> Show all checklists
           </button>

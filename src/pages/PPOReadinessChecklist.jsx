@@ -184,7 +184,7 @@ const PPOReadinessChecklist = () => {
           className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center"
         >
           <div>
-            {/*<p className="inline-flex items-center rounded-full bg-[#C5D92D]/20 text-[#1a2e05] px-3 py-1 text-sm font-semibold mb-4">
+            {/*<p className="inline-flex items-center rounded-full bg-[#8CB429]/20 text-[#1a2e05] px-3 py-1 text-sm font-semibold mb-4">
               BEANbite practice assessment
             </p>*/}
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
@@ -199,7 +199,7 @@ const PPOReadinessChecklist = () => {
               <CtaButton href="#checklist">Start assessment</CtaButton>
               {/*<a
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-700 hover:border-[#AFCB12] hover:text-[#1a2e05] transition-colors"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-700 hover:border-[#8CB429] hover:text-[#1a2e05] transition-colors"
               >
                 Book a complimentary review
               </a>*/}
@@ -240,7 +240,7 @@ const PPOReadinessChecklist = () => {
                     cy="40"
                     r={RING_RADIUS}
                     fill="none"
-                    stroke="#AFCB12"
+                    stroke="#8CB429"
                     strokeWidth="8"
                     strokeLinecap="round"
                     strokeDasharray={RING_CIRCUMFERENCE}
@@ -264,7 +264,7 @@ const PPOReadinessChecklist = () => {
 
             <div className="h-3 w-full overflow-hidden rounded-full bg-slate-100">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-[#AFCB12] via-[#c7d72f] to-[#dfe970] transition-all duration-500"
+                className="h-full rounded-full bg-[#8CB429] transition-all duration-500"
                 style={{ width: `${(score / 10) * 100}%` }}
               />
             </div>
@@ -309,7 +309,7 @@ const PPOReadinessChecklist = () => {
           <Reveal className="bg-[#111827] px-6 py-5 md:px-8">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#C5D92D] text-[#111827]">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#8CB429] text-[#111827]">
                   <ClipboardCheck size={22} aria-hidden="true" />
                 </span>
                 <h3 className="text-2xl font-bold text-white">
@@ -319,7 +319,7 @@ const PPOReadinessChecklist = () => {
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-sm font-semibold text-slate-200">
                 <ListChecks
                   size={16}
-                  className="text-[#C5D92D]"
+                  className="text-[#8CB429]"
                   aria-hidden="true"
                 />
                 {answered} / {readinessQuestions.length}
@@ -340,7 +340,7 @@ const PPOReadinessChecklist = () => {
                   transition={{ delay: index * 0.03, duration: 0.3 }}
                   className={`group grid gap-4 border-l-4 px-6 py-6 transition-colors duration-300 md:grid-cols-[1fr_auto] md:items-center md:px-8 ${
                     answer
-                      ? "border-l-[#AFCB12] bg-[#F7F9F2]"
+                      ? "border-l-[#8CB429] bg-[#F7F9F2]"
                       : "border-l-transparent hover:bg-slate-50"
                   }`}
                 >
@@ -348,7 +348,7 @@ const PPOReadinessChecklist = () => {
                     <span
                       className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border transition-all duration-300 group-hover:scale-105 ${
                         answer
-                          ? "border-[#AFCB12] bg-white text-[#414C00] shadow-sm"
+                          ? "border-[#8CB429] bg-white text-[#414C00] shadow-sm"
                           : "border-slate-200 bg-slate-50 text-slate-500"
                       }`}
                       aria-hidden="true"
@@ -469,7 +469,7 @@ const PPOReadinessChecklist = () => {
                     transition={{ duration: 0.4 }}
                     className={`rounded-2xl border p-5 transition-colors duration-300 ${
                       isActive
-                        ? "border-[#AFCB12] bg-[#F7F9F2] shadow-md"
+                        ? "border-[#8CB429] bg-[#F7F9F2] shadow-md"
                         : "border-slate-200 bg-white"
                     }`}
                   >
@@ -574,7 +574,7 @@ const PPOReadinessChecklist = () => {
                   {readinessQuestions.map((question, i) => (
                     <span
                       key={question.id}
-                      className={`h-2 flex-1 rounded-full transition-colors duration-300 ${i < score ? "bg-[#AFCB12]" : "bg-slate-200"}`}
+                      className={`h-2 flex-1 rounded-full transition-colors duration-300 ${i < score ? "bg-[#8CB429]" : "bg-slate-200"}`}
                     />
                   ))}
                 </div>
@@ -598,7 +598,7 @@ const PPOReadinessChecklist = () => {
         <div className="rounded-[28px] bg-gradient-to-r from-[#111827] via-[#1b2436] to-[#1e3a5f] px-6 py-10 text-white md:px-10">
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
-              <p className="text-[#C5D92D] text-sm font-semibold uppercase tracking-[0.2em] mb-3 flex items-center gap-2">
+              <p className="text-[#8CB429] text-sm font-semibold uppercase tracking-[0.2em] mb-3 flex items-center gap-2">
                 <ShieldCheck size={16} aria-hidden="true" />
                 Complimentary PPO readiness assessment
               </p>
@@ -614,7 +614,7 @@ const PPOReadinessChecklist = () => {
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2">
                   <MessageSquare
                     size={16}
-                    className="text-[#C5D92D]"
+                    className="text-[#8CB429]"
                     aria-hidden="true"
                   />
                   Text STARTUP to
@@ -627,7 +627,7 @@ const PPOReadinessChecklist = () => {
               <p className="text-sm text-slate-200 text-center mb-4 flex items-center justify-center gap-2">
                 <QrCode
                   size={16}
-                  className="text-[#C5D92D]"
+                  className="text-[#8CB429]"
                   aria-hidden="true"
                 />
                 Scan the QR code below or book your complimentary assessment

@@ -75,7 +75,7 @@ const InsuranceVerification = () => {
 
       {/* 1. Specialized Forms Section */}
       <section className="relative overflow-hidden bg-[#F7F9F2] px-6 py-20 lg:py-10">
-        <div className="absolute -left-24 top-8 h-64 w-64 rounded-full bg-[#C5D92D]/15 blur-3xl" />
+        <div className="absolute -left-24 top-8 h-64 w-64 rounded-full bg-[#8CB429]/15 blur-3xl" />
         <div className="absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-[#002060]/5 blur-3xl" />
         <motion.div
           variants={fadeInUp}
@@ -115,9 +115,9 @@ const InsuranceVerification = () => {
               href="/forms/Complete%20Breakdown%20Form_Aetna.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-4 rounded-2xl border border-[#AFCB12]/30 bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:border-[#AFCB12] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#809900]"
+              className="group flex items-center justify-between gap-4 rounded-2xl border border-[#8CB429]/30 bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:border-[#8CB429] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#809900]"
             >
-              <span className="flex items-center gap-3 font-semibold text-gray-900">
+              <span className="flex items-center gap-3 font-semibold text-[#5e5e5e]">
                 <FileText
                   size={22}
                   className="shrink-0 text-[#D32F2F]"
@@ -135,9 +135,9 @@ const InsuranceVerification = () => {
               href="/forms/Short%20Form%20for%20existing%20patients.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-4 rounded-2xl border border-[#AFCB12]/30 bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:border-[#AFCB12] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#809900]"
+              className="group flex items-center justify-between gap-4 rounded-2xl border border-[#8CB429]/30 bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:border-[#8CB429] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#809900]"
             >
-              <span className="flex items-center gap-3 font-semibold text-gray-900">
+              <span className="flex items-center gap-3 font-semibold text-[#5e5e5e]">
                 <FileText
                   size={22}
                   className="shrink-0 text-[#D32F2F]"
@@ -195,11 +195,11 @@ const InsuranceVerification = () => {
                   >
                     <div className="rounded-full">
                       <CheckCircle2
-                        className="text-white shrink-0 bg-[#AFCB12] rounded-full"
+                        className="text-white shrink-0 bg-[#8CB429] rounded-full"
                         size={22}
                       />
                     </div>
-                    <span className="text-black text-[16px] font-medium">
+                    <span className="text-[#5e5e5e] text-[16px] font-medium">
                       {item}
                     </span>
                   </motion.li>
@@ -221,10 +221,10 @@ const InsuranceVerification = () => {
               {fullFormItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2
-                    className="text-[#FFFFFF] bg-[#AFCB12] shrink-0 mt-1 rounded-full"
+                    className="text-[#FFFFFF] bg-[#8CB429] shrink-0 mt-1 rounded-full"
                     size={22}
                   />
-                  <span className="text-black text-[16px] font-medium">
+                  <span className="text-[#5e5e5e] text-[16px] font-medium">
                     {item}
                   </span>
                 </li>
@@ -267,7 +267,7 @@ const InsuranceVerification = () => {
       <section className="bg-gray-50/50 py-16">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-left mb-16">
-            <span className="bg-[#C5D92D] text-[#1a2e05] px-4 py-1.5 rounded-full text-xs font-bold uppercase">
+            <span className="bg-[#8CB429] text-[#1a2e05] px-4 py-1.5 rounded-full text-xs font-bold uppercase">
               Services
             </span>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 mt-6">
@@ -317,7 +317,7 @@ const FormCard = ({ title, label, href, index, icon: Icon }) => (
       <div className="absolute inset-0 flex flex-col justify-between overflow-hidden rounded-3xl border border-gray-200 bg-white p-5 shadow-sm transition-colors duration-500 [backface-visibility:hidden] group-hover:shadow-xl">
         <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[#F3F6DF] transition-transform duration-500 group-hover:scale-125" />
         <div className="relative flex items-start justify-between">
-          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#002060] text-[#C5D92D] shadow-md transition-transform duration-500 group-hover:rotate-6">
+          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#002060] text-[#8CB429] shadow-md transition-transform duration-500 group-hover:rotate-6">
             <Icon size={23} strokeWidth={1.8} aria-hidden="true" />
           </span>
           <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-bold tracking-[0.14em] text-gray-400">
@@ -328,18 +328,18 @@ const FormCard = ({ title, label, href, index, icon: Icon }) => (
           <span className="mb-1 block text-[10px] font-bold tracking-[0.18em] text-[#809900]">
             {label}
           </span>
-          <h3 className="text-lg font-bold text-gray-900">{title}</h3>
-          <div className="mt-3 h-1 w-10 rounded-full bg-[#C5D92D] transition-all duration-500 group-hover:w-16" />
+          <h3 className="text-lg font-bold text-[#5e5e5e]">{title}</h3>
+          <div className="mt-3 h-1 w-10 rounded-full bg-[#8CB429] transition-all duration-500 group-hover:w-16" />
         </div>
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center rounded-3xl bg-[#002060] p-5 text-center text-white shadow-lg [backface-visibility:hidden] [transform:rotateY(180deg)]">
-        <span className="mb-3 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-[#C5D92D]">
+        <span className="mb-3 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-[#8CB429]">
           <Icon size={21} strokeWidth={1.8} aria-hidden="true" />
         </span>
         <span className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">
           {title}
         </span>
-        <span className="mt-4 rounded-full bg-[#C5D92D] px-5 py-2 text-sm font-bold text-[#1a2e05] transition-transform group-hover:scale-105">
+        <span className="mt-4 rounded-full bg-[#8CB429] px-5 py-2 text-sm font-bold text-[#1a2e05] transition-transform group-hover:scale-105">
           Click to open form
         </span>
       </div>
@@ -370,7 +370,7 @@ const FeatureBlock = ({ icon, title, desc, hasBorder }) => (
       </div>
 
       {/* Text Content */}
-      <h3 className="text-[24px] font-semibold text-black mb-3">{title}</h3>
+      <h3 className="text-[24px] font-semibold text-[#5e5e5e] mb-3">{title}</h3>
       <p className="text-[16px] font-regular text-gray-500 leading-relaxed mx-auto">
         {desc}
       </p>

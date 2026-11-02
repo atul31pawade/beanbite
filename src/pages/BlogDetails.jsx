@@ -48,14 +48,14 @@ const Block = ({ block }) => {
             return (
                 <h4
                     id={slugify(block.text)}
-                    className="text-[17px] md:text-[18px] font-bold text-[#5e5e5e] mt-7 mb-3 pl-4 border-l-[3px] border-[#AFCB12] scroll-mt-28"
+                    className="text-[17px] md:text-[18px] font-bold text-[#5e5e5e] mt-7 mb-3 pl-4 border-l-[3px] border-[#8CB429] scroll-mt-28"
                 >
                     {block.text}
                 </h4>
             );
         case "list":
             return (
-                <ul className="my-5 space-y-2.5 text-[16px] leading-[1.8] text-[#5e5e5e] pl-6 list-disc marker:text-[#AFCB12]">
+                <ul className="my-5 space-y-2.5 text-[16px] leading-[1.8] text-[#5e5e5e] pl-6 list-disc marker:text-[#8CB429]">
                     {block.items.map((item, i) => (
                         <li key={i}>{item}</li>
                     ))}
@@ -163,9 +163,9 @@ const BlogDetails = () => {
             {/* Breadcrumb bar */}
             <div className="bg-[#F7F9F2] border-b border-[#E4E9D8]">
                 <div className="max-w-[1400px] mx-auto px-4 lg:px-12 py-4 flex flex-wrap items-center gap-2 text-sm text-[#5e5e5e]">
-                    <Link to="/" className="hover:text-[#AFCB12] transition-colors">Home</Link>
+                    <Link to="/" className="hover:text-[#8CB429] transition-colors">Home</Link>
                     <span>/</span>
-                    <Link to="/blog" className="hover:text-[#AFCB12] transition-colors">Blog</Link>
+                    <Link to="/blog" className="hover:text-[#8CB429] transition-colors">Blog</Link>
                     <span>/</span>
                     <span className="font-semibold text-gray-900">{post.category}</span>
                 </div>
@@ -177,14 +177,14 @@ const BlogDetails = () => {
                     <div className="min-w-0">
                         <Reveal>
                             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-[#5e5e5e] mb-5">
-                                <span className="px-3 py-1 rounded-full bg-[#AFCB12] text-white font-semibold text-xs uppercase tracking-wide">
+                                <span className="px-3 py-1 rounded-full bg-[#8CB429] text-white font-semibold text-xs uppercase tracking-wide">
                                     {post.category}
                                 </span>
                                 <span className="flex items-center gap-1.5">
-                                    <Calendar size={14} className="text-[#AFCB12]" /> {post.date}
+                                    <Calendar size={14} className="text-[#8CB429]" /> {post.date}
                                 </span>
                                 <span className="flex items-center gap-1.5">
-                                    <Clock size={14} className="text-[#AFCB12]" /> {post.readTime}
+                                    <Clock size={14} className="text-[#8CB429]" /> {post.readTime}
                                 </span>
                             </div>
 
@@ -198,7 +198,7 @@ const BlogDetails = () => {
 
                             <div className="flex flex-wrap items-center justify-between gap-4 border-y border-[#E4E9D8] py-4 mb-10">
                                 <span className="flex items-center gap-2 text-sm font-semibold text-gray-900">
-                                    <User size={16} className="text-[#AFCB12]" /> {post.author}
+                                    <User size={16} className="text-[#8CB429]" /> {post.author}
                                 </span>
                                 <div className="flex items-center gap-2">
                                     {shareLinks.map(({ icon: Icon, label, href }) => (
@@ -210,7 +210,7 @@ const BlogDetails = () => {
                                                 : { target: "_blank", rel: "noreferrer" })}
                                             aria-label={label}
                                             title={label}
-                                            className="w-9 h-9 rounded-full border border-[#E4E9D8] flex items-center justify-center text-gray-600 hover:bg-[#AFCB12] hover:text-white hover:border-[#AFCB12] transition"
+                                            className="w-9 h-9 rounded-full border border-[#E4E9D8] flex items-center justify-center text-gray-600 hover:bg-[#8CB429] hover:text-white hover:border-[#8CB429] transition"
                                         >
                                             <Icon size={16} />
                                         </a>
@@ -238,9 +238,9 @@ const BlogDetails = () => {
                             {previous ? (
                                 <Link
                                     to={`/blog/${previous.id}`}
-                                    className="group border border-[#E4E9D8] rounded-2xl p-5 hover:border-[#AFCB12] hover:bg-[#F7F9F2] transition"
+                                    className="group border border-[#E4E9D8] rounded-2xl p-5 hover:border-[#8CB429] hover:bg-[#F7F9F2] transition"
                                 >
-                                    <span className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-[#AFCB12] mb-2">
+                                    <span className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-[#8CB429] mb-2">
                                         <ArrowLeft size={14} /> Previous
                                     </span>
                                     <span className="line-clamp-2 text-[15px] font-semibold text-gray-900 group-hover:text-[#414C00]">
@@ -253,9 +253,9 @@ const BlogDetails = () => {
                             {next && (
                                 <Link
                                     to={`/blog/${next.id}`}
-                                    className="group border border-[#E4E9D8] rounded-2xl p-5 hover:border-[#AFCB12] hover:bg-[#F7F9F2] transition sm:text-right"
+                                    className="group border border-[#E4E9D8] rounded-2xl p-5 hover:border-[#8CB429] hover:bg-[#F7F9F2] transition sm:text-right"
                                 >
-                                    <span className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-[#AFCB12] mb-2 sm:justify-end">
+                                    <span className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-[#8CB429] mb-2 sm:justify-end">
                                         Next <ArrowRight size={14} />
                                     </span>
                                     <span className="line-clamp-2 text-[15px] font-semibold text-gray-900 group-hover:text-[#414C00]">
@@ -272,14 +272,14 @@ const BlogDetails = () => {
                             {contents.length > 0 && (
                                 <div className="border border-[#E4E9D8] rounded-2xl p-6">
                                     <h2 className="flex items-center gap-2 text-[15px] font-bold text-[#5e5e5e] mb-4">
-                                        <ListTree size={16} className="text-[#AFCB12]" /> On this page
+                                        <ListTree size={16} className="text-[#8CB429]" /> On this page
                                     </h2>
                                     <nav className="space-y-2.5 max-h-[320px] overflow-y-auto pr-1">
                                         {contents.map((block, i) => (
                                             <a
                                                 key={i}
                                                 href={`#${slugify(block.text)}`}
-                                                className={`block text-[13px] leading-snug text-[#5e5e5e] hover:text-[#AFCB12] transition-colors ${
+                                                className={`block text-[13px] leading-snug text-[#5e5e5e] hover:text-[#8CB429] transition-colors ${
                                                     block.type === "h3" ? "pl-3 border-l border-[#E4E9D8]" : "font-semibold text-gray-900"
                                                 }`}
                                             >
@@ -305,7 +305,7 @@ const BlogDetails = () => {
                                                 className="w-20 shrink-0 self-start aspect-[41/25] object-cover rounded-lg"
                                             />
                                             <span>
-                                                <span className="block text-[13px] font-semibold leading-snug line-clamp-2 text-gray-900 group-hover:text-[#AFCB12] transition-colors">
+                                                <span className="block text-[13px] font-semibold leading-snug line-clamp-2 text-gray-900 group-hover:text-[#8CB429] transition-colors">
                                                     {item.title}
                                                 </span>
                                                 <span className="mt-1 block text-[11px] text-gray-400">{item.date}</span>

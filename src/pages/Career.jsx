@@ -865,7 +865,7 @@ const Career = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex-1">
           {showLabel && (
-            <p className="text-xs text-[#AFCB12] font-semibold mb-1 uppercase">
+            <p className="text-xs text-[#8CB429] font-semibold mb-1 uppercase">
               OPEN ROLES
             </p>
           )}
@@ -920,7 +920,7 @@ const Career = () => {
                         key={key}
                         className="text-xs font-semibold bg-white border border-gray-200 rounded-full px-3 py-1.5 text-gray-700"
                       >
-                        <span className="uppercase tracking-wide text-[#AFCB12] mr-1">
+                        <span className="uppercase tracking-wide text-[#8CB429] mr-1">
                           {key}:
                         </span>
                         {value}
@@ -1063,7 +1063,7 @@ const Career = () => {
               </p>
               <a
                 href="mailto:info@BEANbite.com"
-                className="text-[#AFCB12] text-base underline hover:text-[#C5D92D] transition-colors"
+                className="text-[#8CB429] text-base underline hover:text-[#8CB429] transition-colors"
               >
                 info@BEANbite.com
               </a>
@@ -1083,13 +1083,13 @@ const Career = () => {
                     variants={fadeInRight}
                     className="py-6"
                   >
-                    <p className="text-xs text-[#AFCB12] font-semibold mb-1 uppercase">
+                    <p className="text-xs text-[#8CB429] font-semibold mb-1 uppercase">
                       OPEN ROLES
                     </p>
                     <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
                       {job.title}
                     </h3>
-                    <div className="border-l-2 border-[#C5D92D] pl-4 md:pl-6 space-y-6">
+                    <div className="border-l-2 border-[#8CB429] pl-4 md:pl-6 space-y-6">
                       {job.subJobs.map((sub, si) => (
                         <div key={si}>
                           {renderJobRow(sub, `${index}-${si}`, false)}
@@ -1154,7 +1154,7 @@ const Career = () => {
                         value={formData.fullName}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] text-gray-700"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] text-gray-700"
                         placeholder="Your Name"
                       />
                       <input
@@ -1163,7 +1163,7 @@ const Career = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] text-gray-700"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] text-gray-700"
                         placeholder="Your Email"
                       />
                     </div>
@@ -1175,7 +1175,7 @@ const Career = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] text-gray-700"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] text-gray-700"
                         placeholder="Your Phone"
                       />
                       <select
@@ -1183,7 +1183,7 @@ const Career = () => {
                         value={formData.jobPosition}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] text-gray-700 bg-white"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] text-gray-700 bg-white"
                       >
                         <option value="" disabled>
                           Where did you hear about this position?
@@ -1204,7 +1204,7 @@ const Career = () => {
                         value={formData.location}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] text-gray-700 bg-white"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] text-gray-700 bg-white"
                       >
                         <option value="" disabled>
                           Interested Location
@@ -1219,7 +1219,7 @@ const Career = () => {
                         value={formData.currentlyEmployed}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] text-gray-700 bg-white"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] text-gray-700 bg-white"
                       >
                         <option value="" disabled>
                           Are you currently employed?
@@ -1235,7 +1235,7 @@ const Career = () => {
                         value={formData.reasonForChange}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] text-gray-700 bg-white"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] text-gray-700 bg-white"
                       >
                         <option value="" disabled>
                           Reason for seeking a new job?
@@ -1258,7 +1258,7 @@ const Career = () => {
                         value={formData.startAvailability}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] text-gray-700 bg-white"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] text-gray-700 bg-white"
                       >
                         <option value="" disabled>
                           How soon can you start?
@@ -1276,7 +1276,7 @@ const Career = () => {
                         value={formData.shift}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] text-gray-700 bg-white"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] text-gray-700 bg-white"
                       >
                         <option value="" disabled>
                           Preferred Shift
@@ -1299,12 +1299,12 @@ const Career = () => {
                       value={formData.coverLetter}
                       onChange={handleInputChange}
                       rows={3}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#C5D92D] focus:ring-1 focus:ring-[#C5D92D] resize-none text-gray-700"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] resize-none text-gray-700"
                       placeholder="Cover letter"
                     />
 
                     <div>
-                      <div className="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-[#C5D92D] transition-colors relative">
+                      <div className="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-[#8CB429] transition-colors relative">
                         <input
                           type="file"
                           name="resume"
@@ -1339,7 +1339,7 @@ const Career = () => {
                       <input
                         type="checkbox"
                         required
-                        className="mt-1 w-4 h-4 accent-[#C5D92D]"
+                        className="mt-1 w-4 h-4 accent-[#8CB429]"
                       />
                       <label className="text-xs text-gray-500 leading-relaxed">
                         By using this form you agree with the storage and

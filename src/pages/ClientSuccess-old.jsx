@@ -163,15 +163,15 @@ const ResourceCard = ({ item }) => {
       : "Open resource";
 
   const classes =
-    "group flex flex-col h-full rounded-2xl border border-[#E4E9D8] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-[#AFCB12] hover:shadow-[0_14px_34px_rgba(65,76,0,0.10)]";
+    "group flex flex-col h-full rounded-2xl border border-[#E4E9D8] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-[#8CB429] hover:shadow-[0_14px_34px_rgba(65,76,0,0.10)]";
 
   const inner = (
     <>
       <div className="flex items-start justify-between gap-3 mb-5">
-        <span className="w-11 h-11 rounded-xl bg-[#F7F9F2] border border-[#E4E9D8] flex items-center justify-center text-[#414C00] transition duration-300 group-hover:bg-[#AFCB12] group-hover:border-[#AFCB12] group-hover:text-white">
+        <span className="w-11 h-11 rounded-xl bg-[#F7F9F2] border border-[#E4E9D8] flex items-center justify-center text-[#414C00] transition duration-300 group-hover:bg-[#8CB429] group-hover:border-[#8CB429] group-hover:text-white">
           <Icon size={20} />
         </span>
-        <span className="text-[10.5px] font-bold uppercase tracking-wider text-[#414C00] bg-[#C5D92D]/20 border border-[#C5D92D]/45 rounded-md px-2 py-1">
+        <span className="text-[10.5px] font-bold uppercase tracking-wider text-[#414C00] bg-[#8CB429]/20 border border-[#8CB429]/45 rounded-md px-2 py-1">
           {item.format}
         </span>
       </div>
@@ -268,7 +268,7 @@ const ClientSuccess = () => {
       <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-16 grid lg:grid-cols-2 gap-10 items-center">
         {/* LEFT */}
         <motion.div variants={fadeLeft} initial="hidden" whileInView="show">
-          <span className="text-[#AFCB12] font-semibold mb-2 block">
+          <span className="text-[#8CB429] font-semibold mb-2 block">
             Our Clients
           </span>
 
@@ -308,7 +308,7 @@ const ClientSuccess = () => {
             className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-8"
           >
             <div>
-              <span className="text-[#AFCB12] font-semibold mb-2 block">
+              <span className="text-[#8CB429] font-semibold mb-2 block">
                 Resources
               </span>
               <h2 className="text-3xl md:text-4xl font-bold leading-tight max-w-[24ch]">
@@ -316,7 +316,7 @@ const ClientSuccess = () => {
               </h2>
             </div>
 
-            <label className="flex items-center gap-2.5 w-full lg:w-[320px] rounded-full border border-[#E4E9D8] bg-white px-5 py-3 focus-within:border-[#AFCB12] transition">
+            <label className="flex items-center gap-2.5 w-full lg:w-[320px] rounded-full border border-[#E4E9D8] bg-white px-5 py-3 focus-within:border-[#8CB429] transition">
               <Search size={16} className="text-[#9a9a9a] shrink-0" />
               <input
                 type="text"
@@ -351,7 +351,7 @@ const ClientSuccess = () => {
                   className={`cursor-pointer rounded-full px-4 py-2 text-[12.5px] font-semibold transition ${
                     active
                       ? "bg-[#414C00] text-white border border-[#414C00]"
-                      : "bg-white text-[#5e5e5e] border border-[#E4E9D8] hover:border-[#AFCB12] hover:text-[#414C00]"
+                      : "bg-white text-[#5e5e5e] border border-[#E4E9D8] hover:border-[#8CB429] hover:text-[#414C00]"
                   }`}
                 >
                   {name}
@@ -371,7 +371,7 @@ const ClientSuccess = () => {
                 onClick={() => swiperRef.current?.slidePrev()}
                 aria-label="Previous resources"
                 disabled={nav.beginning}
-                className="cursor-pointer w-10 h-10 rounded-full border border-[#E4E9D8] bg-white flex items-center justify-center text-[#414C00] hover:bg-[#C5D92D] hover:border-[#C5D92D] transition disabled:opacity-35 disabled:cursor-default disabled:hover:bg-white disabled:hover:border-[#E4E9D8]"
+                className="cursor-pointer w-10 h-10 rounded-full border border-[#E4E9D8] bg-white flex items-center justify-center text-[#414C00] hover:bg-[#8CB429] hover:border-[#8CB429] transition disabled:opacity-35 disabled:cursor-default disabled:hover:bg-white disabled:hover:border-[#E4E9D8]"
               >
                 <ChevronLeft size={18} />
               </button>
@@ -380,7 +380,7 @@ const ClientSuccess = () => {
                 onClick={() => swiperRef.current?.slideNext()}
                 aria-label="Next resources"
                 disabled={nav.end}
-                className="cursor-pointer w-10 h-10 rounded-full border border-[#E4E9D8] bg-white flex items-center justify-center text-[#414C00] hover:bg-[#C5D92D] hover:border-[#C5D92D] transition disabled:opacity-35 disabled:cursor-default disabled:hover:bg-white disabled:hover:border-[#E4E9D8]"
+                className="cursor-pointer w-10 h-10 rounded-full border border-[#E4E9D8] bg-white flex items-center justify-center text-[#414C00] hover:bg-[#8CB429] hover:border-[#8CB429] transition disabled:opacity-35 disabled:cursor-default disabled:hover:bg-white disabled:hover:border-[#E4E9D8]"
               >
                 <ChevronRight size={18} />
               </button>
@@ -422,7 +422,7 @@ const ClientSuccess = () => {
                   setQuery("");
                   setFilter(RESOURCE_FILTERS[0]);
                 }}
-                className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-[#C5D92D] px-6 py-2.5 text-[13px] font-bold text-[#414C00] hover:bg-[#AFCB12] hover:text-white transition"
+                className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-[#8CB429] px-6 py-2.5 text-[13px] font-bold text-[#414C00] hover:bg-[#8CB429] hover:text-white transition"
               >
                 Show all resources
               </button>

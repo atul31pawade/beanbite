@@ -160,7 +160,7 @@ const PPOFeeNegotiations = () => {
       <section className="py-16 md:py-20">
         <MotionDiv {...reveal} className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center mb-10">
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+            <p className="text-[#8CB429] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Real client results
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
@@ -251,7 +251,7 @@ const PPOFeeNegotiations = () => {
       <section className="bg-[#F7F9F2] py-16 md:py-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+            <p className="text-[#8CB429] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Visual insights
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
@@ -322,7 +322,7 @@ const PPOFeeNegotiations = () => {
       <section className="py-16 md:py-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <motion.div {...reveal} className="mb-10 text-center">
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+            <p className="text-[#8CB429] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               The BEANbite difference
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
@@ -349,7 +349,7 @@ const PPOFeeNegotiations = () => {
                 key={item}
                 className="flex gap-3 items-start border-b border-gray-200 pb-4"
               >
-                <CheckCircle2 className="text-[#AFCB12] shrink-0" size={21} />
+                <CheckCircle2 className="text-[#8CB429] shrink-0" size={21} />
                 <span>{item}</span>
               </div>
             ))}
@@ -374,7 +374,7 @@ const PPOFeeNegotiations = () => {
                 key={title}
                 className="bg-white p-6 border border-gray-100 rounded-[4px]"
               >
-                <div className="w-10 h-10 bg-[#AFCB12]/15 flex items-center justify-center rounded-full mb-5">
+                <div className="w-10 h-10 bg-[#8CB429]/15 flex items-center justify-center rounded-full mb-5">
                   <BarChart3 className="text-[#7d9200]" size={20} />
                 </div>
                 <h3 className="text-lg font-bold text-[#5e5e5e] mb-3">
@@ -391,7 +391,7 @@ const PPOFeeNegotiations = () => {
       <section className="py-16 md:py-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+            <p className="text-[#8CB429] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               A different approach
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
@@ -422,7 +422,7 @@ const PPOFeeNegotiations = () => {
               ))}
             </div>
             <div className="bg-[#383838] text-white p-7 rounded-[4px]">
-              <h3 className="font-bold text-[#C5D92D] text-xl mb-5">
+              <h3 className="font-bold text-[#8CB429] text-xl mb-5">
                 BEANbite&apos;s approach
               </h3>
               {[
@@ -434,7 +434,7 @@ const PPOFeeNegotiations = () => {
                 "Measure success by financial impact to your practice",
               ].map((item) => (
                 <p key={item} className="flex gap-3 mb-4">
-                  <CheckCircle2 className="text-[#C5D92D] shrink-0" size={18} />
+                  <CheckCircle2 className="text-[#8CB429] shrink-0" size={18} />
                   {item}
                 </p>
               ))}
@@ -446,7 +446,7 @@ const PPOFeeNegotiations = () => {
       <section className="py-16 md:py-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+            <p className="text-[#8CB429] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               From data to implementation
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
@@ -460,7 +460,7 @@ const PPOFeeNegotiations = () => {
           <div className="grid md:grid-cols-2 gap-x-10 gap-y-6">
             {steps.map((step, i) => (
               <div key={step} className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-[#AFCB12] text-white flex items-center justify-center font-bold">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-[#8CB429] text-white flex items-center justify-center font-bold">
                   {i + 1}
                 </div>
                 <div>
@@ -501,21 +501,21 @@ const PPOFeeNegotiations = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
-              <TrendingUp className="text-[#C5D92D] mx-auto mb-3" size={32} />
+              <TrendingUp className="text-[#8CB429] mx-auto mb-3" size={32} />
               <h3 className="font-bold text-xl mb-2">Direct PPO negotiation</h3>
               <p className="text-white/70">
                 6% to 37% based on completed client cases.
               </p>
             </div>
             <div>
-              <Network className="text-[#C5D92D] mx-auto mb-3" size={32} />
+              <Network className="text-[#8CB429] mx-auto mb-3" size={32} />
               <h3 className="font-bold text-xl mb-2">Umbrella Networks</h3>
               <p className="text-white/70">
                 14% to 37% based on available arrangements.
               </p>
             </div>
             <div>
-              <ShieldCheck className="text-[#C5D92D] mx-auto mb-3" size={32} />
+              <ShieldCheck className="text-[#8CB429] mx-auto mb-3" size={32} />
               <h3 className="font-bold text-xl mb-2">
                 Not All Negotiations Succeed
               </h3>
@@ -546,7 +546,7 @@ const PPOFeeNegotiations = () => {
       <section className="py-16 md:py-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid md:grid-cols-[1fr_auto] gap-8 items-center">
           <div>
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+            <p className="text-[#8CB429] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Strategic participation, not maximum participation
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
@@ -587,7 +587,7 @@ const PPOFeeNegotiations = () => {
                 key={quote}
                 className="bg-white p-6 rounded-[4px] text-gray-700"
               >
-                <div className="text-[#AFCB12] tracking-[0.2em] mb-4">
+                <div className="text-[#8CB429] tracking-[0.2em] mb-4">
                   ★★★★★
                 </div>
                 <p className="leading-relaxed text-base mb-5">
@@ -619,7 +619,7 @@ const PPOFeeNegotiations = () => {
       <section className="py-16 md:py-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid lg:grid-cols-[.9fr_1.1fr] gap-12 items-center">
           <div>
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+            <p className="text-[#8CB429] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Why practices choose BEANbite
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
@@ -645,7 +645,7 @@ const PPOFeeNegotiations = () => {
                 key={item}
                 className="flex gap-3 items-start bg-[#F7F9F2] p-5 rounded-[4px]"
               >
-                <CheckCircle2 className="text-[#AFCB12] shrink-0" size={20} />
+                <CheckCircle2 className="text-[#8CB429] shrink-0" size={20} />
                 <span className="text-base text-gray-700 leading-relaxed">
                   {item}
                 </span>
@@ -657,7 +657,7 @@ const PPOFeeNegotiations = () => {
       <section className="py-16 md:py-20 bg-[#F7F9F2] mb-20">
         <div className="max-w-[1000px] mx-auto px-6 lg:px-12">
           <div className="text-center mb-10">
-            <p className="text-[#AFCB12] font-bold uppercase tracking-[0.16em] text-sm mb-3">
+            <p className="text-[#8CB429] font-bold uppercase tracking-[0.16em] text-sm mb-3">
               Questions, answered
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">

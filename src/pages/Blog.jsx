@@ -89,11 +89,11 @@ const Blog = () => {
 
                 {/* Content */}
                 <div className="p-6 flex-1">
-                  <span className="inline-block text-xs font-bold uppercase tracking-wide text-[#AFCB12] mb-2">
+                  <span className="inline-block text-xs font-bold uppercase tracking-wide text-[#8CB429] mb-2">
                     {post.category}
                   </span>
 
-                  <h2 className="text-[20px] md:text-[16px] font-bold mb-2 line-clamp-3 text-[#5e5e5e] group-hover:text-[#AFCB12]">
+                  <h2 className="text-[20px] md:text-[16px] font-bold mb-2 line-clamp-3 text-[#5e5e5e] group-hover:text-[#8CB429]">
                     {post.title}
                   </h2>
 
@@ -103,11 +103,11 @@ const Blog = () => {
 
                   <div className="flex gap-4 text-xs text-gray-500">
                     <span className="flex items-center gap-1">
-                      <Calendar size={14} className="text-[#AFCB12]" />
+                      <Calendar size={14} className="text-[#8CB429]" />
                       {post.date}
                     </span>
                     <span className="flex items-center gap-1">
-                      <Clock size={14} className="text-[#AFCB12]" />
+                      <Clock size={14} className="text-[#8CB429]" />
                       {post.readTime}
                     </span>
                   </div>
@@ -117,7 +117,7 @@ const Blog = () => {
                 <div className="p-6 pt-0">
                   <Link
                     to={`/blog/${post.id}`}
-                    className="flex items-center gap-2 text-[#AFCB12] text-sm font-semibold"
+                    className="flex items-center gap-2 text-[#8CB429] text-sm font-semibold"
                   >
                     Read More{" "}
                     <ArrowRight
@@ -151,7 +151,7 @@ const Blog = () => {
                   key={page}
                   onClick={() => handlePageChange(page)}
                   className={`w-10 h-10 rounded-full cursor-pointer ${
-                    currentPage === page ? "bg-[#C5D92D] text-black" : "border"
+                    currentPage === page ? "bg-[#8CB429] text-black" : "border"
                   }`}
                 >
                   {page}

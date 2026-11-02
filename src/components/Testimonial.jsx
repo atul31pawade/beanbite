@@ -66,21 +66,21 @@ const initials = (name) =>
 
 function ReviewCard({ review }) {
   return (
-    <div className="w-[320px] sm:w-[380px] flex-none bg-white/5 border border-white/15 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#C5D92D]/60 hover:bg-white/10 transition-colors">
-      <span className="text-[#C5D92D] text-3xl font-black leading-none select-none">
+    <div className="w-[320px] sm:w-[380px] flex-none bg-white/5 border border-white/15 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#8CB429]/60 hover:bg-white/10 transition-colors">
+      <span className="text-[#8CB429] text-3xl font-black leading-none select-none">
         &ldquo;
       </span>
       <p className="text-white/80 text-base leading-relaxed line-clamp-4">
         {review.text}
       </p>
       <div className="mt-auto flex items-center gap-3 pt-2">
-        <div className="w-10 h-10 rounded-full bg-[#414C00] text-[#C5D92D] font-extrabold text-[13px] flex items-center justify-center shrink-0">
+        <div className="w-10 h-10 rounded-full bg-[#414C00] text-[#8CB429] font-extrabold text-[13px] flex items-center justify-center shrink-0">
           {initials(review.name)}
         </div>
         <span className="text-white font-bold text-sm truncate">
           {review.name}
         </span>
-        <div className="ml-auto flex items-center gap-1 bg-[#C5D92D] text-black text-[11px] font-extrabold px-2.5 py-1 rounded-full shrink-0">
+        <div className="ml-auto flex items-center gap-1 bg-[#8CB429] text-black text-[11px] font-extrabold px-2.5 py-1 rounded-full shrink-0">
           <Star size={11} fill="currentColor" />
           {review.rating}.0
         </div>
@@ -126,7 +126,7 @@ export default function Testimonials() {
       <div className="relative max-w-[1400px] mx-auto px-4 lg:px-12 pt-16 md:pt-10 pb-16 md:pb-10">
         <div className="flex flex-wrap items-end justify-between gap-4 mb-10 md:mb-12">
           <div>
-            <span className="inline-block px-6 py-2 bg-white/10 border border-[#C5D92D]/40 text-[#C5D92D] font-bold rounded-full text-sm mb-5 uppercase tracking-wider">
+            <span className="inline-block px-6 py-2 bg-white/10 border border-[#8CB429]/40 text-[#8CB429] font-bold rounded-full text-sm mb-5 uppercase tracking-wider">
               Testimonials
             </span>
             <h2 className="text-white text-[32px] md:text-5xl font-bold leading-[1.15]">
@@ -135,7 +135,7 @@ export default function Testimonials() {
             </h2>
           </div>
           <div className="flex items-center gap-3 bg-white/5 border border-white/15 rounded-full px-5 py-2.5">
-            <div className="flex text-[#C5D92D]">
+            <div className="flex text-[#8CB429]">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={14} fill="currentColor" />
               ))}

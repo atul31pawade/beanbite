@@ -104,9 +104,9 @@ const ChecklistThankYou = () => {
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="group flex flex-col rounded-2xl border border-[#E4E9D8] bg-white p-6 transition-all hover:-translate-y-1 hover:border-[#C5D92D] hover:shadow-[0_16px_34px_rgba(65,76,0,0.1)]"
+                className="group flex flex-col rounded-2xl border border-[#E4E9D8] bg-white p-6 transition-all hover:-translate-y-1 hover:border-[#8CB429] hover:shadow-[0_16px_34px_rgba(65,76,0,0.1)]"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#F7F9F2] text-[#414C00] transition-colors group-hover:bg-[#C5D92D]/20">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#F7F9F2] text-[#414C00] transition-colors group-hover:bg-[#8CB429]/20">
                   <Icon size={20} />
                 </span>
                 <span className="mt-4 text-lg font-bold text-[#1f1f1f]">

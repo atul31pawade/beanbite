@@ -90,7 +90,7 @@
 
 .hero-swiper .swiper-pagination-bullet-active {
   width: 22px;
-  background: #AFCB12;
+  background: #8CB429;
 }
 
 html {
@@ -123,6 +123,6 @@ html, body {
 }
 
 .contact-from .input-style:focus {
-  border-color: #C5D92D;
-  box-shadow: 0 0 0 1px #C5D92D;
+  border-color: #8CB429;
+  box-shadow: 0 0 0 1px #8CB429;
 }

@@ -93,7 +93,7 @@ const HomeTwo = () => {
     return (
         <div className="font-sans text-gray-800 antialiased bg-white">
             {/* Top Bar */}
-            <div className="bg-[#AFCB12] py-2.5 hidden lg:block overflow-hidden">
+            <div className="bg-[#8CB429] py-2.5 hidden lg:block overflow-hidden">
                  <div className="max-w-[1400px] mx-auto px-4 lg:px-12 flex justify-between items-center text-[13px] font-semibold text-white">
                      <div className="flex text-[14px] font-[400] items-center space-x-8">
                         <span className="flex items-center gap-2"><MapPin size={14} className="text-white" /> 1015 Riley St, #297 Folsom CA 95630</span>
@@ -125,12 +125,12 @@ const HomeTwo = () => {
 
                         {/* Desktop Menu */}
                          <div className="hidden lg:flex items-center space-x-8 font-[400] text-[14px] text-gray-700">
-                                <Link to="/" className="hover:text-[#AFCB12] transition-colors">Home</Link>
-                                <a href="#about" className="hover:text-[#AFCB12] transition-colors">About Us</a>
-                                <a href="#services" className="hover:text-[#AFCB12] transition-colors">Services</a>
-                                <a href="#success" className="hover:text-[#AFCB12] transition-colors">Client Success</a>
-                                <a href="#resources" className="hover:text-[#AFCB12] transition-colors">Resources</a>
-                                <a href="#contact" className="hover:text-[#AFCB12] transition-colors">Contact Us</a>
+                                <Link to="/" className="hover:text-[#8CB429] transition-colors">Home</Link>
+                                <a href="#about" className="hover:text-[#8CB429] transition-colors">About Us</a>
+                                <a href="#services" className="hover:text-[#8CB429] transition-colors">Services</a>
+                                <a href="#success" className="hover:text-[#8CB429] transition-colors">Client Success</a>
+                                <a href="#resources" className="hover:text-[#8CB429] transition-colors">Resources</a>
+                                <a href="#contact" className="hover:text-[#8CB429] transition-colors">Contact Us</a>
                         </div>
 
                         {/* Right Side CTA */}
@@ -206,7 +206,7 @@ const HomeTwo = () => {
                         <motion.button 
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-[#AFCB12] hover:bg-[#9db520] text-white px-[22px] py-[12px] rounded-[4px] font-[600] text-[14px] transition-all  w-max"
+                            className="bg-[#8CB429] hover:bg-[#8CB429] text-white px-[22px] py-[12px] rounded-[4px] font-[600] text-[14px] transition-all  w-max"
                         >
                            Learn More
                         </motion.button>
@@ -238,7 +238,7 @@ const HomeTwo = () => {
                         className="flex flex-col gap-8"
                     >
                          <div>
-                             <span className="text-[#AFCB12] font-semibold text-lg mb-2 block">About Bean Bite</span>
+                             <span className="text-[#8CB429] font-semibold text-lg mb-2 block">About Bean Bite</span>
                              <h2 className="text-[28px] font-bold text-gray-900 leading-tight">Some Interesting Facts About Us</h2>
                          </div>
 
@@ -255,7 +255,7 @@ const HomeTwo = () => {
                             variants={fadeInUp}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-[#AFCB12] hover:bg-[#9db520] text-white px-[22px] py-[12px] rounded-[4px] font-[600] text-[14px] w-max transition-all shadow-lg shadow-[#AFCB12]/20"
+                            className="bg-[#8CB429] hover:bg-[#8CB429] text-white px-[22px] py-[12px] rounded-[4px] font-[600] text-[14px] w-max transition-all shadow-lg shadow-[#8CB429]/20"
                         >
                              Learn More
                          </motion.button>
@@ -266,7 +266,7 @@ const HomeTwo = () => {
              {/* Services Section - Billing Cards */}
              <section id="services" className="bg-white relative pt-[36px] pb-[36px]">
                  {/* Green Header Mask */}
-                 <div className="absolute top-0 left-0 w-full h-[400px] bg-[#AFCB12] z-0"></div>
+                 <div className="absolute top-0 left-0 w-full h-[400px] bg-[#8CB429] z-0"></div>
                  
                  <div className="max-w-[1400px] mx-auto px-4 lg:px-12 relative z-10">
                      <motion.div 
@@ -311,7 +311,7 @@ const HomeTwo = () => {
                                 viewport={{ once: true }}
                                 className="bg-white rounded-[14px] p-5 shadow-sm border border-gray-50 flex flex-col items-start h-full"
                             >
-                                 <div className="w-16 h-16 bg-white border border-[#AFCB12] rounded-xl flex items-center justify-center p-3 mb-4">
+                                 <div className="w-16 h-16 bg-white border border-[#8CB429] rounded-xl flex items-center justify-center p-3 mb-4">
                                      <img src={service.icon} alt={service.title} className="w-full h-full object-contain" />
                                  </div>
                                  <h3 className="md:text-[24px] font-[600] text-gray-900 mb-3">{service.title}</h3>
@@ -321,7 +321,7 @@ const HomeTwo = () => {
                                  <motion.button 
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="bg-[#AFCB12] hover:bg-[#9db520] text-white px-6 py-2 rounded-[4px] font-[600] text-[14px] transition-all"
+                                    className="bg-[#8CB429] hover:bg-[#8CB429] text-white px-6 py-2 rounded-[4px] font-[600] text-[14px] transition-all"
                                 >
                                      Read More
                                  </motion.button>
@@ -351,7 +351,7 @@ const HomeTwo = () => {
                          {/* Right Side: Form */}
                          <div className="lg:w-1/2 py-16 px-8 md:px-12 lg:px-16 relative">
                              <div className="max-w-xl">
-                                 <span className="text-[#AFCB12] font-[600] text-[16px] mb-2 block">Make an Appointment</span>
+                                 <span className="text-[#8CB429] font-[600] text-[16px] mb-2 block">Make an Appointment</span>
                                  <h2 className="text-[26px] font-[600] text-gray-900 mb-4 leading-tight">Start today with absolutely no risk to you.</h2>
                                  <p className="text-gray-600 mb-10 leading-relaxed text-[14px]">
                                      A BEANbite Dental Billing Account Manager will contact you within 24 hours. We are looking forward to earning your trust.
@@ -359,17 +359,17 @@ const HomeTwo = () => {
 
                                  <form className="space-y-6">
                                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                         <input type="text" placeholder="First name" className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#AFCB12] focus:bg-white transition-all" />
-                                         <input type="text" placeholder="Last name" className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#AFCB12] focus:bg-white transition-all" />
+                                         <input type="text" placeholder="First name" className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#8CB429] focus:bg-white transition-all" />
+                                         <input type="text" placeholder="Last name" className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#8CB429] focus:bg-white transition-all" />
                                      </div>
                                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                         <input type="email" placeholder="E-mail" className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#AFCB12] focus:bg-white transition-all" />
-                                         <input type="tel" placeholder="Phone number" className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#AFCB12] focus:bg-white transition-all" />
+                                         <input type="email" placeholder="E-mail" className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#8CB429] focus:bg-white transition-all" />
+                                         <input type="tel" placeholder="Phone number" className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#8CB429] focus:bg-white transition-all" />
                                      </div>
-                                     <textarea placeholder="Message" rows={4} className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#AFCB12] focus:bg-white transition-all resize-none"></textarea>
+                                     <textarea placeholder="Message" rows={4} className="w-full px-6 py-4 rounded-[4px] border border-[#D0E3FF] bg-white focus:outline-none focus:border-[#8CB429] focus:bg-white transition-all resize-none"></textarea>
                                      
                                      <div className="flex items-start gap-4">
-                                         <input type="checkbox" id="appointment-consent-wrapped" className="mt-1.5 h-4 w-4 rounded border-gray-300 text-[#AFCB12] focus:ring-[#AFCB12]" />
+                                         <input type="checkbox" id="appointment-consent-wrapped" className="mt-1.5 h-4 w-4 rounded border-gray-300 text-[#8CB429] focus:ring-[#8CB429]" />
                                          <label htmlFor="appointment-consent-wrapped" className="text-[12px] text-gray-500 leading-relaxed">
                                              By choosing text, you agree to receive texts/calls from BEANbite LLC and its affiliates, including by auto-dialed or prerecorded means, regarding current and future projects or services at the number you provide.
                                          </label>
@@ -378,7 +378,7 @@ const HomeTwo = () => {
                                      <motion.button 
                                         whileHover={{ scale: 1.02 }}
                                         whileTap={{ scale: 0.98 }}
-                                        className="bg-[#AFCB12] hover:bg-[#9db520] text-white px-[22px] py-[12px] rounded-[4px] font-[600] transition-all shadow-lg shadow-[#AFCB12]/30 w-full sm:w-max text-[14px]"
+                                        className="bg-[#8CB429] hover:bg-[#8CB429] text-white px-[22px] py-[12px] rounded-[4px] font-[600] transition-all shadow-lg shadow-[#8CB429]/30 w-full sm:w-max text-[14px]"
                                     >
                                          Submit form
                                      </motion.button>
@@ -392,10 +392,10 @@ const HomeTwo = () => {
              {/* Our Trusted Partners Section */}
              <section className="py-12 bg-white relative overflow-hidden"
              style={{backgroundImage: 'url(/homeOne/bg-grid.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-                 <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#AFCB12 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+                 <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#8CB429 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
                  <div className="max-w-[1400px] mx-auto px-4 lg:px-12 relative z-10">
                      <div className="text-center mb-16">
-                         <span className="text-[#AFCB12] font-bold text-[16px] mb-2 block uppercase tracking-wide">Our Trusted Partners</span>
+                         <span className="text-[#8CB429] font-bold text-[16px] mb-2 block uppercase tracking-wide">Our Trusted Partners</span>
                          <h2 className="text-4xl md:text-[34px] font-bold text-gray-900">Client Success</h2>
                      </div>
                      
@@ -437,7 +437,7 @@ const HomeTwo = () => {
              </section>
 
              {/* Testimonial Section */}
-             <section id="testimonials" className="bg-[#AFCB12] py-[65px] relative overflow-hidden">
+             <section id="testimonials" className="bg-[#8CB429] py-[65px] relative overflow-hidden">
                  <div className="max-w-[1400px] mx-auto px-4 lg:px-12">
                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-center">
                          {/* Left Side: Content */}
@@ -476,7 +476,7 @@ const HomeTwo = () => {
                                     onClick={prevSlide}
                                     whileHover={{ scale: 1.1 }} 
                                     whileTap={{ scale: 0.9 }} 
-                                    className="w-10 h-10 rounded-full bg-white text-[#AFCB12] flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors"
+                                    className="w-10 h-10 rounded-full bg-white text-[#8CB429] flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors"
                                 >
                                     <ArrowLeft size={24}/>
                                  </motion.button>
@@ -484,7 +484,7 @@ const HomeTwo = () => {
                                     onClick={nextSlide}
                                     whileHover={{ scale: 1.1 }} 
                                     whileTap={{ scale: 0.9 }} 
-                                    className="w-10 h-10 rounded-full bg-white text-[#AFCB12] flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors"
+                                    className="w-10 h-10 rounded-full bg-white text-[#8CB429] flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors"
                                 >
                                     <ArrowRight size={24}/>
                                  </motion.button>
@@ -514,7 +514,7 @@ const HomeTwo = () => {
                                                     {testimonial.text}
                                                 </p>
                                                 <div className="flex items-center gap-4">
-                                                    <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#AFCB12]/20">
+                                                    <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#8CB429]/20">
                                                         <img src={testimonial.img} alt={testimonial.name} className="w-full h-full object-cover" />
                                                     </div>
                                                     <div>
@@ -542,7 +542,7 @@ const HomeTwo = () => {
                         viewport={{ once: true }}
                         className="text-center mb-10"
                     >
-                         <span className="text-[#AFCB12] font-bold text-lg mb-4 block">
+                         <span className="text-[#8CB429] font-bold text-lg mb-4 block">
                             Tips News & Useful Resources
                          </span>
                          <h2 className="text-2xl md:text-[34px] font-bold text-gray-900 leading-tight">
@@ -572,7 +572,7 @@ const HomeTwo = () => {
                                  </div>
                                  
                                  <div className="p-6 md:p-8 md:px-3 md:pb-5 flex flex-col flex-grow">
-                                     <h3 className="text-[18px] font-[500]  mb-4 leading-snug group-hover:text-[#AFCB12] transition-colors min-h-[3.5rem]">
+                                     <h3 className="text-[18px] font-[500]  mb-4 leading-snug group-hover:text-[#8CB429] transition-colors min-h-[3.5rem]">
                                          {post.title}
                                      </h3>
                                      <p className="text-gray-500 text-[14px] mb-0 pb-3 border-b border-[#00000025]">
@@ -587,7 +587,7 @@ const HomeTwo = () => {
                                          <motion.button 
                                             whileHover={{ scale: 1.05, x: 5 }}
                                             whileTap={{ scale: 0.95 }}
-                                            className="bg-[#AFCB12] hover:bg-[#9db520] text-white px-[22px] py-[12px] rounded-[4px] font-[600] text-[14px] transition-all w-max"
+                                            className="bg-[#8CB429] hover:bg-[#8CB429] text-white px-[22px] py-[12px] rounded-[4px] font-[600] text-[14px] transition-all w-max"
                                         >
                                              Read more
                                          </motion.button>
@@ -622,23 +622,23 @@ const HomeTwo = () => {
                                  <h4 className="text-xl font-bold">Follow Us</h4>
                                  <div className="flex gap-3">
                                      <motion.a 
-                                        whileHover={{ y: -5, backgroundColor: "#9db520" }} 
+                                        whileHover={{ y: -5, backgroundColor: "#8CB429" }} 
                                         href="#" 
-                                        className="w-10 h-10 rounded-full bg-[#AFCB12] flex items-center justify-center text-[#ffff] transition-all"
+                                        className="w-10 h-10 rounded-full bg-[#8CB429] flex items-center justify-center text-[#ffff] transition-all"
                                     >
                                          <Facebook size={20} fill="white" />
                                      </motion.a>
                                      <motion.a 
-                                        whileHover={{ y: -5, backgroundColor: "#9db520" }} 
+                                        whileHover={{ y: -5, backgroundColor: "#8CB429" }} 
                                         href="#" 
-                                        className="w-10 h-10 rounded-full bg-[#AFCB12] flex items-center justify-center text-[#fff] transition-all"
+                                        className="w-10 h-10 rounded-full bg-[#8CB429] flex items-center justify-center text-[#fff] transition-all"
                                     >
                                          <Instagram size={20} />
                                      </motion.a>
                                      <motion.a 
-                                        whileHover={{ y: -5, backgroundColor: "#9db520" }} 
+                                        whileHover={{ y: -5, backgroundColor: "#8CB429" }} 
                                         href="#" 
-                                        className="w-10 h-10 rounded-full bg-[#AFCB12] flex items-center justify-center text-[#fff] transition-all font-bold text-xl leading-none"
+                                        className="w-10 h-10 rounded-full bg-[#8CB429] flex items-center justify-center text-[#fff] transition-all font-bold text-xl leading-none"
                                     >
                                          X
                                      </motion.a>
@@ -710,7 +710,7 @@ const HomeTwo = () => {
                              <div className="space-y-5">
                                  <div className="flex items-start gap-4 hover:translate-x-2 transition-transform duration-300">
                                      <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
-                                        <MapPin size={22} className="text-[#AFCB12]" />
+                                        <MapPin size={22} className="text-[#8CB429]" />
                                      </div>
                                      <div>
                                          <p className="font-bold text-white text-[15px]">Address</p>
@@ -719,7 +719,7 @@ const HomeTwo = () => {
                                  </div>
                                  <div className="flex items-start gap-4 hover:translate-x-2 transition-transform duration-300">
                                      <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
-                                        <Phone size={22} className="text-[#AFCB12]" />
+                                        <Phone size={22} className="text-[#8CB429]" />
                                      </div>
                                      <div>
                                          <p className="font-bold text-white text-[15px]">Phone Number</p>
@@ -728,7 +728,7 @@ const HomeTwo = () => {
                                  </div>
                                  <div className="flex items-start gap-4 hover:translate-x-2 transition-transform duration-300">
                                      <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
-                                        <Mail size={22} className="text-[#AFCB12]" />
+                                        <Mail size={22} className="text-[#8CB429]" />
                                      </div>
                                      <div>
                                          <p className="font-bold text-white text-[15px]">Mail Us</p>

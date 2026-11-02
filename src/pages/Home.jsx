@@ -169,7 +169,7 @@ const Home = () => {
                         <motion.button
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
-                          className="hero-rise hero-rise-3 cursor-pointer border border-[4px] border-[#414C00] bg-[#C5D92D] hover:bg-[#b0c41a] text-[#fff] pl-8 pr-2 py-2 rounded-full font-bold text-lg inline-flex items-center justify-between gap-4 transition-all w-max shadow-lg group"
+                          className="hero-rise hero-rise-3 cursor-pointer border border-[4px] border-[#414C00] bg-[#8CB429] hover:bg-[#789A23] text-[#fff] pl-8 pr-2 py-2 rounded-full font-bold text-lg inline-flex items-center justify-between gap-4 transition-all w-max shadow-lg group"
                         >
                           <span>Get Started</span>
                           <div className=" w-10 h-10 bg-[#414C00] rounded-full flex items-center justify-center transition-colors">
@@ -225,7 +225,7 @@ const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="cursor-pointer bg-[#C5D92D] hover:bg-[#b0c41a] text-[#ffffff] pl-8 pr-2 py-2 rounded-full font-bold text-lg inline-flex items-center gap-4 transition-all shadow-md group mb-10 border border-[4px] border-[#414C00]"
+                className="cursor-pointer bg-[#8CB429] hover:bg-[#789A23] text-[#ffffff] pl-8 pr-2 py-2 rounded-full font-bold text-lg inline-flex items-center gap-4 transition-all shadow-md group mb-10 border border-[4px] border-[#414C00]"
               >
                 <span>More About</span>
                 <div className="w-10 h-10 bg-[#414C00] rounded-full flex items-center justify-center group-hover:bg-[#1a2e05]/20 transition-colors">
@@ -277,7 +277,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="pt-8"
           >
-            <span className="inline-block px-8 py-3 bg-[#AFCB12] text-[#000000] font-bold rounded-full text-[18px] mb-6 uppercase tracking-wide">
+            <span className="inline-block px-8 py-3 bg-[#8CB429] text-[#000000] font-bold rounded-full text-[18px] mb-6 uppercase tracking-wide">
               WHO WE ARE
             </span>
 
@@ -285,7 +285,7 @@ const Home = () => {
 
             <h2 className="text-[34px] md:text-5xl font-bold text-[#5e5e5e] leading-[1.2] mb-6">
               Dental Insurance & Credentialing Experts <br />
-              Behind <span className="text-[#AFCB12]">BEANbite</span>
+              Behind <span className="text-[#8CB429]">BEANbite</span>
             </h2>
 
             <p className="text-gray-600  text-base mb-6">
@@ -401,7 +401,7 @@ const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="cursor-pointer border border-[4px] border-[#414C00] bg-[#9db520] hover:bg-[#8ca319] text-[#ffffff] pl-8 pr-2 py-2 rounded-full font-semibold text-[16px] inline-flex items-center gap-4 transition-all shadow-lg group"
+                className="cursor-pointer border border-[4px] border-[#414C00] bg-[#8CB429] hover:bg-[#789A23] text-[#ffffff] pl-8 pr-2 py-2 rounded-full font-semibold text-[16px] inline-flex items-center gap-4 transition-all shadow-lg group"
               >
                 <span>Remote Support</span>
                 <div className="w-10 h-10 bg-[#414C00] rounded-full flex items-center justify-center group-hover:bg-[#1a2e05]/20 transition-colors">
@@ -449,7 +449,7 @@ const Home = () => {
                             viewport={{ once: true }}
                             className="lg:w-1/2"
                         >
-                             <span className="inline-block px-4 py-1.5 bg-[#C5D92D] text-[#1a2e05] font-bold rounded-full text-sm mb-6 uppercase tracking-wide">
+                             <span className="inline-block px-4 py-1.5 bg-[#8CB429] text-[#1a2e05] font-bold rounded-full text-sm mb-6 uppercase tracking-wide">
                                  OUR TRUSTED PARTNERS
                              </span>
                              <h2 className="text-4xl md:text-[42px] font-bold text-gray-900 mb-10 leading-tight">Strengthen your business <br/> for enduring success.</h2>
@@ -480,10 +480,10 @@ const Home = () => {
                              </motion.div>
                              
                              <div className="flex gap-4">
-                                 <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="w-14 h-14 rounded-full border border-gray-100 flex items-center justify-center hover:bg-[#C5D92D] hover:border-[#C5D92D] hover:text-[#1a2e05] transition-colors text-gray-400">
+                                 <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="w-14 h-14 rounded-full border border-gray-100 flex items-center justify-center hover:bg-[#8CB429] hover:border-[#8CB429] hover:text-[#1a2e05] transition-colors text-gray-400">
                                     <ArrowLeft size={24}/>
                                  </motion.button>
-                                 <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="w-14 h-14 rounded-full bg-[#C5D92D] text-[#1a2e05] flex items-center justify-center hover:bg-[#b0c41a] transition-colors shadow-lg shadow-[#c5d92d]/30">
+                                 <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="w-14 h-14 rounded-full bg-[#8CB429] text-[#1a2e05] flex items-center justify-center hover:bg-[#789A23] transition-colors shadow-lg shadow-[#8CB429]/30">
                                     <ArrowRight size={24}/>
                                  </motion.button>
                              </div>
@@ -501,34 +501,34 @@ const Home = () => {
                                  
                                  <div className="relative z-10">
                                      <div className="mb-8">
-                                        <span className="text-[#AFCB12] text-sm font-bold tracking-wide mb-2 block">Make an Appointment</span>
+                                        <span className="text-[#8CB429] text-sm font-bold tracking-wide mb-2 block">Make an Appointment</span>
                                         <h3 className="text-3xl font-bold text-gray-900">Start today with absolutely no risk to you.</h3>
                                      </div>
                                      
                                      <form className="space-y-5">
                                          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                              <div className="space-y-1">
-                                                 <input type="text" placeholder="First name" className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#84cc16] focus:ring-1 focus:ring-[#84cc16] bg-white text-gray-700 placeholder-gray-500" />
+                                                 <input type="text" placeholder="First name" className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] bg-white text-gray-700 placeholder-gray-500" />
                                              </div>
                                              <div className="space-y-1">
-                                                 <input type="text" placeholder="Last name" className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#84cc16] focus:ring-1 focus:ring-[#84cc16] bg-white text-gray-700 placeholder-gray-500" />
+                                                 <input type="text" placeholder="Last name" className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] bg-white text-gray-700 placeholder-gray-500" />
                                              </div>
                                          </div>
                                          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                              <div className="space-y-1">
-                                                 <input type="email" placeholder="E-mail" className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#84cc16] focus:ring-1 focus:ring-[#84cc16] bg-white text-gray-700 placeholder-gray-500" />
+                                                 <input type="email" placeholder="E-mail" className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] bg-white text-gray-700 placeholder-gray-500" />
                                              </div>
                                              <div className="space-y-1">
-                                                 <input type="tel" placeholder="Phone number" className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#84cc16] focus:ring-1 focus:ring-[#84cc16] bg-white text-gray-700 placeholder-gray-500" />
+                                                 <input type="tel" placeholder="Phone number" className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] bg-white text-gray-700 placeholder-gray-500" />
                                              </div>
                                          </div>
                                          <div className="space-y-1">
-                                             <textarea placeholder="Message" rows={4} className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#84cc16] focus:ring-1 focus:ring-[#84cc16] bg-white text-gray-700 placeholder-gray-500 resize-none"></textarea>
+                                             <textarea placeholder="Message" rows={4} className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-[#8CB429] focus:ring-1 focus:ring-[#8CB429] bg-white text-gray-700 placeholder-gray-500 resize-none"></textarea>
                                          </div>
                                          
                                          <div className="flex items-start gap-3 pt-2">
                                             <div className="relative flex items-center">
-                                                <input type="checkbox" id="consent" className="peer h-5 w-5 cursor-pointer appearance-none rounded border border-gray-300 shadow-sm checked:border-[#84cc16] checked:bg-[#84cc16]" />
+                                                <input type="checkbox" id="consent" className="peer h-5 w-5 cursor-pointer appearance-none rounded border border-gray-300 shadow-sm checked:border-[#8CB429] checked:bg-[#8CB429]" />
                                                 <CheckCircle2 size={14} className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white opacity-0 peer-checked:opacity-100" strokeWidth={3} />
                                             </div>
                                             <label htmlFor="consent" className="text-xs text-gray-500 leading-relaxed cursor-pointer select-none">
@@ -539,7 +539,7 @@ const Home = () => {
                                          <motion.button 
                                             whileHover={{ scale: 1.02 }}
                                             whileTap={{ scale: 0.98 }}
-                                            className="border border-[5px] border-[#414C00] bg-[#94AE00] hover:bg-[#65a30d] text-white px-8 py-2 pr-2 rounded-full font-bold text-lg inline-flex items-center gap-3 transition-all shadow-lg shadow-green-600/20 group w-max mt-4"
+                                            className="border border-[5px] border-[#414C00] bg-[#8CB429] hover:bg-[#789A23] text-white px-8 py-2 pr-2 rounded-full font-bold text-lg inline-flex items-center gap-3 transition-all shadow-lg shadow-green-600/20 group w-max mt-4"
                                         >
                                              <span>Submit</span>
                                              <div className="w-10 h-10 bg-[#414C00] rounded-full flex items-center justify-center transition-colors">
@@ -576,7 +576,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-8 py-3 bg-[#AFCB12] text-[#000000] font-bold rounded-full text-[18px] mb-6 uppercase tracking-wide">
+            <span className="inline-block px-8 py-3 bg-[#8CB429] text-[#000000] font-bold rounded-full text-[18px] mb-6 uppercase tracking-wide">
               News & Blogs
             </span>
             <h2 className="text-[34px] md:text-5xl font-bold text-[#5e5e5e] leading-[1.2] mb-6">
@@ -629,7 +629,7 @@ const Home = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="border border-[3px] border-[#414C00] bg-[#C5D92D] hover:bg-[#b0c41a] text-[#fff] pl-6 pr-1 py-1.5 rounded-full font-bold text-sm inline-flex items-center gap-3 transition-all shadow-sm group/btn w-max cursor-pointer"
+                    className="border border-[3px] border-[#414C00] bg-[#8CB429] hover:bg-[#789A23] text-[#fff] pl-6 pr-1 py-1.5 rounded-full font-bold text-sm inline-flex items-center gap-3 transition-all shadow-sm group/btn w-max cursor-pointer"
                   >
                     <span>Read More</span>
                     <div className="w-9 h-9 bg-[#414C00] rounded-full flex items-center justify-center text-white group-hover/btn:bg-[#2d4a0a] transition-colors">

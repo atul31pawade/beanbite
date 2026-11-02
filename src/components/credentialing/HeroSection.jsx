@@ -15,7 +15,7 @@ const HeroSection = () => {
       {/* Background */}
 
       <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#AFCB12]/10 blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#8CB429]/10 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-gray-100 blur-3xl"></div>
       </div>
 
@@ -31,7 +31,7 @@ const HeroSection = () => {
             transition={{ duration: .6 }}
           >
 
-            {/* <span className="inline-flex items-center rounded-full bg-[#AFCB12]/10 text-[#7A9200] px-5 py-2 font-semibold">
+            {/* <span className="inline-flex items-center rounded-full bg-[#8CB429]/10 text-[#7A9200] px-5 py-2 font-semibold">
 
               Strategic Dental Credentialing
 
@@ -72,13 +72,13 @@ const HeroSection = () => {
 
             {/* Tagline */}
 
-            <div className="mt-10 rounded-2xl border border-[#AFCB12]/20 bg-[#F9FCEB] p-4">
+            <div className="mt-10 rounded-2xl border border-[#8CB429]/20 bg-[#F9FCEB] p-4">
 
               <h3 className="text-xl font-bold text-gray-900">
 
                 Optimizing Billing.
 
-                <span className="text-[#AFCB12]">
+                <span className="text-[#8CB429]">
 
                   {" "}Maximizing Revenue. 
 

@@ -17,7 +17,7 @@ const SIZES = {
 
 const VARIANTS = {
   primary:
-    'border-[4px] border-[#414C00] bg-[#C5D92D] text-white hover:bg-[#b0c41a]',
+    'border-[4px] border-[#414C00] bg-[#8CB429] text-white hover:bg-[#789A23]',
   light:
     'border-[4px] border-[#00000025] bg-white text-[#414C00] hover:bg-gray-50',
 };

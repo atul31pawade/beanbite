@@ -47,7 +47,7 @@ const ServicesGrid = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto text-center mb-20"
         >
-          {/* <span className="inline-flex rounded-full bg-[#AFCB12]/10 px-5 py-2 text-[#7A9200] font-semibold">
+          {/* <span className="inline-flex rounded-full bg-[#8CB429]/10 px-5 py-2 text-[#7A9200] font-semibold">
             Our Credentialing Services
           </span> */}
 
@@ -73,18 +73,18 @@ const ServicesGrid = () => {
                 duration: 0.4,
                 delay: index * 0.05,
               }}
-              className="group bg-white rounded-2xl border border-gray-200 hover:border-[#AFCB12] hover:shadow-xl transition-all duration-300 px-2 py-2"
+              className="group bg-white rounded-2xl border border-gray-200 hover:border-[#8CB429] hover:shadow-xl transition-all duration-300 px-2 py-2"
             >
               <div className="flex items-start gap-3">
-                <div className="w-12 h-12 rounded-xl bg-[#AFCB12]/10 flex items-center justify-center shrink-0 group-hover:bg-[#AFCB12] transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-[#8CB429]/10 flex items-center justify-center shrink-0 group-hover:bg-[#8CB429] transition-all duration-300">
                   <CheckCircle2
                     size={26}
-                    className="text-[#AFCB12] group-hover:text-white transition-all duration-300"
+                    className="text-[#8CB429] group-hover:text-white transition-all duration-300"
                   />
                 </div>
 
                 <div>
-                  <span className="text-xs uppercase tracking-widest font-semibold text-[#AFCB12]">
+                  <span className="text-xs uppercase tracking-widest font-semibold text-[#8CB429]">
                     Service {String(index + 1).padStart(2, "0")}
                   </span>
 

@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-[1240px] mx-auto px-4 lg:px-12 relative z-20">
         <motion.div className="relative bg-white rounded-[40px] p-8 md:px-12 md:py-6 flex flex-col md:flex-row justify-between items-center shadow-lg border-4 border-white/10 overflow-hidden">
           {/* <motion.div 
-            className="relative bg-[#AFCB12] rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row justify-between items-center shadow-lg border-4 border-white/10 overflow-hidden"
+            className="relative bg-[#8CB429] rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row justify-between items-center shadow-lg border-4 border-white/10 overflow-hidden"
           ></motion.div> */}
           {/* Background Image */}
           <img
@@ -68,7 +68,7 @@ const Footer = () => {
             </p>
             {/*<div className="relative">
               <input type="email" placeholder="Email Address" className="w-full bg-white text-gray-800 rounded-lg pl-4 py-3 text-sm" />
-              <button className="absolute right-1 top-1 bottom-1 w-10 bg-[#C5D92D] rounded-md flex items-center justify-center text-[#1a2e05]"><ArrowRight size={18}/></button>
+              <button className="absolute right-1 top-1 bottom-1 w-10 bg-[#8CB429] rounded-md flex items-center justify-center text-[#1a2e05]"><ArrowRight size={18}/></button>
             </div>*/}
             <Link
               className="p-2 bg-white block rounded-md"
@@ -216,7 +216,7 @@ const Footer = () => {
                 </div>
                 <a
                   href="tel:+18887005589"
-                  className="block ml-7 mt-1 text-white text-[14px] font-light hover:text-[#AFCB12] transition"
+                  className="block ml-7 mt-1 text-white text-[14px] font-light hover:text-[#8CB429] transition"
                 >
                   (888) 700 5589
                 </a>
@@ -229,7 +229,7 @@ const Footer = () => {
                 </div>
                 <a
                   href="mailto:info@BEANbite.com"
-                  className="block ml-7 mt-1 text-white text-[14px] font-light hover:text-[#AFCB12] transition"
+                  className="block ml-7 mt-1 text-white text-[14px] font-light hover:text-[#8CB429] transition"
                 >
                   info@BEANbite.com
                 </a>

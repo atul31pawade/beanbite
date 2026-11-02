@@ -91,16 +91,16 @@ const BillingServices = () => {
                     key={service.title}
                     className="group grid grid-cols-[46px_1fr] gap-4 border-t border-[#E4E9D8] py-6 first:border-t-0 first:pt-0 md:grid-cols-[56px_1fr] md:gap-[22px] md:py-7"
                   >
-                    <span className="flex h-[46px] w-[46px] flex-none items-center justify-center rounded-full border border-[#E4E9D8] bg-[#F7F9F2] text-[#809900] transition-colors duration-300 group-hover:border-[#AFCB12] group-hover:bg-[#AFCB12]/10">
+                    <span className="flex h-[46px] w-[46px] flex-none items-center justify-center rounded-full border border-[#E4E9D8] bg-[#F7F9F2] text-[#809900] transition-colors duration-300 group-hover:border-[#8CB429] group-hover:bg-[#8CB429]/10">
                       <Icon size={22} strokeWidth={1.8} aria-hidden="true" />
                     </span>
                     <div>
                       <div className="flex items-center gap-3">
-                        <span className="text-[11px] font-bold tracking-[0.16em] text-[#AFCB12]">
+                        <span className="text-[11px] font-bold tracking-[0.16em] text-[#8CB429]">
                           {String(index + 1).padStart(2, "0")}
                         </span>
-                        <span className="h-[3px] flex-1 rounded-full bg-[#AFCB12]/20">
-                          <span className="block h-full w-0 rounded-full bg-[#AFCB12] transition-all duration-700 group-hover:w-full"></span>
+                        <span className="h-[3px] flex-1 rounded-full bg-[#8CB429]/20">
+                          <span className="block h-full w-0 rounded-full bg-[#8CB429] transition-all duration-700 group-hover:w-full"></span>
                         </span>
                       </div>
                       <h3 className="mt-[5px] text-[17px] font-bold leading-snug text-[#5e5e5e]">
