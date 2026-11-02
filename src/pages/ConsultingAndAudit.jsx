@@ -226,7 +226,7 @@ const ConsultingAndAudit = () => {
                   </div>
 
                   {/* Content - Full Answer Visible */}
-                  <h3 className="font-bold text-gray-900 mb-3 text-sm leading-tight">
+                  <h3 className="font-bold text-[#5e5e5e] mb-3 text-sm leading-tight">
                     {step.question}
                   </h3>
 
