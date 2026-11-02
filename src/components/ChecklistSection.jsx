@@ -20,6 +20,14 @@ const FIELDS = [
   { name: "email", label: "Work email", type: "email" },
 ];
 
+// Logo lockup colors: "BEAN" #8CB428, "bite" #7F7F7F
+const Wordmark = () => (
+  <>
+    <span className="text-[#8CB428]">BEAN</span>
+    <span className="text-[#7F7F7F]">bite</span>
+  </>
+);
+
 const ChecklistCard = ({ item, onOpen }) => (
   <motion.article
     initial={{ opacity: 0, y: 24 }}
@@ -35,8 +43,8 @@ const ChecklistCard = ({ item, onOpen }) => (
     >
       <div className="m-5 mb-0 rounded-xl border border-[#E4E9D8] bg-[#F7F9F2] px-5 py-4">
         <div className="flex items-baseline justify-between">
-          <span className="text-[15px] font-extrabold tracking-tight text-[#010851]">
-            BEAN<span className="text-[#AFCB12]">bite</span>
+          <span className="text-[15px] font-extrabold tracking-tight">
+            <Wordmark />
           </span>
           <span className="text-[8px] font-semibold uppercase tracking-[0.14em] text-[#9aa37f]">
             Checklist
@@ -57,7 +65,7 @@ const ChecklistCard = ({ item, onOpen }) => (
             {item.category}
           </span>
           <span className="text-[11px] font-medium uppercase tracking-[0.12em] text-[#9aa37f]">
-            Team BEANbite
+            Team <Wordmark />
           </span>
         </div>
         <p className="text-base leading-relaxed text-[#5e5e5e]">{item.blurb}</p>
@@ -147,8 +155,8 @@ const DownloadModal = ({ item, onClose }) => {
         <div className="hidden bg-[#F7F9F2] p-8 md:block">
           <div className="rounded-xl border border-[#E4E9D8] bg-white px-5 py-4">
             <div className="flex items-baseline justify-between">
-              <span className="text-[17px] font-extrabold tracking-tight text-[#010851]">
-                BEAN<span className="text-[#AFCB12]">bite</span>
+              <span className="text-[17px] font-extrabold tracking-tight">
+                <Wordmark />
               </span>
               <span className="text-[8px] font-semibold uppercase tracking-[0.14em] text-[#9aa37f]">
                 Checklist
@@ -283,7 +291,7 @@ const ChecklistSection = () => {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
-          BEANbite Checklists
+          <Wordmark /> Checklists
         </h2>
         <p className="text-base leading-relaxed text-[#5e5e5e] max-w-[640px]">
           The same claim-by-claim routines our billing team runs every day. Tell

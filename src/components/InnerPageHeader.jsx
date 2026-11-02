@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const InnerPageHeader = ({ title, breadcrumb }) => {
   return (
-    <section className="bg-[#AFCB12] py-8 md:py-8">
+    <section className="bg-[#555555] py-8 md:py-8">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-12">
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
@@ -21,9 +21,11 @@ const InnerPageHeader = ({ title, breadcrumb }) => {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
             className="text-white/90 text-base"
           >
-            <Link to="/" className="hover:text-[#C5D92D] transition-colors">Home</Link>
+            <Link to="/" className="hover:text-[#C5D92D] transition-colors">
+              Home
+            </Link>
             <span className="mx-2">/</span>
-            <span className="text-[#e1f160]">{breadcrumb}</span>
+            <span className="text-[#f8f8f8]">{breadcrumb}</span>
           </motion.div>
         )}
       </div>

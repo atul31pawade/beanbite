@@ -305,7 +305,7 @@ const PPOFeeNegotiations = () => {
                     Data view
                   </span>
                 </div>
-                <h3 className="font-bold text-gray-900 text-lg mb-3">
+                <h3 className="font-bold text-[#5e5e5e] text-lg mb-3">
                   {title}
                 </h3>
                 <p className="text-base text-gray-600 leading-relaxed mb-4">
@@ -377,7 +377,7 @@ const PPOFeeNegotiations = () => {
                 <div className="w-10 h-10 bg-[#AFCB12]/15 flex items-center justify-center rounded-full mb-5">
                   <BarChart3 className="text-[#7d9200]" size={20} />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                <h3 className="text-lg font-bold text-[#5e5e5e] mb-3">
                   {title}
                 </h3>
                 <p className="text-base text-gray-600 leading-relaxed">
@@ -404,7 +404,7 @@ const PPOFeeNegotiations = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border border-gray-200 p-7 rounded-[4px]">
-              <h3 className="font-bold text-gray-900 text-xl mb-5">
+              <h3 className="font-bold text-[#5e5e5e] text-xl mb-5">
                 Typical PPO consultants
               </h3>
               {[
@@ -438,7 +438,7 @@ const PPOFeeNegotiations = () => {
                   {item}
                 </p>
               ))}
-              <span class="badge">Founder: DDS + Office Manager</span>
+              <span className="badge">Founder: DDS + Office Manager</span>
             </div>
           </div>
         </div>
@@ -450,7 +450,7 @@ const PPOFeeNegotiations = () => {
               From data to implementation
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4">
-              Our 11-step PPO strategy process
+              Our PPO fee negotiation strategy
             </h2>
             <p className="text-gray-600 mt-4">
               From data analysis to implementation verification—here's exactly
@@ -464,7 +464,7 @@ const PPOFeeNegotiations = () => {
                   {i + 1}
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900">{step}</h3>
+                  <h3 className="font-bold text-[#5e5e5e]">{step}</h3>
                   <p className="text-base text-gray-600 mt-1">
                     {
                       [
@@ -509,9 +509,7 @@ const PPOFeeNegotiations = () => {
             </div>
             <div>
               <Network className="text-[#C5D92D] mx-auto mb-3" size={32} />
-              <h3 className="font-bold text-xl mb-2">
-                Umbrella/Alternative Networks
-              </h3>
+              <h3 className="font-bold text-xl mb-2">Umbrella Networks</h3>
               <p className="text-white/70">
                 14% to 37% based on available arrangements.
               </p>
@@ -678,7 +676,7 @@ const PPOFeeNegotiations = () => {
                 <button
                   type="button"
                   onClick={() => setOpenFaq(openFaq === i ? -1 : i)}
-                  className="w-full flex items-center justify-between gap-4 text-left p-5 font-semibold text-gray-900"
+                  className="w-full flex items-center justify-between gap-4 text-left p-5 font-semibold text-[#5e5e5e]"
                 >
                   <span>{question}</span>
                   <ChevronDown
