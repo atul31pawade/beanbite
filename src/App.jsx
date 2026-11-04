@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import HomeTwo from './pages/HomeTwo';
@@ -36,7 +36,8 @@ function App() {
           <Route path="/services/credentialing" element={<Credentialing />} />
           <Route path="/services/verification" element={<InsuranceVerification />} />
           <Route path="/services/billing" element={<BillingServices />} />
-          <Route path="/services/consultingandaudit" element={<ConsultingAndAudit />} />
+          <Route path="/services/practiceauditsupport" element={<ConsultingAndAudit />} />
+          <Route path="/services/consultingandaudit" element={<Navigate to="/services/practiceauditsupport" replace />} />
           <Route path="/services/ppo-fee-negotiations" element={<PPOFeeNegotiations />} />
           <Route path="/services/ppo-network-readiness-checklist" element={<PPOReadinessChecklist />} />
           <Route path="/CDA-Advertising" element={<CDAAdvertising />} />

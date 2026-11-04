@@ -43,17 +43,28 @@ const ServicesSection = ({ headingClass = SECTION_HEADING }) => {
     {
       id: 4,
       icon: "/homeOne/service-card-4-icon.png",
-      title: "Practice Consulting & Audit Support",
+      title: "Practice Audit Support",
       desc: "BEANbite helps dental practices navigate insurance audits, including record requests, chart reviews, billing reviews, and payer communications to reduce compliance risk.",
-      link: "/services/consultingandaudit",
+      link: "/services/practiceauditsupport",
     },
     {
       id: 5,
-      icon: "/homeOne/fee-negotiations.png",
+      icon: "/homeOne/service-card-5-icon.png",
       title: "PPO Fee Negotiations",
       desc: "BEANbite helps dental practices negotiate stronger PPO fee schedules and improve reimbursement while protecting long-term practice profitability.",
       link: "/services/ppo-fee-negotiations",
     },
+  ];
+
+  // Billing Services (index 2) is repeated as the 6th slide, so it lands on
+  // every 3rd position and one copy is always in the 3-up desktop view.
+  const sliderServices = [
+    services[0],
+    services[1],
+    services[2],
+    services[3],
+    services[4],
+    services[2],
   ];
 
   return (
@@ -114,8 +125,8 @@ const ServicesSection = ({ headingClass = SECTION_HEADING }) => {
             }}
             className="services-slider"
           >
-            {services.map((service) => (
-              <SwiperSlide key={service.id}>
+            {sliderServices.map((service, index) => (
+              <SwiperSlide key={`${service.id}-${index}`}>
                 <ServiceCard
                   icon={service.icon}
                   title={service.title}

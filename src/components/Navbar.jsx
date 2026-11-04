@@ -14,7 +14,7 @@ const Navbar = () => {
     { path: "/services/verification", label: "Dental Insurance Verification" },
     { path: "/services/billing", label: "Billing Services" },
     {
-      path: "/services/consultingandaudit",
+      path: "/services/practiceauditsupport",
       label: "Practice Consulting and Audit Support",
     },
     { path: "/services/ppo-fee-negotiations", label: "PPO Fee Negotiations" },
@@ -44,8 +44,8 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center justify-center flex-1 mx-6">
-            <div className="flex items-center space-x-8">
+          <div className="hidden lg:flex items-center justify-center flex-1 mx-6 min-[1400px]:mx-3 2xl:mx-6">
+            <div className="flex items-center space-x-8 min-[1400px]:space-x-5 min-[1400px]:whitespace-nowrap 2xl:space-x-8">
               <Link
                 to="/"
                 className={`text-[15px] font-light transition-colors ${isActive("/") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB429]"}`}
@@ -111,7 +111,7 @@ const Navbar = () => {
           </div>
 
           {/* Right Side CTA */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8 min-[1400px]:hidden!">
             <Link
               to="https://assist.zoho.com/install-customer-plugin"
               className="text-[16px] font-medium text-black border-b-2 border-black hover:text-[#8CB429] hover:border-[#8CB429] pb-0.5 flex items-center gap-1 transition-all"
@@ -124,6 +124,23 @@ const Navbar = () => {
             >
               Book a Consultation <span className="text-lg font-medium">›</span>
             </Link>
+          </div>
+
+          {/* The two pills need 1290px of row width, which the 1400px container only offers from 1400px up */}
+          <div className="hidden min-[1400px]:flex items-center gap-3 2xl:gap-4">
+            <CtaButton
+              href="https://assist.zoho.com/install-customer-plugin"
+              size="sm"
+            >
+              Remote Support
+            </CtaButton>
+            <CtaButton
+              href="https://outlook.office.com/owa/calendar/Consultation@beanbite.com/bookings/"
+              variant="light"
+              size="sm"
+            >
+              Book a Consultation
+            </CtaButton>
           </div>
 
           {/* Mobile menu button */}

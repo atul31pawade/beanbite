@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const SIZES = {
+  sm: {
+    pill: 'pl-4 pr-1 py-1 text-[13px] gap-2',
+    icon: 'w-7 h-7',
+    glyph: 15,
+  },
   md: {
     pill: 'pl-6 pr-1.5 py-1.5 text-[15px] gap-3',
     icon: 'w-9 h-9',

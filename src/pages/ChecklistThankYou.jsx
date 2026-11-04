@@ -56,12 +56,12 @@ const ChecklistThankYou = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.45 }}
         >
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#010851]">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#5e5e5e]">
             Thank you!
           </h1>
           <p className="mt-6 text-xl md:text-2xl leading-snug text-[#5e5e5e]">
             Click the button below to access your resource:
-            <span className="mt-1 block font-bold text-[#1f1f1f]">
+            <span className="mt-1 block font-bold text-[#5e5e5e]">
               &ldquo;{item.title}&rdquo;
             </span>
           </p>
@@ -109,7 +109,7 @@ const ChecklistThankYou = () => {
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#F7F9F2] text-[#414C00] transition-colors group-hover:bg-[#8CB429]/20">
                   <Icon size={20} />
                 </span>
-                <span className="mt-4 text-lg font-bold text-[#1f1f1f]">
+                <span className="mt-4 text-lg font-bold text-[#5e5e5e]">
                   {label}
                 </span>
                 <span className="mt-2 text-[15px] leading-relaxed text-[#5e5e5e]">
