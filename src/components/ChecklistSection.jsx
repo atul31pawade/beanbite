@@ -51,7 +51,7 @@ const ChecklistCard = ({ item, onOpen }) => (
           </span>
         </div>
         <div className="mt-1.5 h-[2px] w-full bg-[#010851]/20" />
-        <p className="mt-3 line-clamp-2 text-[15px] font-bold leading-snug text-[#1f1f1f]">
+        <p className="mt-3 line-clamp-2 text-[15px] font-bold leading-snug text-[#5e5e5e]">
           {item.title}
         </p>
         <p className="mt-1 text-[11px] text-[#7c8566]">
@@ -76,7 +76,7 @@ const ChecklistCard = ({ item, onOpen }) => (
       <button
         type="button"
         onClick={() => onOpen(item)}
-        className="inline-flex items-center gap-2 text-[15px] font-bold text-[#010851] transition-colors hover:text-[#414C00]"
+        className="inline-flex items-center gap-2 text-[15px] font-bold text-[#5e5e5e] transition-colors hover:text-[#414C00]"
       >
         See What&rsquo;s Inside
         <ArrowRight
@@ -163,7 +163,7 @@ const DownloadModal = ({ item, onClose }) => {
               </span>
             </div>
             <div className="mt-1.5 h-[2px] bg-[#010851]/20" />
-            <p className="mt-3 text-[17px] font-bold leading-snug text-[#1f1f1f]">
+            <p className="mt-3 text-[17px] font-bold leading-snug text-[#5e5e5e]">
               {item.title}
             </p>
             <p className="mt-1 text-[11px] text-[#7c8566]">
@@ -177,7 +177,7 @@ const DownloadModal = ({ item, onClose }) => {
           <ul className="mt-3 space-y-3">
             {item.inside.map((line) => (
               <li key={line} className="flex gap-2.5 text-[#5e5e5e]">
-                <Check size={17} className="mt-0.5 shrink-0 text-[#010851]" />
+                <Check size={17} className="mt-0.5 shrink-0 text-[#8CB429]" />
                 <span className="text-[15px] leading-snug">{line}</span>
               </li>
             ))}
@@ -185,7 +185,7 @@ const DownloadModal = ({ item, onClose }) => {
         </div>
 
         <div className="p-6 sm:p-8">
-          <h3 className="text-xl font-bold leading-snug text-[#1f1f1f] md:text-2xl">
+          <h3 className="text-xl font-bold leading-snug text-[#5e5e5e] md:text-2xl">
             {item.title}
           </h3>
           <p className="mt-2 text-base leading-relaxed text-[#5e5e5e]">

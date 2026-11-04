@@ -15,6 +15,7 @@ import Testimonial from "../components/Testimonial";
 const heroSlides = [
   {
     image: "/hero/11.jpg",
+    mobileImage: "/hero/11-mobile.jpg",
     lines: ["Bill Smarter.", "Collect Faster.", "Keep More."],
     paragraphs: [
       "Expert billing, credentialing, PPO optimization and revenue cycle management — helping dental practices boost collections, strengthen cash flow and shed the admin load.",
@@ -22,6 +23,7 @@ const heroSlides = [
   },
   {
     image: "/hero/12.jpg",
+    mobileImage: "/hero/12-mobile.jpg",
     lines: ["Zero Guesswork.", "Zero Stress."],
     paragraphs: [
       "Straight-talking advice you can bank on — dependable, transparent revenue services your practice can count on, day in and day out.",
@@ -29,6 +31,7 @@ const heroSlides = [
   },
   {
     image: "/hero/13.jpg",
+    mobileImage: "/hero/13-mobile.jpg",
     lines: ["Keep Every Dollar", "You've Drilled For."],
     paragraphs: [
       " Increase Your Practice Revenue Without Doing More Dentistry",
@@ -98,14 +101,14 @@ const ProductionImpact = () => {
     historicalProduction + productionPerSecond * elapsedSeconds;
 
   return (
-    <div className="min-w-0">
+    <div className="min-w-0 flex-1">
       <p className="text-base font-bold text-gray-900 sm:text-lg">
         Over{" "}
         <span className="text-xl tabular-nums sm:text-2xl" aria-live="off">
           {productionCurrency.format(dailyAccrualTotal)}
         </span>
       </p>
-      <p className="max-w-[430px] text-md leading-5 text-slate-600">
+      <p className="max-w-[430px] text-base leading-7 text-slate-600">
         in Dental Production Supported Across Our Client Base Since 2016, with
         new production added every day.
       </p>
@@ -135,14 +138,20 @@ const Home = () => {
           >
             {heroSlides.map((slide) => (
               <SwiperSlide key={slide.lines.join("|")}>
-                <div className="relative flex flex-col items-center md:block min-h-[550px] md:min-h-[650px] lg:min-h-[700px] xl:min-h-[740px]">
+                <div className="relative flex flex-col items-center min-h-[550px] md:min-h-[650px] lg:min-h-[700px] xl:min-h-[740px]">
                   {/* Background Image with slow per-slide zoom */}
                   <div className="absolute inset-0 z-0 overflow-hidden">
-                    <img
-                      src={slide.image}
-                      alt="Dental Team"
-                      className="hero-kb-img w-full h-full object-cover object-[right_top]"
-                    />
+                    <picture className="block h-full w-full">
+                      <source
+                        media="(max-width: 767px)"
+                        srcSet={slide.mobileImage}
+                      />
+                      <img
+                        src={slide.image}
+                        alt="Dental Team"
+                        className="hero-kb-img h-full w-full object-cover object-[center_top] md:object-[right_top]"
+                      />
+                    </picture>
                     <div
                       aria-hidden="true"
                       className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0.72)_38%,rgba(255,255,255,0.3)_58%,transparent_78%)]"
@@ -150,8 +159,8 @@ const Home = () => {
                   </div>
 
                   {/* Content */}
-                  <div className="relative z-10 max-w-[1400px] mx-auto w-full h-full px-4 lg:px-12">
-                    <div className="md:w-[46%] xl:w-[42%] flex flex-col justify-center h-full py-16 md:py-20 pt-24 md:pt-20">
+                  <div className="relative z-10 max-w-[1400px] mx-auto w-full h-full flex-1 flex flex-col px-4 lg:px-12">
+                    <div className="md:w-[46%] xl:w-[42%] flex flex-col justify-center h-full flex-1 py-16 md:py-20 pt-24 md:pt-20">
                       <h1 className="hero-rise text-4xl md:text-[56px] font-bold leading-[1.1] mb-8 text-[#5e5e5e]">
                         {slide.lines.map((line, i) => (
                           <React.Fragment key={i}>
@@ -239,8 +248,8 @@ const Home = () => {
             </Link>
 
             {/* Social Proof */}
-            <div className="mt-10 flex items-center gap-4">
-              <div className="flex -space-x-3">
+            <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+              <div className="flex shrink-0 -space-x-3">
                 <img
                   src="/about/impact1.png"
                   alt="user 1"
@@ -313,18 +322,18 @@ const Home = () => {
                         </p>*/}
 
             {/* Experience Graphic */}
-            <div className="relative flex items-center justify-left ml-4">
+            <div className="relative mt-2 flex flex-col items-center gap-0 sm:flex-row sm:items-center sm:justify-start">
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="relative z-10 bg-white border border-[#D9D9D9] pr-[50px] rounded-full w-[280px] h-[280px] flex flex-col items-center justify-center text-center shrink-0"
+                className="relative z-10 flex h-[200px] w-[200px] shrink-0 flex-col items-center justify-start rounded-full border border-[#D9D9D9] bg-white pr-0 pt-6 text-center sm:justify-center sm:pt-0 sm:pr-6 md:h-[240px] md:w-[240px] md:pr-8 lg:pr-[60px] xl:h-[280px] xl:w-[280px] xl:pr-[50px]"
               >
-                <span className="text-[80px] font-bold text-black leading-none">
-                  20<sup className="text-4xl">+</sup>
+                <span className="text-[56px] font-bold text-black leading-none md:text-[68px] xl:text-[80px]">
+                  20<sup className="text-[24px] md:text-[30px] xl:text-4xl">+</sup>
                 </span>
-                <span className="text-lg font-medium text-black mt-2">
+                <span className="mt-2 text-[14px] font-medium text-black md:text-base xl:text-lg">
                   Years Experienced <br /> Team Help you
                 </span>
               </motion.div>
@@ -333,12 +342,12 @@ const Home = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="relative -ml-20 z-20 rounded-full overflow-hidden w-[280px] h-[280px]"
+                className="relative z-20 -mt-14 h-[200px] w-[200px] shrink-0 overflow-hidden rounded-full sm:-ml-10 sm:-mt-0 md:-ml-12 md:h-[240px] md:w-[240px] lg:-ml-16 xl:-ml-20 xl:h-[280px] xl:w-[280px]"
               >
                 <img
                   src="/services/consulting-audit/dental-insurance-credentialing-experts-behind-BEANbite.jpg"
                   alt="Team Discussion"
-                  className="w-full h-full object-cover"
+                  className="h-full w-full object-cover"
                 />
               </motion.div>
             </div>

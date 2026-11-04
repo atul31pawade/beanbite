@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, TrendingUp, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, TrendingUp } from "lucide-react";
 import CtaButton from "./CtaButton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -83,9 +83,45 @@ const PartnerSection = ({ headingClass = SECTION_HEADING }) => {
     },
   ];
 
+  const row3Logos = [
+    {
+      name: "Sunny Family Dental",
+      tagline: "",
+      image: "/homeOne/partner-logos/p20.jpg",
+    },
+    {
+      name: "MK Dental Excellence",
+      tagline: "Cincinnati",
+      image: "/homeOne/partner-logos/p19.webp",
+      // Wordmark is white-on-transparent, so the card goes dark to keep it legible.
+      bg: "bg-[#383838]",
+    },
+    {
+      name: "California Coast Dental Arts",
+      tagline: "",
+      image: "/homeOne/partner-logos/p18.svg",
+    },
+    {
+      name: "Prime Life Dental",
+      tagline: "Implants, Cosmetics, Esthetics",
+      image: "/homeOne/partner-logos/p17.webp",
+    },
+    {
+      name: "Olive Dental Studio",
+      tagline: "",
+      image: "/homeOne/partner-logos/p16.png",
+    },
+    {
+      name: "Dr. Matthew Wallace, DDS",
+      tagline: "",
+      image: "/homeOne/partner-logos/p21.png",
+    },
+  ];
+
   // Refs for swiper instances
   const swiperRow1Ref = useRef(null);
   const swiperRow2Ref = useRef(null);
+  const swiperRow3Ref = useRef(null);
 
   // Common swiper settings with autoplay and loop
   const getSwiperSettings = (rowNumber) => ({
@@ -105,7 +141,8 @@ const PartnerSection = ({ headingClass = SECTION_HEADING }) => {
     className: "!pb-4",
     onSwiper: (swiper) => {
       if (rowNumber === 1) swiperRow1Ref.current = swiper;
-      else swiperRow2Ref.current = swiper;
+      else if (rowNumber === 2) swiperRow2Ref.current = swiper;
+      else swiperRow3Ref.current = swiper;
     },
   });
 
@@ -113,11 +150,13 @@ const PartnerSection = ({ headingClass = SECTION_HEADING }) => {
   const handlePrev = () => {
     swiperRow1Ref.current?.slidePrev();
     swiperRow2Ref.current?.slidePrev();
+    swiperRow3Ref.current?.slidePrev();
   };
 
   const handleNext = () => {
     swiperRow1Ref.current?.slideNext();
     swiperRow2Ref.current?.slideNext();
+    swiperRow3Ref.current?.slideNext();
   };
 
   return (
@@ -161,6 +200,17 @@ const PartnerSection = ({ headingClass = SECTION_HEADING }) => {
             </Swiper>
           </div>
 
+          {/* Row 3 */}
+          <div className="mb-4">
+            <Swiper {...getSwiperSettings(3)}>
+              {row3Logos.map((partner, i) => (
+                <SwiperSlide key={`row3-${i}`}>
+                  <LogoCard partner={partner} delay={i * 0.1} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
           {/* Navigation */}
           <div className="flex gap-3 mt-4">
             <NavButton
@@ -190,13 +240,19 @@ const LogoCard = ({ partner, delay }) => (
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5, delay }}
     whileHover={{ scale: 1.05 }}
-    className="bg-white h-20 flex items-center justify-center transition-shadow cursor-pointer border border-[#D8D8D8] rounded-md py-1 px-1"
+    className={`${partner.bg || "bg-white"} h-20 flex items-center justify-center transition-shadow cursor-pointer border border-[#D8D8D8] rounded-md py-1 px-1`}
   >
-    <img
-      src={partner.image}
-      alt={partner.name}
-      className="max-w-full max-h-full object-contain"
-    />
+    {partner.image ? (
+      <img
+        src={partner.image}
+        alt={partner.name}
+        className="max-w-full max-h-full object-contain"
+      />
+    ) : (
+      <span className="px-3 text-center text-[13px] font-semibold leading-tight text-[#5e5e5e]">
+        {partner.name}
+      </span>
+    )}
   </motion.div>
 );
 
@@ -254,28 +310,21 @@ const ContactFormCard = () => (
           className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB429] bg-white"
           placeholder="Message"
         />
-        <div className="flex items-start gap-3 pt-2">
-          <div className="relative flex items-center">
-            <input
-              type="checkbox"
-              id="consent"
-              className="peer h-5 w-5 cursor-pointer appearance-none rounded border border-gray-300 shadow-sm checked:border-[#8CB429] checked:bg-[#8CB429]"
-            />
-            <CheckCircle2
-              size={14}
-              className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white opacity-0 peer-checked:opacity-100"
-              strokeWidth={3}
-            />
-          </div>
-          <label
-            htmlFor="consent"
-            className="text-xs text-gray-500 leading-relaxed cursor-pointer select-none"
-          >
+        <div className="text-xs text-gray-500 leading-relaxed space-y-3 pt-2">
+          <p>
             By choosing text, you agree to receive texts/calls from BEANbite LLC
             and its affiliates, including by auto-dialed or prerecorded means,
             regarding current and future projects or services at the number you
-            provide.
-          </label>
+            provide. Since texts are unencrypted, there is a risk that your
+            message could be intercepted or viewed by third parties, and others
+            who access your device. Consent is not a condition of purchasing any
+            goods/services. Message frequency varies. Message and data rates may
+            apply.
+          </p>
+          <p>
+            We do not share personal information with third parties for
+            marketing purposes under any circumstances.
+          </p>
         </div>
         <CtaButton icon={TrendingUp}>Submit</CtaButton>
       </form>

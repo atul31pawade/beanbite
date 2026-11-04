@@ -149,9 +149,9 @@ const PPOFeeNegotiations = () => {
           >
             <div className="overflow-hidden rounded-2xl border border-gray-200">
               <img
-                src="/services/ppo-fee-charts.jpg"
-                alt="Printed PPO reimbursement comparison charts on a desk"
-                className="w-full h-[280px] md:h-[360px] lg:h-[300px] object-cover"
+                src="/services/ppo-collections-by-carrier.jpg"
+                alt="Collections by insurance: billed versus paid amounts across Delta Dental, Aetna PPO, Cigna, MetLife, United Healthcare, Horizon, Guardian, Anthem BCBS, BCBS, United Concordia, Principal and Humana"
+                className="w-full h-auto"
               />
             </div>
           </MotionDiv>

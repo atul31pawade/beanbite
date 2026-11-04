@@ -93,7 +93,7 @@ const ConsultingAndAudit = () => {
             <p className="text-gray-600 text-base leading-relaxed mb-0">
               BEANbite brings an experienced, objective perspective to evaluate
               your practice, uncover improvement opportunities, and strengthen
-              the systems that drive long-term success. Our consulting and audit
+              the systems that drive long-term success. Our practice audit
               support services help you make informed decisions, improve
               operational performance, and confidently prepare your team for
               future growth.

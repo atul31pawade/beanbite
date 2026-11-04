@@ -36,7 +36,7 @@ const Footer = () => {
 
           <div className="flex items-center flex-col md:flex-row gap-6 relative z-10">
             <img
-              src="/homeOne/footer-card-arrow-icon.png"
+              src="/homeOne/footer-card-arrow-icon-orange.png"
               alt="arrow"
               className="w-[150px] hidden md:block"
             />
@@ -141,10 +141,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/consultingandaudit"
+                  to="/services/practiceauditsupport"
                   className="text-white text-[14px] font-light"
                 >
-                  Consulting & Audit Support
+                  Practice Audit Support
                 </Link>
               </li>
               <li>
