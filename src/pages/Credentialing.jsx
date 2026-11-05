@@ -101,15 +101,15 @@ const Credentialing = () => {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-[#F7F9F2]">
       <InnerPageHeader
         title="Stretagic Dental Credentialing & PPO Fee Nagotiations"
         breadcrumb="Services / Credentialing"
       />
 
       {/* 1. Top Section: We Cater to Start-up... */}
-      <section className="max-w-[1400px] mx-auto px-6 lg:px-16 py-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-[#F7F9F2] py-10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT SIDE */}
           <motion.div
             variants={fadeInUp}
@@ -226,7 +226,7 @@ const Credentialing = () => {
 
       {/* 2. Middle Section: PPO Fee Negotiations - PURE FULL BLEED IMAGE ON RIGHT */}
       {/* ========================================================= */}
-      <section className="bg-[#EEF4FF] overflow-hidden relative">
+      <section className="bg-white overflow-hidden relative">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="flex flex-col lg:grid lg:grid-cols-2 lg:min-h-[600px]">
             {/* LEFT SIDE: Text content */}
@@ -235,7 +235,7 @@ const Credentialing = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: "-100px" }}
-              className="py-16 lg:py-24 pr-0 lg:pr-20 z-10"
+              className="py-16 lg:py-10 pr-0 lg:pr-20 z-10"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
                 PPO Fee Negotiations
@@ -282,7 +282,7 @@ const Credentialing = () => {
       </section>
 
       {/* 3. Documents Required Section */}
-      <section className="max-w-[1400px] mx-auto px-6 lg:px-16 py-20">
+      <section className="max-w-[1400px]  bg-white mx-auto px-6 lg:px-16 py-10">
         <div className="grid lg:grid-cols-5 gap-12 items-center">
           <div className="lg:col-span-2">
             <img
@@ -313,7 +313,7 @@ const Credentialing = () => {
       </section>
 
       {/* 4. Workflow Accordion Section */}
-      <section className="bg-white mb-20">
+      <section className="bg-white py-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 text-center">
             BEANbite Credentialing and Fee <br /> Negotiations Workflow
@@ -393,9 +393,11 @@ const Credentialing = () => {
       </section>
 
       {/* 5. Partner Section */}
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pb-20">
-        <PartnerSection />
-      </div>
+      <section className="bg-white">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-10">
+          <PartnerSection />
+        </div>
+      </section>
     </div>
   );
 };

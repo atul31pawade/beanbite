@@ -176,12 +176,12 @@ const PPOReadinessChecklist = () => {
         breadcrumb="PPO Network Readiness"
       />
 
-      <section className="max-w-[1400px] mx-auto lg:px-12 px-6 py-12 md:py-20">
+      <section className="bg-[#F7F9F2] py-10">
         <Motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center"
+          className="max-w-[1400px] mx-auto lg:px-12 px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center"
         >
           <div>
             {/*<p className="inline-flex items-center rounded-full bg-[#8CB429]/20 text-[#1a2e05] px-3 py-1 text-sm font-semibold mb-4">
@@ -190,7 +190,7 @@ const PPOReadinessChecklist = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-tight">
               Your Next PPO Decision Deserves More Than a Gut Feeling
             </h2>
-            <p className="text-base text-slate-600 leading-relaxed mb-6">
+            <p className="text-base text-[#5e5e5e] leading-relaxed mb-6">
               Should your practice go in-network? Answer these 10 questions
               about your collections, patient demand, financial performance, and
               operational readiness to help determine your next move.
@@ -199,7 +199,7 @@ const PPOReadinessChecklist = () => {
               <CtaButton href="#checklist">Start assessment</CtaButton>
               {/*<a
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-700 hover:border-[#8CB429] hover:text-[#1a2e05] transition-colors"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 font-semibold text-[#5e5e5e] hover:border-[#8CB429] hover:text-[#8CB429] transition-colors"
               >
                 Book a complimentary review
               </a>*/}
@@ -209,16 +209,16 @@ const PPOReadinessChecklist = () => {
           <div className="bg-white rounded-3xl p-6 shadow-xl border border-slate-200 lg:sticky lg:top-24">
             <div className="mb-6 flex items-start justify-between gap-4">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5e5e5e]">
                   Your score
                 </p>
-                <h3 className="text-5xl font-bold text-[#111827] mt-2">
-                  {score} <span className="text-2xl text-slate-400">/ 10</span>
+                <h3 className="text-5xl font-bold text-[#5e5e5e] mt-2">
+                  {score} <span className="text-2xl text-[#5e5e5e]">/ 10</span>
                 </h3>
-                <p className="mt-3 flex items-center gap-2 text-sm font-medium text-slate-500">
+                <p className="mt-3 flex items-center gap-2 text-sm font-medium text-[#5e5e5e]">
                   <ListChecks
                     size={16}
-                    className="text-[#809900]"
+                    className="text-[#8CB429]"
                     aria-hidden="true"
                   />
                   {answered} of 10 answered
@@ -252,10 +252,10 @@ const PPOReadinessChecklist = () => {
                   />
                 </svg>
                 <span className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="text-xl font-bold leading-none text-[#111827]">
+                  <span className="text-xl font-bold leading-none text-[#5e5e5e]">
                     {Math.round((answered / readinessQuestions.length) * 100)}%
                   </span>
-                  <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-slate-500">
+                  <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#5e5e5e]">
                     done
                   </span>
                 </span>
@@ -270,7 +270,7 @@ const PPOReadinessChecklist = () => {
             </div>
 
             <div className="mt-5 flex items-center gap-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#5e5e5e]">
                 Readiness band
               </p>
               {answered > 0 ? (
@@ -285,17 +285,17 @@ const PPOReadinessChecklist = () => {
                   {scoreResult.label}
                 </Motion.span>
               ) : (
-                <span className="inline-flex items-center gap-2 rounded-full border border-dashed border-slate-300 px-3 py-1 text-sm font-medium text-slate-400">
+                <span className="inline-flex items-center gap-2 rounded-full border border-dashed border-slate-300 px-3 py-1 text-sm font-medium text-[#5e5e5e]">
                   Answer to reveal
                 </span>
               )}
             </div>
 
             <div className="mt-6 rounded-2xl bg-slate-50 border border-slate-200 p-4">
-              <p className="text-base font-semibold text-slate-700 mb-2">
+              <p className="text-base font-semibold text-[#5e5e5e] mb-2">
                 Before you sign a PPO contract, ask:
               </p>
-              <p className="text-base font-medium text-slate-800 leading-relaxed">
+              <p className="text-base font-medium text-[#5e5e5e] leading-relaxed">
                 “Do I really need more patients, or do I need to collect more
                 from the patients and treatment I already have?”
               </p>
@@ -304,7 +304,7 @@ const PPOReadinessChecklist = () => {
         </Motion.div>
       </section>
 
-      <section id="checklist" className="max-w-6xl mx-auto px-6 pb-20">
+      <section id="checklist" className="max-w-6xl mx-auto px-6 py-10">
         <div className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-xl">
           <Reveal className="bg-[#111827] px-6 py-5 md:px-8">
             <div className="flex flex-wrap items-center justify-between gap-4">
@@ -349,15 +349,15 @@ const PPOReadinessChecklist = () => {
                       className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border transition-all duration-300 group-hover:scale-105 ${
                         answer
                           ? "border-[#8CB429] bg-white text-[#414C00] shadow-sm"
-                          : "border-slate-200 bg-slate-50 text-slate-500"
+                          : "border-slate-200 bg-slate-50 text-[#5e5e5e]"
                       }`}
                       aria-hidden="true"
                     >
                       <QuestionIcon size={20} />
                     </span>
                     <div>
-                      <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                        <span className="text-[#809900]">
+                      <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#5e5e5e]">
+                        <span className="text-[#8CB429]">
                           {String(index + 1).padStart(2, "0")}
                         </span>
                         {question.title}
@@ -380,7 +380,7 @@ const PPOReadinessChecklist = () => {
                           </Motion.span>
                         )}
                       </p>
-                      <p className="text-base text-slate-700 leading-relaxed">
+                      <p className="text-base text-[#5e5e5e] leading-relaxed">
                         {question.description}
                       </p>
                     </div>
@@ -394,7 +394,7 @@ const PPOReadinessChecklist = () => {
                       className={`inline-flex items-center justify-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold transition-all active:scale-95 ${
                         answer === "yes"
                           ? "border-emerald-500 bg-emerald-50 text-emerald-700 shadow-sm"
-                          : "border-slate-300 bg-white text-slate-700 hover:border-emerald-400 hover:text-emerald-700"
+                          : "border-slate-300 bg-white text-[#5e5e5e] hover:border-emerald-400 hover:text-emerald-700"
                       }`}
                     >
                       {answer === "yes" ? (
@@ -411,7 +411,7 @@ const PPOReadinessChecklist = () => {
                       className={`inline-flex items-center justify-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold transition-all active:scale-95 ${
                         answer === "no"
                           ? "border-rose-500 bg-rose-50 text-rose-700 shadow-sm"
-                          : "border-slate-300 bg-white text-slate-700 hover:border-rose-400 hover:text-rose-700"
+                          : "border-slate-300 bg-white text-[#5e5e5e] hover:border-rose-400 hover:text-rose-700"
                       }`}
                     >
                       {answer === "no" ? (
@@ -427,7 +427,7 @@ const PPOReadinessChecklist = () => {
             })}
           </div>
           <div className="flex flex-wrap items-center justify-end gap-4 border-t border-slate-200 px-6 py-5 md:px-8">
-            <p className="text-sm font-medium text-slate-500">
+            <p className="text-sm font-medium text-[#5e5e5e]">
               {answered === readinessQuestions.length
                 ? "All questions answered"
                 : `${readinessQuestions.length - answered} left to answer`}
@@ -439,7 +439,7 @@ const PPOReadinessChecklist = () => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 pb-20">
+      <section className="max-w-6xl mx-auto px-6 py-10">
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <Reveal className="overflow-hidden rounded-3xl border border-slate-200 shadow-xl">
             <img
@@ -482,7 +482,7 @@ const PPOReadinessChecklist = () => {
                       </span>
                       <div>
                         <div className="flex flex-wrap items-center gap-3">
-                          <h3 className="text-lg font-bold text-[#111827]">
+                          <h3 className="text-lg font-bold text-[#5e5e5e]">
                             {band.label}
                           </h3>
                           <span
@@ -496,7 +496,7 @@ const PPOReadinessChecklist = () => {
                             </span>
                           )}
                         </div>
-                        <p className="mt-1 text-base text-slate-600 leading-relaxed">
+                        <p className="mt-1 text-base text-[#5e5e5e] leading-relaxed">
                           {band.description}
                         </p>
                       </div>
@@ -525,7 +525,7 @@ const PPOReadinessChecklist = () => {
                 aria-modal="true"
                 aria-labelledby="readiness-result-title"
                 aria-describedby="readiness-result-description"
-                className="relative w-full max-w-[560px] rounded-2xl border border-slate-200 bg-white p-6 text-slate-900 shadow-2xl sm:p-8"
+                className="relative w-full max-w-[560px] rounded-2xl border border-slate-200 bg-white p-6 text-[#5e5e5e] shadow-2xl sm:p-8"
               >
                 <div className="mb-7 flex items-start justify-between gap-4">
                   <div className="flex items-center gap-4">
@@ -535,7 +535,7 @@ const PPOReadinessChecklist = () => {
                       <Icon size={28} aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#5e5e5e]">
                         PPO readiness result
                       </p>
                       <span
@@ -549,7 +549,7 @@ const PPOReadinessChecklist = () => {
                     type="button"
                     onClick={() => setIsResultOpen(false)}
                     aria-label="Close readiness result"
-                    className="rounded-full bg-slate-100 p-2 text-slate-600 transition-colors hover:bg-slate-200"
+                    className="rounded-full bg-slate-100 p-2 text-[#5e5e5e] transition-colors hover:bg-slate-200"
                   >
                     <X size={20} />
                   </button>
@@ -562,7 +562,7 @@ const PPOReadinessChecklist = () => {
                 </h3>
                 <p
                   id="readiness-result-description"
-                  className="text-base leading-relaxed text-slate-600"
+                  className="text-base leading-relaxed text-[#5e5e5e]"
                 >
                   {scoreResult.description}
                 </p>
@@ -579,9 +579,9 @@ const PPOReadinessChecklist = () => {
                   ))}
                 </div>
                 <div className="mt-7 flex flex-col gap-4 border-t border-slate-200 pt-5 sm:flex-row sm:items-center sm:justify-between">
-                  <p className="text-sm font-medium text-slate-500">
+                  <p className="text-sm font-medium text-[#5e5e5e]">
                     Your score{" "}
-                    <span className="ml-1 text-lg font-bold text-slate-900">
+                    <span className="ml-1 text-lg font-bold text-[#5e5e5e]">
                       {score}/10
                     </span>
                   </p>
@@ -594,7 +594,7 @@ const PPOReadinessChecklist = () => {
           );
         })()}
 
-      <section className="max-w-6xl mx-auto px-6 pb-24">
+      <section className="max-w-6xl mx-auto px-6 py-10">
         <div className="rounded-[28px] bg-gradient-to-r from-[#111827] via-[#1b2436] to-[#1e3a5f] px-6 py-10 text-white md:px-10">
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>

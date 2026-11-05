@@ -75,8 +75,6 @@ const InsuranceVerification = () => {
 
       {/* 1. Specialized Forms Section */}
       <section className="relative overflow-hidden bg-[#F7F9F2] px-6 py-20 lg:py-10">
-        <div className="absolute -left-24 top-8 h-64 w-64 rounded-full bg-[#8CB429]/15 blur-3xl" />
-        <div className="absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-[#002060]/5 blur-3xl" />
         <motion.div
           variants={fadeInUp}
           initial="hidden"

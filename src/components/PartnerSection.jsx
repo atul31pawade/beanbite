@@ -8,7 +8,8 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const SECTION_HEADING = "text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-[1.2]";
+const SECTION_HEADING =
+  "text-2xl md:text-3xl font-bold text-[#5e5e5e] mb-4 leading-[1.2]";
 
 const PartnerSection = ({ headingClass = SECTION_HEADING }) => {
   // Different partner logos for Row 1 and Row 2
@@ -310,6 +311,26 @@ const ContactFormCard = () => (
           className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB429] bg-white"
           placeholder="Message"
         />
+
+        {/* Opt-in */}
+        <div className="pt-4">
+          <p className="text-sm font-semibold text-gray-800 mb-3">
+            Would you like to opt-in for communications from BEANbite LLC?
+          </p>
+
+          <div className="flex gap-6">
+            <label className="flex items-center gap-2">
+              <input type="checkbox" className="accent-[#8CB429]" />
+              <span className="text-sm">E-mail</span>
+            </label>
+
+            <label className="flex items-center gap-2">
+              <input type="checkbox" className="accent-[#8CB429]" />
+              <span className="text-sm">Text</span>
+            </label>
+          </div>
+        </div>
+
         <div className="text-xs text-gray-500 leading-relaxed space-y-3 pt-2">
           <p>
             By choosing text, you agree to receive texts/calls from BEANbite LLC

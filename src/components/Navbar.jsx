@@ -15,7 +15,7 @@ const Navbar = () => {
     { path: "/services/billing", label: "Billing Services" },
     {
       path: "/services/practiceauditsupport",
-      label: "Practice Consulting and Audit Support",
+      label: "Practice Audit Support",
     },
     { path: "/services/ppo-fee-negotiations", label: "PPO Fee Negotiations" },
   ];

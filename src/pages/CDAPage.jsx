@@ -66,7 +66,7 @@ const billingSupport = [
   }
 ];
 
-const inputClassName = 'mt-2 min-h-12 w-full rounded-md border border-slate-300 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#748A00] focus:ring-2 focus:ring-[#8CB429]/30';
+const inputClassName = 'mt-2 min-h-12 w-full rounded-md border border-slate-300 bg-white px-3.5 py-3 text-sm text-[#5e5e5e] outline-none transition placeholder:text-[#5e5e5e]/75 focus:border-[#748A00] focus:ring-2 focus:ring-[#8CB429]/30';
 
 const CDAPage = () => {
   const handleSubmit = (event) => {
@@ -87,17 +87,17 @@ const CDAPage = () => {
   };
 
   return (
-    <div className="bg-white text-slate-900">
+    <div className="bg-white text-[#5e5e5e]">
       <section className="relative overflow-hidden border-b border-[#e5e9d0] bg-[#f7f9ef]">
         <div className="absolute inset-y-0 right-0 hidden w-[42%] bg-[linear-gradient(135deg,rgba(140,180,41,0.14),rgba(140,180,41,0)_70%)] lg:block" aria-hidden="true" />
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:py-20">
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8">
           <Reveal className="flex flex-col justify-center">
-            <p className="mb-4 text-sm font-bold uppercase text-[#657600]">Dental billing support in California</p>
-            <h1 className="max-w-2xl text-4xl font-extrabold leading-tight text-[#20270a] sm:text-5xl">
+            <p className="mb-4 text-sm font-bold uppercase text-[#8CB429]">Dental billing support in California</p>
+            <h1 className="max-w-2xl text-4xl font-extrabold leading-tight text-[#5e5e5e] sm:text-5xl">
               Affordable Dental Billing Services California
             </h1>
-            <h2 className="mt-4 text-2xl font-bold text-[#657600] sm:text-3xl">Get paid what you’re worth.</h2>
-            <p className="mt-5 max-w-xl text-base leading-7 text-slate-600">
+            <h2 className="mt-4 text-2xl font-bold text-[#5e5e5e] sm:text-3xl">Get paid what you’re worth.</h2>
+            <p className="mt-5 max-w-xl text-base leading-7 text-[#5e5e5e]">
               BEANbite helps dental practices keep claims moving, work through denials, and stay on top of insurance accounts receivable, so your team can focus more time on patients.
             </p>
             <nav aria-label="Related services" className="mt-8 flex flex-wrap gap-2.5">
@@ -105,48 +105,67 @@ const CDAPage = () => {
                 <Link
                   key={service.to}
                   to={service.to}
-                  className="inline-flex min-h-10 items-center gap-2 rounded-full border border-[#d8dfb4] bg-white px-4 py-2 text-sm font-semibold text-[#394307] transition hover:border-[#789A23] hover:bg-[#f2f6dc]"
+                  className="inline-flex min-h-10 items-center gap-2 rounded-full border border-[#d8dfb4] bg-white px-4 py-2 text-sm font-semibold text-[#5e5e5e] transition hover:border-[#789A23] hover:bg-[#f2f6dc]"
                 >
                   {service.label}<ArrowRight size={14} aria-hidden="true" />
                 </Link>
               ))}
             </nav>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-slate-700">
-              <a href="tel:+18887005589" className="inline-flex items-center gap-2 hover:text-[#657600]"><Phone size={16} aria-hidden="true" />(888) 700-5589</a>
-              <a href="mailto:info@beanbite.com" className="inline-flex items-center gap-2 hover:text-[#657600]"><Mail size={16} aria-hidden="true" />info@beanbite.com</a>
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[#5e5e5e]">
+              <a href="tel:+18887005589" className="inline-flex items-center gap-2 hover:text-[#8CB429]"><Phone size={16} aria-hidden="true" />(888) 700-5589</a>
+              <a href="mailto:info@beanbite.com" className="inline-flex items-center gap-2 hover:text-[#8CB429]"><Mail size={16} aria-hidden="true" />info@beanbite.com</a>
             </div>
           </Reveal>
 
           <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-[0_18px_50px_rgba(39,50,0,0.10)] sm:p-7">
             <div className="mb-6 border-b border-slate-200 pb-5">
-              <p className="text-xs font-bold uppercase text-[#748A00]">Talk with our team</p>
-              <h2 className="mt-2 text-2xl font-bold text-slate-950">Get in touch</h2>
-              <p className="mt-2 text-base leading-7 text-slate-600">Tell us a little about your practice and how we can help.</p>
+              <p className="text-xs font-bold uppercase text-[#8CB429]">Talk with our team</p>
+              <h2 className="mt-2 text-2xl font-bold text-[#5e5e5e]">Get in touch</h2>
+              <p className="mt-2 text-base leading-7 text-[#5e5e5e]">Tell us a little about your practice and how we can help.</p>
             </div>
-            <form id="contact-form" onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid gap-4 sm:grid-cols-2">
-                <label className="text-sm font-semibold text-slate-700">
+            <form id="contact-form" onSubmit={handleSubmit} className="space-y-2">
+              <div className="grid gap-x-4 gap-y-2 sm:grid-cols-2">
+                <label className="text-sm font-semibold text-[#5e5e5e]">
                   Your name <span className="text-rose-600">*</span>
                   <input className={inputClassName} name="name" autoComplete="name" placeholder="Your full name" required />
                 </label>
-                <label className="text-sm font-semibold text-slate-700">
+                <label className="text-sm font-semibold text-[#5e5e5e]">
                   Your email <span className="text-rose-600">*</span>
                   <input className={inputClassName} type="email" name="email" autoComplete="email" placeholder="you@example.com" required />
                 </label>
-                <label className="text-sm font-semibold text-slate-700">
+                <label className="text-sm font-semibold text-[#5e5e5e]">
                   Your phone <span className="text-rose-600">*</span>
                   <input className={inputClassName} type="tel" name="phone" autoComplete="tel" placeholder="(555) 555-5555" required />
                 </label>
-                <label className="text-sm font-semibold text-slate-700">
+                <label className="text-sm font-semibold text-[#5e5e5e]">
                   Practice name
                   <input className={inputClassName} name="practice" autoComplete="organization" placeholder="Practice or DSO" />
                 </label>
               </div>
-              <label className="block text-sm font-semibold text-slate-700">
+              <label className="block text-sm font-semibold text-[#5e5e5e]">
                 How can we help? <span className="text-rose-600">*</span>
                 <textarea className={`${inputClassName} min-h-28 resize-y`} name="message" rows="4" placeholder="Tell us about your billing needs" required />
               </label>
-              <p className="text-xs leading-5 text-slate-500">Submitting opens a new email to BEANbite with your inquiry. Please do not include patient information.</p>
+              {/* Opt-in */}
+              <div className="pt-1">
+                <p className="text-sm font-semibold text-[#5e5e5e] mb-3">Would you like to opt-in for communications from BEANbite LLC?</p>
+                <div className="flex gap-6">
+                  <label className="flex items-center gap-2">
+                    <input type="checkbox" className="accent-[#8CB429]" />
+                    <span className="text-sm">E-mail</span>
+                  </label>
+                  <label className="flex items-center gap-2">
+                    <input type="checkbox" className="accent-[#8CB429]" />
+                    <span className="text-sm">Text</span>
+                  </label>
+                </div>
+              </div>
+
+              <div className="text-xs leading-relaxed text-[#5e5e5e] space-y-2 pt-1">
+                <p>By choosing text, you agree to receive texts/calls from BEANbite LLC and its affiliates, including by auto-dialed or prerecorded means, regarding current and future projects or services at the number you provide. Since texts are unencrypted, there is a risk that your message could be intercepted or viewed by third parties, and others who access your device. Consent is not a condition of purchasing any goods/services. Message frequency varies. Message and data rates may apply.</p>
+                <p>We do not share personal information with third parties for marketing purposes under any circumstances.</p>
+              </div>
+
               <CtaButton type="submit" fullWidth>
                 Send message
               </CtaButton>
@@ -155,23 +174,23 @@ const CDAPage = () => {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <Reveal className="mb-9 max-w-2xl">
-          <p className="text-sm font-bold uppercase text-[#748A00]">A steadier billing workflow</p>
-          <h2 className="mt-2 text-3xl font-extrabold leading-tight text-slate-950 sm:text-4xl">Billing support from claim to follow-up</h2>
-          <p className="mt-4 text-base leading-7 text-slate-600">From timely submissions to practical reporting, our team helps keep the details of insurance billing moving.</p>
+          <p className="text-sm font-bold uppercase text-[#8CB429]">A steadier billing workflow</p>
+          <h2 className="mt-2 text-3xl font-extrabold leading-tight text-[#5e5e5e] sm:text-4xl">Billing support from claim to follow-up</h2>
+          <p className="mt-4 text-base leading-7 text-[#5e5e5e]">From timely submissions to practical reporting, our team helps keep the details of insurance billing moving.</p>
         </Reveal>
         <div className="grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
           {billingSupport.map((item, index) => {
             const Icon = item.icon;
             return (
               <article key={item.title} className="border-t border-slate-200 py-6">
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-md bg-[#f2f6dc] text-[#657600]">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-md bg-[#f2f6dc] text-[#789A23]">
                   <Icon size={21} aria-hidden="true" />
                 </div>
-                <p className="text-xs font-bold uppercase text-[#748A00]">0{index + 1}</p>
-                <h3 className="mt-2 text-lg font-bold leading-snug text-slate-900">{item.title}</h3>
-                <p className="mt-2 text-base leading-7 text-slate-600">{item.description}</p>
+                <p className="text-xs font-bold uppercase text-[#8CB429]">0{index + 1}</p>
+                <h3 className="mt-2 text-lg font-bold leading-snug text-[#5e5e5e]">{item.title}</h3>
+                <p className="mt-2 text-base leading-7 text-[#5e5e5e]">{item.description}</p>
               </article>
             );
           })}
@@ -179,10 +198,10 @@ const CDAPage = () => {
       </section>
 
       <section className="border-y border-[#e5e9d0] bg-[#f7f9ef]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between md:py-12 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
           <div>
-            <h2 className="text-2xl font-bold text-slate-950">Ready to talk through your billing workflow?</h2>
-            <p className="mt-2 text-base leading-7 text-slate-600">Call our team at <a className="font-semibold text-[#536400] underline underline-offset-2" href="tel:+18887005589">(888) 700-5589</a> or send us a message.</p>
+            <h2 className="text-2xl font-bold text-[#5e5e5e]">Ready to talk through your billing workflow?</h2>
+            <p className="mt-2 text-base leading-7 text-[#5e5e5e]">Call our team at <a className="font-semibold text-[#5e5e5e] underline underline-offset-2" href="tel:+18887005589">(888) 700-5589</a> or send us a message.</p>
           </div>
           <CtaButton href="#contact-form" className="shrink-0">
             Contact BEANbite
