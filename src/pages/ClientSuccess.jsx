@@ -110,7 +110,7 @@ const ClientSuccess = () => {
       <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-10 grid lg:grid-cols-2 gap-10 items-center">
         {/* LEFT */}
         <motion.div variants={fadeLeft} initial="hidden" whileInView="show">
-          <span className="text-[#8CB429] text-lg font-semibold mb-2 block">
+          <span className="text-[#8CB429] text-2xl font-semibold mb-2 block">
             Our Happy Clients
           </span>
 

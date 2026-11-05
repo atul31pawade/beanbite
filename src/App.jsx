@@ -39,7 +39,11 @@ function App() {
           <Route path="/services/practiceauditsupport" element={<ConsultingAndAudit />} />
           <Route path="/services/consultingandaudit" element={<Navigate to="/services/practiceauditsupport" replace />} />
           <Route path="/services/ppo-fee-negotiations" element={<PPOFeeNegotiations />} />
-          <Route path="/services/ppo-network-readiness-checklist" element={<PPOReadinessChecklist />} />
+          <Route path="/ppo-network-readiness-checklist" element={<PPOReadinessChecklist />} />
+          <Route
+            path="/services/ppo-network-readiness-checklist"
+            element={<Navigate to="/ppo-network-readiness-checklist" replace />}
+          />
           <Route path="/CDA-Advertising" element={<CDAAdvertising />} />
           <Route path="/CDA-Advertising.php" element={<CDAAdvertising />} />
           <Route path="/cda" element={<CDAPage />} />

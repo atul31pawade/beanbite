@@ -40,8 +40,8 @@ const Services = () => {
       <InnerPageHeader title="Services" breadcrumb="Services" />
 
       {/* Intro Section */}
-      <section className="max-w-[1400px] mx-auto px-6 lg:px-12 py-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-[#F7F9F2] py-10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             variants={fadeInUp}
             initial="hidden"

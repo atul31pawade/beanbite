@@ -79,8 +79,8 @@ const ConsultingAndAudit = () => {
       />
 
       {/* 1. Top Section */}
-      <section className="max-w-[1400px] mx-auto px-6 lg:px-16 py-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="bg-[#F7F9F2] py-10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
             <p className="text-gray-600 text-base leading-relaxed mb-2">
               Most dental practices in the United States closely monitor
@@ -110,7 +110,7 @@ const ConsultingAndAudit = () => {
       </section>
 
       {/* 2. Middle Section */}
-      <section className="bg-[#EEF4FF] overflow-hidden relative">
+      <section className="bg-white overflow-hidden relative">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="flex flex-col lg:grid lg:grid-cols-2 lg:min-h-[600px]">
             {/* LEFT SIDE: Text content */}

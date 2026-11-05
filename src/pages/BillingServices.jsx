@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
 import {
   BadgeCheck,
   ChartNoAxesCombined,
@@ -75,140 +74,104 @@ const billingServices = [
 
 const number = (index) => String(index + 1).padStart(2, "0");
 
+// index.css sets `*{font-family:"DM Sans"}` outside Tailwind's cascade layers, so `font-mono` loses; inline styles win.
+const mono = {
+  fontFamily: "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+};
+const lineCount = String(billingServices.length).padStart(2, "0");
+
 const BillingServices = () => {
-  const [active, setActive] = useState(0);
-  const itemRefs = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActive(Number(entry.target.dataset.index));
-        });
-      },
-      { rootMargin: "-42% 0px -48% 0px", threshold: 0 },
-    );
-    itemRefs.current.forEach((el) => el && observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
-  const ActiveIcon = billingServices[active].icon;
-
   return (
     <div className="bg-white">
-      <InnerPageHeader title="Billing Services" breadcrumb="Services / Billing" />
+      <InnerPageHeader
+        title="Billing Services"
+        breadcrumb="Services / Billing"
+      />
 
-      <section className="bg-white px-6 py-16 md:py-14">
-        <div className="mx-auto grid max-w-[1200px] gap-10 lg:grid-cols-[minmax(0,44fr)_minmax(0,56fr)] lg:px-6">
-          <div className="hidden lg:block">
-            <div className="sticky top-[104px]">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[26px] border border-[#E4E9D8]">
-                <AnimatePresence mode="sync" initial={false}>
-                  <motion.img
-                    key={billingServices[active].image}
-                    src={billingServices[active].image}
-                    alt={billingServices[active].title}
-                    initial={{ opacity: 0, scale: 1.05 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
-                </AnimatePresence>
-                <div className="absolute bottom-4 left-4 flex items-center gap-3 rounded-2xl border border-[#E4E9D8] bg-white px-4 py-2.5 shadow-[0_10px_24px_rgba(31,34,22,0.1)]">
-                  <span className="grid h-[42px] w-[42px] flex-none place-items-center rounded-xl bg-[#8CB429] text-white">
-                    <ActiveIcon size={22} strokeWidth={1.8} aria-hidden="true" />
-                  </span>
-                  <span>
-                    <span className="block text-[11px] font-bold tracking-[0.16em] text-[#8CB429]">
-                      {number(active)}
-                    </span>
-                    <span className="block max-w-[210px] text-sm font-bold leading-5 text-[#5e5e5e]">
-                      {billingServices[active].title}
-                    </span>
-                  </span>
-                </div>
-              </div>
-
-              <div className="mt-4 flex flex-col gap-0.5">
-                {billingServices.map((service, index) => (
-                  <button
-                    key={service.title}
-                    type="button"
-                    onClick={() =>
-                      itemRefs.current[index]?.scrollIntoView({
-                        behavior: "smooth",
-                        block: "center",
-                      })
-                    }
-                    className={`flex items-center gap-2.5 border-l-[3px] px-2.5 py-2 text-left transition-colors ${
-                      index === active
-                        ? "border-[#8CB429] bg-[#F7F9F2]"
-                        : "border-transparent hover:bg-[#F7F9F2]"
-                    }`}
-                  >
-                    <span
-                      className={`flex-none text-[11px] font-bold tracking-[0.12em] ${
-                        index === active ? "text-[#8CB429]" : "text-[#AEB4A0]"
-                      }`}
-                    >
-                      {number(index)}
-                    </span>
-                    <span className="truncate text-[13px] text-[#5e5e5e]">
-                      {service.title}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div>
-            {billingServices.map((service, index) => {
-              const Icon = service.icon;
-              const isActive = index === active;
-              return (
-                <div
-                  key={service.title}
-                  data-index={index}
-                  ref={(el) => {
-                    itemRefs.current[index] = el;
-                  }}
-                  className="mb-8 border-b border-[#E4E9D8] pb-10 last:mb-0 last:border-0 lg:mb-0 lg:border-0 lg:pb-0"
+      <section className="bg-[#F7F9F2] px-4 pb-10 lg:px-6 lg:pb-14">
+        <div className="mx-auto max-w-[1200px]">
+          {billingServices.map((service, index) => {
+            const Icon = service.icon;
+            const flipped = index % 2 === 1;
+            const first = index === 0;
+            return (
+              <article
+                key={service.title}
+                className={`group grid items-center gap-5 lg:gap-11 ${
+                  flipped
+                    ? "lg:grid-cols-[minmax(0,60fr)_minmax(0,40fr)]"
+                    : "lg:grid-cols-[minmax(0,40fr)_minmax(0,60fr)]"
+                } ${
+                  first
+                    ? "pt-[30px] pb-[34px] lg:pb-[50px]"
+                    : "border-t border-[#E4E9D8] py-[34px] lg:py-[30px]"
+                }`}
+              >
+                <Reveal
+                  y={24}
+                  className={`relative ${flipped ? "lg:order-2" : ""}`}
                 >
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    loading="lazy"
-                    className="mb-4 aspect-[16/9] w-full rounded-[20px] border border-[#E4E9D8] object-cover lg:hidden"
-                  />
-                  <Reveal y={24} className="mb-14 lg:mb-24">
-                    <div className="mb-2.5 flex items-center gap-3">
-                      <span className="grid h-[42px] w-[42px] flex-none place-items-center rounded-xl bg-[#8CB429] text-white lg:hidden">
-                        <Icon size={20} strokeWidth={1.8} aria-hidden="true" />
-                      </span>
-                      <span className="text-xs font-bold tracking-[0.16em] text-[#8CB429]">
-                        {number(index)}
-                      </span>
-                      <span className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-[#8CB429]/20">
-                        <span
-                          className={`absolute inset-y-0 left-0 rounded-full bg-[#8CB429] transition-all duration-500 ${
-                            isActive ? "w-full" : "w-0"
-                          }`}
+                  <div className="relative aspect-[3/2] overflow-hidden rounded-[20px] border border-[#E4E9D8] lg:aspect-[4/3] lg:rounded-[26px]">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
+                    />
+                    <span
+                      className="pointer-events-none absolute inset-2 rounded-[14px] border border-white/50 lg:inset-[10px] lg:rounded-[18px]"
+                      aria-hidden="true"
+                    />
+                    <span className="absolute bottom-3 left-3 flex items-center gap-2 rounded-[12px] border border-[#E4E9D8] bg-white/95 py-1.5 pl-1.5 pr-3 lg:bottom-4 lg:left-4 lg:rounded-[14px] lg:py-[7px] lg:pl-2 lg:pr-[13px]">
+                      <span className="grid h-7 w-7 place-items-center rounded-[8px] bg-[#8CB429] text-white transition-colors group-hover:bg-[#789A23] lg:h-8 lg:w-8 lg:rounded-[9px]">
+                        <Icon
+                          strokeWidth={1.8}
+                          aria-hidden="true"
+                          className="h-4 w-4 lg:h-[18px] lg:w-[18px]"
                         />
                       </span>
+                      <span
+                        style={mono}
+                        className="text-[11px] font-bold tracking-[0.14em] text-[#5e5e5e]"
+                      >
+                        {number(index)} / {lineCount}
+                      </span>
+                    </span>
+                  </div>
+                </Reveal>
+
+                <Reveal y={24} className="relative">
+                  <span
+                    aria-hidden="true"
+                    className={`pointer-events-none absolute -top-[18px] left-0 select-none text-[76px] font-extrabold leading-none tracking-[-0.04em] text-[rgba(140,180,41,0.13)] lg:-top-6 lg:text-[112px] ${
+                      flipped ? "lg:left-auto lg:right-0" : ""
+                    }`}
+                  >
+                    {number(index)}
+                  </span>
+                  <div className="relative">
+                    <div className="flex items-center gap-3">
+                      <span
+                        style={mono}
+                        className="text-[11px] font-bold tracking-[0.16em] text-[#8CB429]"
+                      >
+                        SERVICE
+                      </span>
+                      <span className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-[#8CB429]/20">
+                        <span className="absolute inset-y-0 left-0 w-0 rounded-full bg-[#8CB429] transition-all duration-700 group-hover:w-full" />
+                      </span>
                     </div>
-                    <h3 className="text-[20px] font-bold leading-7 text-[#5e5e5e]">
+                    <h3 className="mt-3 text-[21px] font-bold leading-7 text-[#5e5e5e] lg:text-[26px] lg:leading-[34px]">
                       {service.title}
                     </h3>
                     <p className="mt-3 text-base leading-7 text-gray-600">
                       {service.description}
                     </p>
-                  </Reveal>
-                </div>
-              );
-            })}
-          </div>
+                  </div>
+                </Reveal>
+              </article>
+            );
+          })}
         </div>
       </section>
 
