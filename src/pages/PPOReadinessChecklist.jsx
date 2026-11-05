@@ -306,7 +306,7 @@ const PPOReadinessChecklist = () => {
 
       <section id="checklist" className="max-w-6xl mx-auto px-6 py-10">
         <div className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-xl">
-          <Reveal className="bg-[#111827] px-6 py-5 md:px-8">
+          <Reveal className="bg-[#555555] px-6 py-5 md:px-8">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-4">
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#8CB429] text-[#111827]">
