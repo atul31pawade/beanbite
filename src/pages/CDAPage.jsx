@@ -97,16 +97,16 @@ const CDAPage = () => {
 
   return (
     <div className="bg-white text-[#5e5e5e]">
-      <section className="relative overflow-hidden border-b border-[#e5e9d0] bg-[#f7f9ef]">
+      <section className="relative overflow-hidden border-b border-[#e5e9d0] bg-[#F7F9F2]">
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8">
           <Reveal className="flex flex-col justify-center">
             <p className="mb-4 text-sm font-bold uppercase text-[#8CB429]">
               Dental billing support in California
             </p>
-            <h1 className="max-w-2xl text-4xl font-extrabold leading-tight text-[#5e5e5e] sm:text-5xl">
+            <h1 className="max-w-2xl text-3xl font-bold leading-tight text-[#5e5e5e] md:text-4xl">
               Affordable Dental Billing Services California
             </h1>
-            <h2 className="mt-4 text-2xl font-bold text-[#5e5e5e] sm:text-3xl">
+            <h2 className="mt-4 text-2xl font-bold text-[#5e5e5e] md:text-3xl">
               Get paid what you’re worth.
             </h2>
             <p className="mt-5 max-w-xl text-base leading-7 text-[#5e5e5e]">
@@ -152,7 +152,7 @@ const CDAPage = () => {
               <p className="text-xs font-bold uppercase text-[#8CB429]">
                 Talk with our team
               </p>
-              <h2 className="mt-2 text-2xl font-bold text-[#5e5e5e]">
+              <h2 className="mt-2 text-2xl font-bold text-[#5e5e5e] md:text-3xl">
                 Get in touch
               </h2>
               <p className="mt-2 text-base leading-7 text-[#5e5e5e]">
@@ -265,7 +265,7 @@ const CDAPage = () => {
           <p className="text-sm font-bold uppercase text-[#8CB429]">
             A steadier billing workflow
           </p>
-          <h2 className="mt-2 text-3xl font-extrabold leading-tight text-[#5e5e5e] sm:text-4xl">
+          <h2 className="mt-2 text-2xl font-bold leading-tight text-[#5e5e5e] md:text-3xl">
             Billing support from claim to follow-up
           </h2>
           <p className="mt-4 text-base leading-7 text-[#5e5e5e]">
@@ -299,10 +299,10 @@ const CDAPage = () => {
         </div>
       </section>
 
-      <section className="border-y border-[#e5e9d0] bg-[#f7f9ef]">
+      {/* <section className="border-y border-[#e5e9d0] bg-[#f7f9ef]">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
           <div>
-            <h2 className="text-2xl font-bold text-[#5e5e5e]">
+            <h2 className="text-2xl font-bold text-[#5e5e5e] md:text-3xl">
               Ready to talk through your billing workflow?
             </h2>
             <p className="mt-2 text-base leading-7 text-[#5e5e5e]">
@@ -320,7 +320,7 @@ const CDAPage = () => {
             Contact BEANbite
           </CtaButton>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

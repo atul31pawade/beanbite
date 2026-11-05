@@ -144,13 +144,13 @@ const CDAAdvertising = () => {
 
   if (isSubmitted) {
     return (
-      <section className="min-h-[70vh] bg-[#F6F8F7] px-4 py-10 sm:px-6">
+      <section className="min-h-[70vh] bg-white px-4 py-10 sm:px-6">
         <div className="mx-auto max-w-[760px] rounded-[20px] border-t-[5px] border-[#8CB429] bg-white px-6 py-10 shadow-[0_24px_70px_rgba(15,23,42,0.10)] sm:px-10 sm:py-12">
           <div className="mb-5 flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
             <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#EFF9CD] text-[#789A23]">
               <Check size={34} strokeWidth={4} aria-hidden="true" />
             </span>
-            <h1 className="text-2xl font-extrabold text-[#5e5e5e] sm:text-[30px]">
+            <h1 className="text-2xl font-bold text-[#5e5e5e] md:text-3xl">
               Let’s talk through the next step
             </h1>
           </div>
@@ -192,20 +192,20 @@ const CDAAdvertising = () => {
   }
 
   return (
-    <div className="bg-[#F6F8F7] text-[#5e5e5e]">
-      <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+    <div className="bg-white text-[#5e5e5e]">
+      <section className="bg-[#F7F9F2] py-10">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <Reveal className="mx-auto max-w-4xl text-center">
-          <p className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full bg-[#EAF4B5] px-4 py-2 text-sm font-bold uppercase text-[#414C00]">
+          <p className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full bg-[#8CB429] px-4 py-2 text-sm font-bold uppercase text-white">
             <BadgeCheck size={16} aria-hidden="true" />
             BEANbite dental billing assessment
           </p>
-          <h1 className="text-4xl font-extrabold leading-tight text-[#5e5e5e] sm:text-5xl">
+          <h1 className="text-3xl font-bold leading-tight text-[#5e5e5e] md:text-4xl">
             Busy schedule. Unpaid claims.
             <span className="mx-auto mt-0 block max-w-2xl text-xl font-semibold leading-snug text-[#5e5e5e] sm:text-2xl">
               Let’s find out where revenue is getting stuck.
             </span>
           </h1>
-          <div className="mx-auto mt-2 h-1 w-16 rounded-full bg-[#8CB429]" aria-hidden="true" />
           <p className="mx-auto mt-6 max-w-4xl text-md leading-6 text-[#5e5e5e]">
             Your team works hard to provide care. But when claims sit unresolved, denials pile up, or payments are posted incorrectly, collections can fall behind production.
           </p>
@@ -213,10 +213,13 @@ const CDAAdvertising = () => {
             BEANbite helps dental practices manage the full billing cycle, from claim submission and attachments to payment posting, denial follow-up, and accounts receivable. Start with a conversation about what is happening in your practice and where your billing process may need attention.
           </p>
         </Reveal>
+        </div>
+      </section>
 
-        <Reveal delay={0.15} className="mx-auto mt-10 max-w-4xl">
+      <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+        <Reveal delay={0.15} className="mx-auto max-w-4xl">
           <div className="flex flex-wrap items-end justify-between gap-3 border-b border-slate-300 pb-4">
-            <h2 className="flex items-center gap-2 text-xl font-bold text-[#5e5e5e]">
+            <h2 className="flex items-center gap-2 text-2xl font-bold text-[#5e5e5e] md:text-3xl">
               <ShieldCheck size={21} className="text-[#8CB429]" aria-hidden="true" />
               What we’ll review together
             </h2>
@@ -248,7 +251,7 @@ const CDAAdvertising = () => {
 
         <div className="mt-9 rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_16px_45px_rgba(15,23,42,0.08)] sm:p-8">
           <div className="mb-7">
-            <h2 className="text-2xl font-bold text-[#5e5e5e] sm:text-3xl">Tell us a little about your practice</h2>
+            <h2 className="text-2xl font-bold text-[#5e5e5e] md:text-3xl">Tell us a little about your practice</h2>
             <p className="mt-2 leading-6 text-[#5e5e5e]">
               Fill out this short form to get your custom billing assessment and schedule a 1-on-1 consultation.
             </p>

@@ -212,7 +212,7 @@ const PPOReadinessChecklist = () => {
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5e5e5e]">
                   Your score
                 </p>
-                <h3 className="text-5xl font-bold text-[#5e5e5e] mt-2">
+                <h3 className="text-3xl font-bold text-[#5e5e5e] mt-2">
                   {score} <span className="text-2xl text-[#5e5e5e]">/ 10</span>
                 </h3>
                 <p className="mt-3 flex items-center gap-2 text-sm font-medium text-[#5e5e5e]">
@@ -556,7 +556,7 @@ const PPOReadinessChecklist = () => {
                 </div>
                 <h3
                   id="readiness-result-title"
-                  className="mb-3 text-2xl font-bold sm:text-3xl"
+                  className="mb-3 text-2xl font-bold md:text-3xl"
                 >
                   {scoreResult.label}
                 </h3>
