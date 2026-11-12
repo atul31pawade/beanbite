@@ -443,7 +443,7 @@ const PPOFeeNegotiations = () => {
           </div>
         </div>
       </section>
-      <section className="py-16 md:py-20">
+      <section className="py-16 md:py-20 bg-[#F7F9F2]">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <p className="text-[#8CB429] font-bold uppercase tracking-[0.16em] text-sm mb-3">

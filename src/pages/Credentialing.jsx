@@ -101,7 +101,7 @@ const Credentialing = () => {
   ];
 
   return (
-    <div className="bg-[#F7F9F2]">
+    <div className="bg-white">
       <InnerPageHeader
         title="Stretagic Dental Credentialing & PPO Fee Nagotiations"
         breadcrumb="Services / Credentialing"
