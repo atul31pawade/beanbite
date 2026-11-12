@@ -94,12 +94,12 @@ const Navbar = () => {
                 Client & Resources
               </Link>
 
-              <Link
+              {/*<Link
                 to="/blog"
                 className={`text-[15px] font-light transition-colors ${isActive("/blog") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB429]"}`}
               >
                 Blog
-              </Link>
+              </Link>*/}
 
               <Link
                 to="/contact"
@@ -242,13 +242,13 @@ const Navbar = () => {
                   Client Success
                 </Link>
 
-                <Link
+                {/*<Link
                   to="/blog"
                   onClick={() => setIsMenuOpen(false)}
                   className={`${isActive("/blog") ? "text-[#8CB429]" : "text-gray-600"} py-2`}
                 >
                   Blog
-                </Link>
+                </Link>*/}
 
                 <Link
                   to="/contact"

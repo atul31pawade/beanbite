@@ -331,7 +331,10 @@ const Home = () => {
                 className="relative z-10 flex h-[200px] w-[200px] shrink-0 flex-col items-center justify-start rounded-full border border-[#D9D9D9] bg-white pr-0 pt-6 text-center sm:justify-center sm:pt-0 sm:pr-6 md:h-[240px] md:w-[240px] md:pr-8 lg:pr-[60px] xl:h-[280px] xl:w-[280px] xl:pr-[50px]"
               >
                 <span className="text-[56px] font-bold text-black leading-none md:text-[68px] xl:text-[80px]">
-                  20<sup className="text-[24px] md:text-[30px] xl:text-4xl">+</sup>
+                  20
+                  <sup className="text-[24px] md:text-[30px] xl:text-4xl">
+                    +
+                  </sup>
                 </span>
                 <span className="mt-2 text-[14px] font-medium text-black md:text-base xl:text-lg">
                   Years Experienced <br /> Team Help you
@@ -608,13 +611,13 @@ const Home = () => {
               >
                 {/* Image */}
                 <div className="rounded-[32px] overflow-hidden mb-6 aspect-[41/25]">
-                  <Link to={`/blog/${post.id}`}>
+                  {/* <Link to={`/blog/${post.id}`}> */}
                     <img
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                  </Link>
+                  {/* </Link> */}
                 </div>
 
                 {/* Date */}
@@ -625,16 +628,16 @@ const Home = () => {
                 </div>
 
                 {/* Title */}
-                <Link to={`/blog/${post.id}`}>
+                {/* <Link to={`/blog/${post.id}`}> */}
                   <h3 className="text-[20px] md:text-[16px] font-bold text-[#5e5e5e] mb-6 leading-snug pr-4 line-clamp-3">
                     {post.title}
                   </h3>
-                </Link>
+                {/* </Link> */}
 
                 <div className="border-t border-[#B2B2B2] opacity-50 mb-6 mt-auto"></div>
 
                 {/* Button */}
-                <Link to={`/blog/${post.id}`}>
+                {/* <Link to={`/blog/${post.id}`}> */}
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -645,7 +648,7 @@ const Home = () => {
                       <TrendingUp size={16} />
                     </div>
                   </motion.button>
-                </Link>
+                {/* </Link> */}
               </motion.div>
             ))}
           </motion.div>
