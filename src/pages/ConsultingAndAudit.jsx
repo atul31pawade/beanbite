@@ -179,7 +179,7 @@ const ConsultingAndAudit = () => {
               {services.map((service, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <CheckCircle2
-                    className="text-[#8CB429] shrink-0 mt-0.5"
+                    className="text-[#8CB428] shrink-0 mt-0.5"
                     size={18}
                   />
                   <span className="text-gray-700 text-base font-medium">
@@ -214,14 +214,14 @@ const ConsultingAndAudit = () => {
                 viewport={{ once: true }}
                 className="group relative"
               >
-                <div className="h-full bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-200 hover:border-[#8CB429] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div className="h-full bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-200 hover:border-[#8CB428] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                   {/* Step Number */}
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#8CB429]/10 text-[#8CB429] font-bold text-sm group-hover:bg-[#8CB429] group-hover:text-white transition-colors">
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#8CB428]/10 text-[#8CB428] font-bold text-sm group-hover:bg-[#8CB428] group-hover:text-white transition-colors">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <div className="h-1 flex-1 bg-[#8CB429]/20 rounded-full">
-                      <div className="h-full w-0 group-hover:w-full bg-[#8CB429] rounded-full transition-all duration-700"></div>
+                    <div className="h-1 flex-1 bg-[#8CB428]/20 rounded-full">
+                      <div className="h-full w-0 group-hover:w-full bg-[#8CB428] rounded-full transition-all duration-700"></div>
                     </div>
                   </div>
 

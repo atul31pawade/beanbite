@@ -171,7 +171,7 @@ const PartnerSection = ({ headingClass = SECTION_HEADING }) => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* LEFT SIDE - Logos */}
         <div>
-          <motion.span className="inline-block px-6 py-2 bg-[#8CB429] text-[#000000] font-bold rounded-full text-lg mb-6">
+          <motion.span className="inline-block px-6 py-2 bg-[#8CB428] text-[#000000] font-bold rounded-full text-lg mb-6">
             The Clients We Stand Behind
           </motion.span>
 
@@ -264,7 +264,7 @@ const NavButton = ({ icon, onClick, isPrimary }) => (
     onClick={onClick}
     className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors cursor-pointer border ${
       isPrimary
-        ? "bg-[#8CB429] border-transparent text-[#ffffff]"
+        ? "bg-[#8CB428] border-transparent text-[#ffffff]"
         : "border-gray-300 text-gray-300"
     }`}
   >
@@ -285,7 +285,7 @@ const ContactFormCard = () => (
       />
     </div>
     <div className="relative z-10">
-      <p className="text-[#8CB429] text-[16px] font-semibold mb-1">
+      <p className="text-[#8CB428] text-[16px] font-semibold mb-1">
         Make an Appointment
       </p>
       <h3 className="text-[26px] font-semibold text-black mb-6">
@@ -294,21 +294,21 @@ const ContactFormCard = () => (
       <form className="space-y-4">
         <div className="grid sm:grid-cols-2 gap-4">
           <input
-            className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB429] bg-white"
+            className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB428] bg-white"
             placeholder="First name"
           />
           <input
-            className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB429] bg-white"
+            className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB428] bg-white"
             placeholder="Last name"
           />
         </div>
         <input
-          className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB429] bg-white"
+          className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB428] bg-white"
           placeholder="E-mail"
         />
         <textarea
           rows={3}
-          className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB429] bg-white"
+          className="w-full px-5 py-3 rounded-xl border border-[#D0E3FF] focus:outline-none focus:border-[#8CB428] bg-white"
           placeholder="Message"
         />
 
@@ -320,12 +320,12 @@ const ContactFormCard = () => (
 
           <div className="flex gap-6">
             <label className="flex items-center gap-2">
-              <input type="checkbox" className="accent-[#8CB429]" />
+              <input type="checkbox" className="accent-[#8CB428]" />
               <span className="text-sm">E-mail</span>
             </label>
 
             <label className="flex items-center gap-2">
-              <input type="checkbox" className="accent-[#8CB429]" />
+              <input type="checkbox" className="accent-[#8CB428]" />
               <span className="text-sm">Text</span>
             </label>
           </div>

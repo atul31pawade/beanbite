@@ -110,7 +110,7 @@ const ClientSuccess = () => {
       <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-10 grid lg:grid-cols-2 gap-10 items-center">
         {/* LEFT */}
         <motion.div variants={fadeLeft} initial="hidden" whileInView="show">
-          <span className="text-[#8CB429] text-2xl md:text-3xl font-semibold mb-2 block">
+          <span className="text-[#8CB428] text-2xl md:text-3xl font-semibold mb-2 block">
             Our Happy Clients
           </span>
 
@@ -167,12 +167,12 @@ const ClientSuccess = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`flex gap-2 items-start hover:underline transition 
-                        ${item.external ? "hover:text-[#8CB429]" : "hover:text-black"}
+                        ${item.external ? "hover:text-[#8CB428]" : "hover:text-black"}
                       `}
                     >
                       <span
                         className={`w-1.5 h-1.5 mt-2 rounded-full transition 
-                        ${item.external ? "bg-gray-600 group-hover:bg-[#8CB429]" : "bg-gray-600"}
+                        ${item.external ? "bg-gray-600 group-hover:bg-[#8CB428]" : "bg-gray-600"}
                       `}
                       ></span>
                       {item.name}

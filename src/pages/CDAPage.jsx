@@ -75,7 +75,7 @@ const billingSupport = [
 ];
 
 const inputClassName =
-  "mt-2 min-h-12 w-full rounded-md border border-slate-300 bg-white px-3.5 py-3 text-sm text-[#5e5e5e] outline-none transition placeholder:text-[#5e5e5e]/75 focus:border-[#748A00] focus:ring-2 focus:ring-[#8CB429]/30";
+  "mt-2 min-h-12 w-full rounded-md border border-slate-300 bg-white px-3.5 py-3 text-sm text-[#5e5e5e] outline-none transition placeholder:text-[#5e5e5e]/75 focus:border-[#748A00] focus:ring-2 focus:ring-[#8CB428]/30";
 
 const CDAPage = () => {
   const handleSubmit = (event) => {
@@ -100,7 +100,7 @@ const CDAPage = () => {
       <section className="relative overflow-hidden border-b border-[#e5e9d0] bg-[#F7F9F2]">
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8">
           <Reveal className="flex flex-col justify-center">
-            <p className="mb-4 text-sm font-bold uppercase text-[#8CB429]">
+            <p className="mb-4 text-sm font-bold uppercase text-[#8CB428]">
               Dental billing support in California
             </p>
             <h1 className="max-w-2xl text-3xl font-bold leading-tight text-[#5e5e5e] md:text-4xl">
@@ -132,14 +132,14 @@ const CDAPage = () => {
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[#5e5e5e]">
               <a
                 href="tel:+18887005589"
-                className="inline-flex items-center gap-2 hover:text-[#8CB429]"
+                className="inline-flex items-center gap-2 hover:text-[#8CB428]"
               >
                 <Phone size={16} aria-hidden="true" />
                 (888) 700-5589
               </a>
               <a
                 href="mailto:info@beanbite.com"
-                className="inline-flex items-center gap-2 hover:text-[#8CB429]"
+                className="inline-flex items-center gap-2 hover:text-[#8CB428]"
               >
                 <Mail size={16} aria-hidden="true" />
                 info@beanbite.com
@@ -149,7 +149,7 @@ const CDAPage = () => {
 
           <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-[0_18px_50px_rgba(39,50,0,0.10)] sm:p-7">
             <div className="mb-6 border-b border-slate-200 pb-5">
-              <p className="text-xs font-bold uppercase text-[#8CB429]">
+              <p className="text-xs font-bold uppercase text-[#8CB428]">
                 Talk with our team
               </p>
               <h2 className="mt-2 text-2xl font-bold text-[#5e5e5e] md:text-3xl">
@@ -224,11 +224,11 @@ const CDAPage = () => {
                 </p>
                 <div className="flex gap-6">
                   <label className="flex items-center gap-2">
-                    <input type="checkbox" className="accent-[#8CB429]" />
+                    <input type="checkbox" className="accent-[#8CB428]" />
                     <span className="text-sm">E-mail</span>
                   </label>
                   <label className="flex items-center gap-2">
-                    <input type="checkbox" className="accent-[#8CB429]" />
+                    <input type="checkbox" className="accent-[#8CB428]" />
                     <span className="text-sm">Text</span>
                   </label>
                 </div>
@@ -262,7 +262,7 @@ const CDAPage = () => {
 
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <Reveal className="mb-9 max-w-2xl">
-          <p className="text-sm font-bold uppercase text-[#8CB429]">
+          <p className="text-sm font-bold uppercase text-[#8CB428]">
             A steadier billing workflow
           </p>
           <h2 className="mt-2 text-2xl font-bold leading-tight text-[#5e5e5e] md:text-3xl">
@@ -284,7 +284,7 @@ const CDAPage = () => {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-md bg-[#f2f6dc] text-[#789A23]">
                   <Icon size={21} aria-hidden="true" />
                 </div>
-                <p className="text-xs font-bold uppercase text-[#8CB429]">
+                <p className="text-xs font-bold uppercase text-[#8CB428]">
                   0{index + 1}
                 </p>
                 <h3 className="mt-2 text-lg font-bold leading-snug text-[#5e5e5e]">

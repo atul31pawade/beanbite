@@ -48,14 +48,14 @@ const Navbar = () => {
             <div className="flex items-center space-x-8 min-[1400px]:space-x-5 min-[1400px]:whitespace-nowrap 2xl:space-x-8">
               <Link
                 to="/"
-                className={`text-[15px] font-light transition-colors ${isActive("/") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB429]"}`}
+                className={`text-[15px] font-light transition-colors ${isActive("/") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB428]"}`}
               >
                 Home
               </Link>
 
               <Link
                 to="/about"
-                className={`text-[15px] font-light transition-colors ${isActive("/about") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB429]"}`}
+                className={`text-[15px] font-light transition-colors ${isActive("/about") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB428]"}`}
               >
                 About Us
               </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
               <div className="relative group py-4">
                 <Link
                   to="/services"
-                  className={`flex items-center gap-1.5 text-[15px] font-light transition-colors ${location.pathname.startsWith("/services") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB429]"}`}
+                  className={`flex items-center gap-1.5 text-[15px] font-light transition-colors ${location.pathname.startsWith("/services") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB428]"}`}
                 >
                   Services <ChevronDown size={14} strokeWidth={2.5} />
                 </Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
                       <Link
                         key={index}
                         to={service.path}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#8CB429] hover:text-[#1a2e05] transition-colors"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#8CB428] hover:text-[#1a2e05] transition-colors"
                       >
                         {service.label}
                       </Link>
@@ -89,21 +89,21 @@ const Navbar = () => {
 
               <Link
                 to="/client-success"
-                className={`text-[15px] font-light transition-colors ${isActive("/client-success") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB429]"}`}
+                className={`text-[15px] font-light transition-colors ${isActive("/client-success") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB428]"}`}
               >
                 Client & Resources
               </Link>
 
               {/*<Link
                 to="/blog"
-                className={`text-[15px] font-light transition-colors ${isActive("/blog") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB429]"}`}
+                className={`text-[15px] font-light transition-colors ${isActive("/blog") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB428]"}`}
               >
                 Blog
               </Link>*/}
 
               <Link
                 to="/contact"
-                className={`text-[15px] font-light transition-colors ${isActive("/contact") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB429]"}`}
+                className={`text-[15px] font-light transition-colors ${isActive("/contact") ? "text-[#000000] , font-semibold" : "text-black hover:text-[#8CB428]"}`}
               >
                 Contact Us
               </Link>
@@ -114,13 +114,13 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center gap-6 xl:gap-8 min-[1400px]:hidden!">
             <Link
               to="https://assist.zoho.com/install-customer-plugin"
-              className="text-[16px] font-medium text-black border-b-2 border-black hover:text-[#8CB429] hover:border-[#8CB429] pb-0.5 flex items-center gap-1 transition-all"
+              className="text-[16px] font-medium text-black border-b-2 border-black hover:text-[#8CB428] hover:border-[#8CB428] pb-0.5 flex items-center gap-1 transition-all"
             >
               Remote Support <span className="text-lg font-medium">›</span>
             </Link>
             <Link
               to="https://outlook.office.com/owa/calendar/Consultation@beanbite.com/bookings/"
-              className="text-[16px] font-medium text-black border-b-2 border-black hover:text-[#8CB429] hover:border-[#8CB429] pb-0.5 flex items-center gap-1 transition-all"
+              className="text-[16px] font-medium text-black border-b-2 border-black hover:text-[#8CB428] hover:border-[#8CB428] pb-0.5 flex items-center gap-1 transition-all"
             >
               Book a Consultation <span className="text-lg font-medium">›</span>
             </Link>
@@ -147,7 +147,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-[#8CB429] p-2 transition-colors"
+              className="text-gray-600 hover:text-[#8CB428] p-2 transition-colors"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -170,7 +170,7 @@ const Navbar = () => {
                 <Link
                   to="/"
                   onClick={() => setIsMenuOpen(false)}
-                  className={`${isActive("/") ? "text-[#8CB429]" : "text-gray-600"} py-2`}
+                  className={`${isActive("/") ? "text-[#8CB428]" : "text-gray-600"} py-2`}
                 >
                   Home
                 </Link>
@@ -178,7 +178,7 @@ const Navbar = () => {
                 <Link
                   to="/about"
                   onClick={() => setIsMenuOpen(false)}
-                  className={`${isActive("/about") ? "text-[#8CB429]" : "text-gray-600"} py-2`}
+                  className={`${isActive("/about") ? "text-[#8CB428]" : "text-gray-600"} py-2`}
                 >
                   About Us
                 </Link>
@@ -189,7 +189,7 @@ const Navbar = () => {
                     <Link
                       to="/services"
                       onClick={() => setIsMenuOpen(false)}
-                      className={`${location.pathname === "/services" ? "text-[#8CB429]" : "text-gray-600"} flex-1`}
+                      className={`${location.pathname === "/services" ? "text-[#8CB428]" : "text-gray-600"} flex-1`}
                     >
                       Services
                     </Link>
@@ -224,7 +224,7 @@ const Navbar = () => {
                               setIsMenuOpen(false);
                               setIsServicesOpen(false);
                             }}
-                            className="block text-sm text-gray-500 hover:text-[#8CB429] transition-colors py-2 pl-4"
+                            className="block text-sm text-gray-500 hover:text-[#8CB428] transition-colors py-2 pl-4"
                           >
                             {service.label}
                           </Link>
@@ -237,7 +237,7 @@ const Navbar = () => {
                 <Link
                   to="/client-success"
                   onClick={() => setIsMenuOpen(false)}
-                  className={`${isActive("/client-success") ? "text-[#8CB429]" : "text-gray-600"} py-2`}
+                  className={`${isActive("/client-success") ? "text-[#8CB428]" : "text-gray-600"} py-2`}
                 >
                   Client Success
                 </Link>
@@ -245,7 +245,7 @@ const Navbar = () => {
                 {/*<Link
                   to="/blog"
                   onClick={() => setIsMenuOpen(false)}
-                  className={`${isActive("/blog") ? "text-[#8CB429]" : "text-gray-600"} py-2`}
+                  className={`${isActive("/blog") ? "text-[#8CB428]" : "text-gray-600"} py-2`}
                 >
                   Blog
                 </Link>*/}
@@ -253,7 +253,7 @@ const Navbar = () => {
                 <Link
                   to="/contact"
                   onClick={() => setIsMenuOpen(false)}
-                  className={`${isActive("/contact") ? "text-[#8CB429]" : "text-gray-600"} py-2`}
+                  className={`${isActive("/contact") ? "text-[#8CB428]" : "text-gray-600"} py-2`}
                 >
                   Contact Us
                 </Link>
