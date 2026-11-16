@@ -21,7 +21,7 @@ const InnerPageHeader = ({ title, breadcrumb }) => {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
             className="text-white/90 text-base"
           >
-            <Link to="/" className="hover:text-[#8CB429] transition-colors">
+            <Link to="/" className="hover:text-[#8CB428] transition-colors">
               Home
             </Link>
             <span className="mx-2">/</span>

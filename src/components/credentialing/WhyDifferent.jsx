@@ -59,7 +59,7 @@ const WhyDifferent = () => {
           viewport={{ once: true }}
           className="max-w-4xl mb-8"
         >
-          {/* <span className="inline-flex rounded-full bg-[#8CB429]/10 px-5 py-2 font-semibold text-[#7A9200]">
+          {/* <span className="inline-flex rounded-full bg-[#8CB428]/10 px-5 py-2 font-semibold text-[#7A9200]">
             Why Our Approach Is Different
           </span> */}
 
@@ -91,7 +91,7 @@ const WhyDifferent = () => {
                     <div
                       className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
                         active === item.id
-                          ? "bg-[#8CB429] text-white shadow-lg"
+                          ? "bg-[#8CB428] text-white shadow-lg"
                           : "bg-white border border-gray-300 text-gray-500"
                       }`}
                     >
@@ -102,7 +102,7 @@ const WhyDifferent = () => {
                       <h3
                         className={`font-bold text-md transition ${
                           active === item.id
-                            ? "text-[#8CB429]"
+                            ? "text-[#8CB428]"
                             : "text-gray-900"
                         }`}
                       >
@@ -112,7 +112,7 @@ const WhyDifferent = () => {
                       <div
                         className={`h-[2px] mt-2 rounded-full transition-all duration-300 ${
                           active === item.id
-                            ? "bg-[#8CB429] w-20"
+                            ? "bg-[#8CB428] w-20"
                             : "bg-gray-200 w-10"
                         }`}
                       ></div>
@@ -131,11 +131,11 @@ const WhyDifferent = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="rounded-[30px] p-10 bg-white shadow-2xl border border-[#8CB429]/30"
+                className="rounded-[30px] p-10 bg-white shadow-2xl border border-[#8CB428]/30"
               >
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-14 h-14 rounded-2xl bg-[#8CB429]/10 flex items-center justify-center">
-                    <span className="text-[#8CB429] text-xl font-bold">
+                  <div className="w-14 h-14 rounded-2xl bg-[#8CB428]/10 flex items-center justify-center">
+                    <span className="text-[#8CB428] text-xl font-bold">
                       {activeSection.id}
                     </span>
                   </div>
@@ -166,7 +166,7 @@ const WhyDifferent = () => {
                       >
                         <div className="flex items-center gap-4">
                           <CheckCircle2
-                            className="text-[#8CB429] shrink-0"
+                            className="text-[#8CB428] shrink-0"
                             size={22}
                           />
                           <p className="leading-7 text-gray-700">{item}</p>

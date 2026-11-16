@@ -74,7 +74,7 @@ const DocumentsSection = () => {
 
         <div className="text-center max-w-4xl mx-auto mb-16">
 
-          {/*<span className="inline-flex px-5 py-2 rounded-full bg-[#8CB429]/10 text-[#7A9200] font-semibold">
+          {/*<span className="inline-flex px-5 py-2 rounded-full bg-[#8CB428]/10 text-[#7A9200] font-semibold">
             Documents Typically Required
           </span>*/}
 
@@ -109,16 +109,16 @@ const DocumentsSection = () => {
   whileHover={{
     y: -5,
   }}
-  className="group bg-white border border-gray-200 rounded-2xl p-2 hover:border-[#8CB429] hover:shadow-lg transition-all duration-300"
+  className="group bg-white border border-gray-200 rounded-2xl p-2 hover:border-[#8CB428] hover:shadow-lg transition-all duration-300"
 >
 
   <div className="flex items-center gap-5">
 
-    <div className="w-14 h-14 rounded-xl bg-[#8CB429]/10 flex items-center justify-center group-hover:bg-[#8CB429] transition">
+    <div className="w-14 h-14 rounded-xl bg-[#8CB428]/10 flex items-center justify-center group-hover:bg-[#8CB428] transition">
 
       <Icon
         size={28}
-        className="text-[#8CB429] group-hover:text-white transition"
+        className="text-[#8CB428] group-hover:text-white transition"
       />
 
     </div>
